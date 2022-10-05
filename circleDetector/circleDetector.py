@@ -35,11 +35,11 @@ def main():
 			
 			# Separate into 5 rows of 8 corresponding to each row of the sequencer
 			coordinatesDict = {
-				"hihat": centerPixelCoordinates[0:8],
-				"snare": centerPixelCoordinates[8:16],
-				"bassDrum": centerPixelCoordinates[16:24],
-				"tom": centerPixelCoordinates[24:32],
-				"guitar": centerPixelCoordinates[32:40]
+				"guitar": centerPixelCoordinates[0:8],
+				"tom": centerPixelCoordinates[8:16],
+				"hihat": centerPixelCoordinates[16:24],
+				"snare": centerPixelCoordinates[24:32],
+				"kick": centerPixelCoordinates[32:40]
 			}
 
 			# Sort each row of 8 by their x values to get the correct order
