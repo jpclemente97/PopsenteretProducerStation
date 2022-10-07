@@ -80,11 +80,11 @@ def main():
 						value.sort(key=secondSort)
 
 					# Write the json file
-					with open("seq.json", "w") as f:
+					with open("/Users/henrikharaldsensveen/Documents/GitHub/PopsenteretProducerStation/FUZZ_prod/seq.json", "w") as f:
 						json.dump(coordinatesDict, f)
 
 					# Write the CSV file
-					with open('seq.csv', 'w') as f:
+					with open('/Users/henrikharaldsensveen/Documents/GitHub/PopsenteretProducerStation/FUZZ_prod/seq.csv', 'w') as f:
 						writer = csv.writer(f)
 						for key, value in coordinatesDict.items():
 							for coordinate in value:
