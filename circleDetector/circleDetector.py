@@ -12,7 +12,7 @@ def secondSort(coordinates):
 def main():
 	# Detect circles from an image from the webcam
 	#img = cv2.imread('/Users/jpclemente97/git/PopsenteretProducerStation/circleDetector/seq_test_real.png', cv2.IMREAD_COLOR)
-	cam = cv2.VideoCapture(1)
+	cam = cv2.VideoCapture(0)
 	cam.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
 	cam.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
 	
@@ -25,7 +25,10 @@ def main():
 	blur = cv2.blur(gray, (3, 3))
 
 	fourtyCirclesFound = False
+	success = False
 	for param1 in reversed(range(30, 80)):
+		if(success):
+			break
 		for param2 in reversed(range(1, 150)):
 
 			circles = cv2.HoughCircles(blur,
@@ -87,6 +90,7 @@ def main():
 							for coordinate in value:
 								writer.writerow(coordinate)
 					print("Success! Find results in seq.json and seq.csv")
+					success = True
 					break
 
 # TODO: grid/overlap checker & have user confirmation to say if the 40 circles are correct or not
