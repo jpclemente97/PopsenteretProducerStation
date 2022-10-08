@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 269.0, 79.0, 895.0, 1007.0 ],
+		"rect" : [ 41.0, 84.0, 1468.0, 865.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,97 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-119",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "int" ],
+					"patching_rect" : [ 1449.470000000000027, 894.67999999999995, 48.0, 22.0 ],
+					"text" : "change"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-82",
+					"linecount" : 8,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1287.234033346176147, 704.255314111709595, 381.914891958236694, 117.0 ],
+					"text" : "Doing as separate sends/receives because when packing to lists there were 2 problems with bot pack and pak.\n\nPack would only trigger the list through is there was a kick in the row.\n\nPak would trigger the list through five times.\n\nBetter to use separate sends as this solved problem."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-45",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2135.061428197792338, 921.273829779624975, 68.0, 22.0 ],
+					"text" : "r drumPat4"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-44",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1890.820517778396606, 921.273829779624975, 68.0, 22.0 ],
+					"text" : "r drumPat3"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1666.820517778396606, 921.273829779624975, 68.0, 22.0 ],
+					"text" : "r drumPat2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1453.820517778396606, 921.273829779624975, 68.0, 22.0 ],
+					"text" : "r drumPat1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-30",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1220.820517778396606, 921.273829779624975, 68.0, 22.0 ],
+					"text" : "r drumPat0"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-10",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1099.0, 824.0, 111.096140116453171, 22.0 ],
-					"text" : "0 1 0 0 0"
+					"patching_rect" : [ 1099.0, 767.617021679878235, 111.096140116453171, 22.0 ],
+					"text" : "0. 0. 0. 0. 0."
 				}
 
 			}
@@ -566,7 +650,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1150.000038385391235, 2168.269303143024445, 150.0, 33.0 ],
+					"patching_rect" : [ 1150.000038385391235, 2168.269303143024445, 150.0, 34.0 ],
 					"text" : "reads mouse position in locked mode"
 				}
 
@@ -747,7 +831,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 788.251220047473907, 1737.499139010906219, 261.235963940620422, 154.0 ],
+					"patching_rect" : [ 788.251220047473907, 1737.499139010906219, 261.235963940620422, 158.0 ],
 					"text" : "digital software interfacing\n\nhow fast you click a button increases the fx amnt (tap tempo delay?)\n\nhow you drag a slider affects the fx value\n\nXY pad where each corner has a dedicated effect (mix + param)\n\nFX param sequencer"
 				}
 
@@ -771,7 +855,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1147.715651988983154, 1319.544183790683746, 99.438198208808899, 33.0 ],
+					"patching_rect" : [ 1147.715651988983154, 1319.544183790683746, 99.438198208808899, 34.0 ],
 					"text" : "maybe cut lows when vel is low"
 				}
 
@@ -783,7 +867,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 2158.761703968048096, 1338.16530042886734, 40.0, 22.0 ],
+					"patching_rect" : [ 2158.761703968048096, 1309.371796071529388, 40.0, 22.0 ],
 					"text" : "*~ 0.5"
 				}
 
@@ -1795,7 +1879,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1268.820517778396606, 1351.694712340831757, 29.5, 22.0 ],
+					"patching_rect" : [ 1268.820517778396606, 1355.694712340831757, 29.5, 22.0 ],
 					"text" : "*~"
 				}
 
@@ -1986,7 +2070,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3197.153846025466919, 748.038462340831757, 155.0, 181.0 ],
+					"patching_rect" : [ 3197.153846025466919, 748.038462340831757, 155.0, 186.0 ],
 					"text" : "this will pack all the lists in a matrix and output to leds guiding the user to the presets\n\nsequencer info will be sent to this hidden sequencer in easy-mode which will only be used to send the list to the leds.\n\nshould maybe be done in javascript"
 				}
 
@@ -2304,7 +2388,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 440.534054130315781, 311.205129206180573, 54.239597976207733, 22.0 ],
-					"text" : "50 45"
+					"text" : "50 71"
 				}
 
 			}
@@ -3200,7 +3284,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1152.153846025466919, 615.89317387342453, 111.0, 47.0 ],
+					"patching_rect" : [ 1152.153846025466919, 615.89317387342453, 111.0, 48.0 ],
 					"text" : "will be sent to LED strip showing playback"
 				}
 
@@ -3252,7 +3336,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2282.903064944914149, 556.9046731688195, 150.0, 141.0 ],
+					"patching_rect" : [ 2282.903064944914149, 556.9046731688195, 150.0, 144.0 ],
 					"text" : "we can make presets in the sequencer and use getrow to print the rows and copy the numbers to a message box.\n\nalternatively we use the preset object and connect it to the matrix. easier, but also more voulnerable."
 				}
 
@@ -3361,7 +3445,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1865.076979875564575, 600.538481950759888, 200.000001668930054, 33.0 ],
+					"patching_rect" : [ 1865.076979875564575, 600.538481950759888, 200.000001668930054, 34.0 ],
 					"text" : "sends 8*4 packets formatted as [seq_step, track_num, on_off]"
 				}
 
@@ -3373,7 +3457,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2179.807765066623688, 369.576600872665381, 150.0, 47.0 ],
+					"patching_rect" : [ 2179.807765066623688, 369.576600872665381, 150.0, 48.0 ],
 					"text" : "sends 8 packets of sequence number and note value"
 				}
 
@@ -3385,7 +3469,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2420.598406076431274, 351.923088669776917, 150.0, 33.0 ],
+					"patching_rect" : [ 2419.098406076431274, 339.157131314277649, 150.0, 34.0 ],
 					"text" : "camera control is excluded from the project"
 				}
 
@@ -3397,7 +3481,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 76.211541771888733, 305.705129206180573, 150.0, 33.0 ],
+					"patching_rect" : [ 76.211541771888733, 305.705129206180573, 150.0, 34.0 ],
 					"text" : "how many genres are we making?"
 				}
 
@@ -3420,7 +3504,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1935.325722694396973, 528.364480147521931, 150.0, 33.0 ],
+					"patching_rect" : [ 1935.325722694396973, 528.364480147521931, 150.0, 34.0 ],
 					"text" : "random button could be cool for adv mode"
 				}
 
@@ -3465,7 +3549,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 475.961554348468781, 722.115408718585968, 150.0, 33.0 ],
+					"patching_rect" : [ 475.961554348468781, 722.115408718585968, 150.0, 34.0 ],
 					"text" : "maybe this is cool for advanced mode"
 				}
 
@@ -3477,7 +3561,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 469.230784893035889, 827.538481295108795, 150.0, 33.0 ],
+					"patching_rect" : [ 469.230784893035889, 827.538481295108795, 150.0, 34.0 ],
 					"text" : "we don't need these controls"
 				}
 
@@ -3489,7 +3573,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 847.55580723285675, 142.491999328136444, 150.0, 33.0 ],
+					"patching_rect" : [ 847.55580723285675, 142.491999328136444, 150.0, 34.0 ],
 					"text" : "we don't need record button, will always be 'on'"
 				}
 
@@ -3501,7 +3585,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1232.692348837852478, 42.705129206180573, 150.0, 33.0 ],
+					"patching_rect" : [ 1232.692348837852478, 42.705129206180573, 150.0, 34.0 ],
 					"text" : "we don't need this, only track 5 will be recorded"
 				}
 
@@ -3513,7 +3597,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1025.000034213066101, 390.444712340831757, 103.846152305603027, 33.0 ],
+					"patching_rect" : [ 1025.000034213066101, 390.444712340831757, 103.846152305603027, 34.0 ],
 					"text" : "prerecording to catch transients"
 				}
 
@@ -3525,7 +3609,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 785.128210663795471, 320.705129206180573, 109.0, 33.0 ],
+					"patching_rect" : [ 785.128210663795471, 320.705129206180573, 109.0, 34.0 ],
 					"text" : "snapshoting audio to rms values"
 				}
 
@@ -3548,7 +3632,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 99.551278471946716, 196.700851321220398, 150.0, 33.0 ],
+					"patching_rect" : [ 99.551278471946716, 196.700851321220398, 150.0, 34.0 ],
 					"text" : "track 5 will be recorded from guitar/bass"
 				}
 
@@ -3560,7 +3644,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 99.551278471946716, 153.846158981323242, 151.0, 33.0 ],
+					"patching_rect" : [ 99.551278471946716, 153.846158981323242, 151.0, 34.0 ],
 					"text" : "track 1-4 will be controlled via drum pad midi"
 				}
 
@@ -3771,7 +3855,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 2420.598406076431274, 393.489436864852905, 329.283164501190186, 28.255136668682098 ],
+					"patching_rect" : [ 2419.098406076431274, 390.444712340831757, 329.283164501190186, 28.255136668682098 ],
 					"saved_attribute_attributes" : 					{
 						"activebgoncolor" : 						{
 							"expression" : ""
@@ -3848,8 +3932,8 @@
 					"name" : "LydLab_bpatch_1.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"offset" : [ 0.0, -555.0 ],
-					"patching_rect" : [ 2419.098406076431274, 528.364480147521931, 515.378307342529297, 232.157310724258423 ],
+					"offset" : [ 0.0, -870.0 ],
+					"patching_rect" : [ 2419.098406076431274, 518.79001213089748, 515.378307342529297, 232.157310724258423 ],
 					"viewvisibility" : 1
 				}
 
@@ -3906,7 +3990,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1220.820517778396606, 786.785613834857941, 61.0, 22.0 ],
+					"patching_rect" : [ 1220.820517778396606, 730.402635514736176, 61.0, 22.0 ],
 					"text" : "r drumPat"
 				}
 
@@ -10147,7 +10231,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 2153.826137759855555, 1380.788462340831757, 44.0, 65.0 ],
+					"patching_rect" : [ 2153.826137759855555, 1374.788462340831757, 44.0, 65.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_exponent" : 0.5,
@@ -10267,7 +10351,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1268.820517778396606, 1405.788462340831757, 44.0, 65.0 ],
+					"patching_rect" : [ 1268.820517778396606, 1402.663462340831757, 44.0, 65.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_exponent" : 0.5,
@@ -12148,7 +12232,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 8,
 					"outlettype" : [ "int", "int", "int", "int", "int", "int", "int", "int" ],
-					"patching_rect" : [ 1220.820517778396606, 885.391420006752014, 1618.921593233942986, 22.0 ],
+					"patching_rect" : [ 1220.820517778396606, 829.008441686630249, 1618.921593233942986, 22.0 ],
 					"text" : "unpack 0 0 0 0 0 0 0 0"
 				}
 
@@ -12525,7 +12609,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 735.128210663795471, 18.846148252487183, 180.0, 74.0 ],
+					"patching_rect" : [ 735.128210663795471, 18.846148252487183, 180.0, 75.0 ],
 					"text" : "REC",
 					"textjustification" : 1
 				}
@@ -13264,7 +13348,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 869.0, 419.0, 640.0, 480.0 ],
+						"rect" : [ 675.0, 495.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -14499,41 +14583,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
-					"source" : [ "obj-224", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-223", 0 ],
-					"source" : [ "obj-224", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-23", 0 ],
-					"source" : [ "obj-224", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-25", 0 ],
-					"source" : [ "obj-224", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
-					"source" : [ "obj-224", 4 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"order" : 1,
 					"source" : [ "obj-225", 0 ]
@@ -14999,6 +15048,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-77", 0 ],
 					"source" : [ "obj-301", 0 ]
 				}
@@ -15106,6 +15162,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-320", 0 ],
 					"source" : [ "obj-319", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-23", 0 ],
+					"source" : [ "obj-32", 0 ]
 				}
 
 			}
@@ -15519,6 +15582,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-223", 0 ],
+					"source" : [ "obj-37", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-382", 0 ],
 					"source" : [ "obj-370", 0 ]
 				}
@@ -15919,6 +15989,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-96", 0 ],
 					"source" : [ "obj-43", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"source" : [ "obj-45", 0 ]
 				}
 
 			}
@@ -16507,42 +16591,42 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "LydLab_bpatch_1.maxpat",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/FUZZ_prod",
+				"bootpath" : "~/Documents/MCT/MCT 4033/PopsenteretProducerStation/FUZZ_prod",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "iconPlay.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/FUZZ_prod",
+				"bootpath" : "~/Documents/MCT/MCT 4033/PopsenteretProducerStation/FUZZ_prod",
 				"patcherrelativepath" : ".",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "iconStop.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/FUZZ_prod",
+				"bootpath" : "~/Documents/MCT/MCT 4033/PopsenteretProducerStation/FUZZ_prod",
 				"patcherrelativepath" : ".",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "melodySeq.js",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/FUZZ_prod",
+				"bootpath" : "~/Documents/MCT/MCT 4033/PopsenteretProducerStation/FUZZ_prod",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "randomSeq.js",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/FUZZ_prod",
+				"bootpath" : "~/Documents/MCT/MCT 4033/PopsenteretProducerStation/FUZZ_prod",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "seqTracker.js",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/FUZZ_prod",
+				"bootpath" : "~/Documents/MCT/MCT 4033/PopsenteretProducerStation/FUZZ_prod",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
