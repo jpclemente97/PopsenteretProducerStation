@@ -84,7 +84,7 @@ def main():
 						json.dump(coordinatesDict, f)
 
 					# Write the CSV file
-					with open('seq.csv', 'w') as f:
+					with open('seq.csv', 'w', newline='') as f:
 						writer = csv.writer(f)
 						for key, value in coordinatesDict.items():
 							for coordinate in value:
