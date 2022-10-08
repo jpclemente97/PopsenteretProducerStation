@@ -87,7 +87,7 @@ def main():
 					with open('seq.csv', 'w', newline='') as f:
 						writer = csv.writer(f)
 						for key, value in coordinatesDict.items():
-							for coordinate in value:
+							for coordinate in value:g
 								writer.writerow(coordinate)
 					print("Success! Find results in seq.json and seq.csv")
 					success = True
