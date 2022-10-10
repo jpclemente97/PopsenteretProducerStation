@@ -2,8 +2,8 @@
 reading the csv file containing the center pixels for the sequencer holes
 
 */
-inlets = 2
-outlets = 6
+inlets = 3
+outlets = 4
 var csv_filename = "";
 var seq_list = [[], [], [], [], []];
 
@@ -35,9 +35,19 @@ for(x = 0; x < 40; x++){
 
 var a = 0;
 var led_list = [[], [], [], [], []];
+var b = 0;
+var step_list = [];
 //iterating over the sorted list
 function msg_int(i){
+	//counter clock value collecting sequencer step (columns) information
 	if (inlet == 0){
+		for (x in seq_list){
+			var output = ["getcell", seq_list[x][i][0], seq_list[x][i][1]]
+			outlet(0, output)
+			}
+		// then these column values will be processed through the square_mean
+		// and collected as a new list
+		/*
 		var out_1 = ["getcell", seq_list[0][i][0], seq_list[0][i][1]]
 		var out_2 = ["getcell", seq_list[1][i][0], seq_list[1][i][1]]
 		var out_3 = ["getcell", seq_list[2][i][0], seq_list[2][i][1]]
@@ -48,7 +58,9 @@ function msg_int(i){
 		outlet(2, out_3)
 		outlet(3, out_4)
 		outlet(4, out_5)
+		*/
 		}
+	// generate list for LED control
 	else if (inlet == 1){
 		if (a >= 40){
 			a = 0;
@@ -56,38 +68,36 @@ function msg_int(i){
 			}
 		var row = Math.floor(a/8)
 		led_list[row].push(i)
+		//post(led_list[0])
 		a++
 		}
-	}
-
-//var a = 0
-
-function bang(){
-
-	/*
-	if (a >= 40){
-		a = 0
+	// generate list for sequencer step
+	else if (inlet == 2){
+		if (b >= 5){
+			b = 0;
+			step_list = []
+			}
+		step_list.push(i)
+		if (b >= 4){
+			outlet(2, step_list)
+			}
+		b++
 		}
-	var row = Math.floor(a/8)
-	var column = a % 8
-	outlet(5, seq_list[row][column])
-	a++
-	*/
+	}
 	
+function bang(){
 	//output all coordinates
 	if (inlet == 0){
 	for (i in seq_list){
 		for (j in seq_list[i]){
-			outlet(5, seq_list[i][j])
+			outlet(1, seq_list[i][j])
 			}		
 		}
 	}
 	else if (inlet == 1){
-		//outlet(2, led_list)
-		post(led_list[0])
-		post(led_list[1])
-		post(led_list[2])
-		post(led_list[3])
-		post(led_list[4])
+		for (x in led_list){
+			outlet(3, led_list[x])
+			//post(led_list[x])
+			}
 		}
 	}
