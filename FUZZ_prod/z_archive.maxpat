@@ -40,6 +40,30 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 480.0, 340.142253041267395, 65.0, 22.0 ],
+					"text" : "jit./ @val 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "jit_matrix" ],
+					"patching_rect" : [ 480.0, 292.473826289176941, 59.0, 22.0 ],
+					"text" : "vid_delay"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-419",
 					"maxclass" : "number",
 					"numinlets" : 1,
@@ -1050,9 +1074,9 @@
 				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 5,
-					"outlettype" : [ "", "", "", "", "" ],
+					"numinlets" : 3,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 151.0, 208.5, 153.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "init_seq_holes.js",
@@ -1504,6 +1528,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-61", 1 ],
 					"source" : [ "obj-57", 0 ]
 				}
@@ -1601,6 +1632,13 @@
 				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/FUZZ_prod",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vid_delay.maxpat",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/FUZZ_prod",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
