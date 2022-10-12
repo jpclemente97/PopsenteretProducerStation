@@ -18,6 +18,8 @@ def main():
 	
 	ret, frame = cam.read()
 
+	frame = cv2.flip(frame, 1)
+
 	cv2.imshow("Detected Circle", frame)
 	cv2.waitKey(0)
 	frame = frame.astype(np.uint8)
