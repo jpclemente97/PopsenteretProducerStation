@@ -13,8 +13,8 @@ def main():
 	# Detect circles from an image from the webcam
 	#img = cv2.imread('/Users/jpclemente97/git/PopsenteretProducerStation/circleDetector/seq_test_real.png', cv2.IMREAD_COLOR)
 	cam = cv2.VideoCapture(1)
-	cam.set(cv2.CAP_PROP_FRAME_WIDTH, 320)
-	cam.set(cv2.CAP_PROP_FRAME_HEIGHT, 240)
+	cam.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
+	cam.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
 	
 	ret, frame = cam.read()
 
@@ -80,14 +80,14 @@ def main():
 						value.sort(key=secondSort)
 
 					# Write the json file
-					with open("/Users/henrikharaldsensveen/Documents/GitHub/PopsenteretProducerStation/FUZZ_prod/seq.json", "w") as f:
+					with open("C:/Users/Hugh/Documents/GitHub/PopsenteretProducerStation/circleDetector/seq.json", "w") as f:
 						json.dump(coordinatesDict, f)
 
 					# Write the CSV file
-					with open('seq.csv', 'w', newline='') as f:
+					with open('C:/Users/Hugh/Documents/GitHub/PopsenteretProducerStation/seq.csv', 'w', newline='') as f:
 						writer = csv.writer(f)
 						for key, value in coordinatesDict.items():
-							for coordinate in value:g
+							for coordinate in value:
 								writer.writerow(coordinate)
 					print("Success! Find results in seq.json and seq.csv")
 					success = True
