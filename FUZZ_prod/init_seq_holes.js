@@ -24,8 +24,8 @@ for(x = 0; x < 40; x++){
 	
 	//getting data
 	var coordinates = line.split(",")
-	x_coor = parseInt(coordinates[0])
-	y_coor = parseInt(coordinates[1])
+	x_coor = parseInt(coordinates[0])/1280
+	y_coor = parseInt(coordinates[1])/720
 	
 	//write to matrix representing the sequener
 	seq_list[row].push([x_coor, y_coor])
@@ -42,7 +42,7 @@ function msg_int(i){
 	//counter clock value collecting sequencer step (columns) information
 	if (inlet == 0){
 		for (x in seq_list){
-			var output = ["getcell", seq_list[x][i][0], seq_list[x][i][1]]
+			var output = ["getcell", seq_list[x][i][0]*320, seq_list[x][i][1]*240]
 			outlet(0, output)
 			}
 		// then these column values will be processed through the square_mean
