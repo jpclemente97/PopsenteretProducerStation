@@ -26,7 +26,6 @@ def main():
 	gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 	blur = cv2.blur(gray, (3, 3))
 
-	fourtyCirclesFound = False
 	success = False
 	for param1 in reversed(range(30, 80)):
 		if(success):
