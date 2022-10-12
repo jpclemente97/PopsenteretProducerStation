@@ -101,7 +101,7 @@ function bang(){
 	if (inlet == 0){
 	for (i in seq_list){
 		for (j in seq_list[i]){
-			outlet(1, seq_list[i][j])
+			outlet(1, [Math.floor(seq_list[x][i][0]*x_dim), Math.floor(seq_list[x][i][1]*y_dim)])
 			}		
 		}
 	}
