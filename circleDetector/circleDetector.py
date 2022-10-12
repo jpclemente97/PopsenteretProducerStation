@@ -18,13 +18,14 @@ def main():
 	
 	ret, frame = cam.read()
 
+	frame = cv2.flip(frame, 1)
+
 	cv2.imshow("Detected Circle", frame)
 	cv2.waitKey(0)
 	frame = frame.astype(np.uint8)
 	gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 	blur = cv2.blur(gray, (3, 3))
 
-	fourtyCirclesFound = False
 	success = False
 	for param1 in reversed(range(30, 80)):
 		if(success):
