@@ -144,7 +144,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
 					"patching_rect" : [ 69.0, 314.0, 244.0, 22.0 ],
-					"text" : "jit.matrix slice 1 char 640 480 @usesrcdim 1"
+					"text" : "jit.matrix slice 1 char 320 240 @usesrcdim 1"
 				}
 
 			}

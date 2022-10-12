@@ -97,7 +97,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1377.333394333333217, 804.0, 95.333344000000125, 161.0 ],
-					"presentation_linecount" : 2,
 					"text" : "<--motion detection methode 2"
 				}
 
@@ -299,7 +298,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 1085.0, 470.683663487434387, 259.0, 23.0 ],
+					"patching_rect" : [ 1125.0, 467.683663487434387, 259.0, 23.0 ],
 					"text" : "jit.slide @slideup 20 @slide_down 10"
 				}
 
@@ -740,7 +739,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 468.5, 249.709837198257446, 23.0, 76.0 ],
-					"text" : "1 1 1 1 1"
+					"text" : "0 0 0 1 1"
 				}
 
 			}
@@ -764,7 +763,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
 					"patching_rect" : [ 327.0, 527.131316065788269, 236.0, 22.0 ],
-					"text" : "jit.matrix full 1 char @dim 640 480 @thru 0"
+					"text" : "jit.matrix full 1 char @dim 320 240 @thru 0"
 				}
 
 			}
@@ -860,7 +859,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
 					"patching_rect" : [ 709.5, 530.683663487434387, 236.0, 22.0 ],
-					"text" : "jit.matrix full 1 char @dim 640 480 @thru 0"
+					"text" : "jit.matrix full 1 char @dim 320 240 @thru 0"
 				}
 
 			}
@@ -896,7 +895,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 799.622571468353271, 127.959018051624298, 126.0, 22.0 ],
-					"text" : "qmetro 200 @active 1"
+					"text" : "qmetro 150 @active 1"
 				}
 
 			}
@@ -1422,7 +1421,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-6",
-					"items" : "FaceTime HD Camera",
+					"items" : [ "FaceTime HD Camera", ",", "USB 2.0 Camera" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1471,7 +1470,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
 					"patching_rect" : [ 848.622571468353271, 178.767214059829712, 113.0, 23.0 ],
-					"text" : "jit.qt.grab 640 480"
+					"text" : "jit.qt.grab 320 240"
 				}
 
 			}
@@ -1832,6 +1831,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-65", 0 ],
+					"order" : 0,
+					"source" : [ "obj-45", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"order" : 1,
 					"source" : [ "obj-45", 0 ]
 				}
 
@@ -1957,13 +1965,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
-					"source" : [ "obj-65", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-64", 0 ],
 					"source" : [ "obj-66", 0 ]
 				}
@@ -1992,16 +1993,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-43", 0 ],
-					"order" : 0,
-					"source" : [ "obj-72", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-73", 0 ],
-					"order" : 1,
 					"source" : [ "obj-72", 0 ]
 				}
 
@@ -2027,15 +2019,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-72", 0 ],
-					"order" : 0,
-					"source" : [ "obj-75", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"order" : 1,
 					"source" : [ "obj-75", 0 ]
 				}
 
@@ -2066,6 +2049,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-75", 0 ],
+					"order" : 0,
+					"source" : [ "obj-95", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"order" : 1,
 					"source" : [ "obj-95", 0 ]
 				}
 
