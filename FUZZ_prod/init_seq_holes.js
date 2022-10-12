@@ -7,6 +7,9 @@ outlets = 4
 var csv_filename = "";
 var seq_list = [[], [], [], [], []];
 
+var x_dim = 1280
+var y_dim = 720
+
 if (jsarguments.length>1)
 	csv_filename = jsarguments[1];
 
@@ -33,16 +36,24 @@ for(x = 0; x < 40; x++){
 
 //post(seq_list[0][7][0])
 
+function set_vid_dim(x_dimin, y_dimin){
+	x_dim = x_dimin
+	y_dim = y_dimin
+	post(x_dim, y_dim)
+	}
+
 var a = 0;
 var led_list = [[], [], [], [], []];
 var b = 0;
 var step_list = [];
+
 //iterating over the sorted list
 function msg_int(i){
 	//counter clock value collecting sequencer step (columns) information
 	if (inlet == 0){
 		for (x in seq_list){
-			var output = ["getcell", seq_list[x][i][0]*320, seq_list[x][i][1]*240]
+			var output = ["getcell", Math.floor(seq_list[x][i][0]*x_dim), Math.floor(seq_list[x][i][1]*y_dim)]
+			//var output = ["getcell", seq_list[x][i][0], seq_list[x][i][1]]
 			outlet(0, output)
 			}
 		// then these column values will be processed through the square_mean
