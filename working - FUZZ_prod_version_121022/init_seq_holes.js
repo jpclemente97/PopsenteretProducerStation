@@ -101,14 +101,29 @@ function bang(){
 	if (inlet == 0){
 	for (i in seq_list){
 		for (j in seq_list[i]){
-			outlet(1, [Math.floor(seq_list[x][i][0]*x_dim), Math.floor(seq_list[x][i][1]*y_dim)])
+			outlet(1, [Math.floor(seq_list[i][j][0]*x_dim), Math.floor(seq_list[i][j][1]*y_dim)])
 			}		
 		}
 	}
 	else if (inlet == 1){
 		for (x in led_list){
-			outlet(3, led_list[x])
+			for (y in led_list[x]){
+				//post('x', x)
+				var on_val = led_list[x][y]
+				//post(on_val)
+				//post(on_val)
+				//post('index', parseInt(x)*8+parseInt(y))
+				var led_index = parseInt(x)*8+parseInt(y)
+				if (on_val == 0){
+					var out_val = [53, led_index, 255]
+					outlet(3, out_val)
+				}
 			//post(led_list[x])
+				else if (on_val == 1){
+					var out_val = [52, led_index, 255]
+					outlet(3, out_val)
+				}
 			}
 		}
 	}
+}
