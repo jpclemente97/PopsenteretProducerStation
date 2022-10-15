@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 798.0, 93.0, 284.0, 687.0 ],
+		"rect" : [ 263.0, 93.0, 451.0, 687.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,7 +39,7 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"comment" : "Bang on mouse up.",
+					"comment" : "Item Symbol",
 					"id" : "obj-7",
 					"index" : 0,
 					"maxclass" : "outlet",
@@ -844,7 +844,7 @@
 		"dependency_cache" : [ 			{
 				"name" : "fuzz-ui-btn_genre_glow.png",
 				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/UI Assets/resources/images",
-				"patcherrelativepath" : "./resources/images",
+				"patcherrelativepath" : "../../UI Assets/resources/images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
@@ -858,11 +858,11 @@
 , 			{
 				"name" : "Large Text",
 				"default" : 				{
-					"fontsize" : [ 64.0 ],
-					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
+					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
 					"fontname" : [ "AlternateGothic-NoOne" ],
+					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
 					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
-					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ]
+					"fontsize" : [ 64.0 ]
 				}
 ,
 				"parentstyle" : "Medium Text",
@@ -871,12 +871,12 @@
 , 			{
 				"name" : "Medium Text",
 				"default" : 				{
-					"fontsize" : [ 36.0 ],
-					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
+					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
 					"fontname" : [ "AlternateGothic-NoOne" ],
+					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
 					"fontface" : [ 0 ],
 					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
-					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ]
+					"fontsize" : [ 36.0 ]
 				}
 ,
 				"parentstyle" : "Small Text",
@@ -885,11 +885,11 @@
 , 			{
 				"name" : "Small Text",
 				"default" : 				{
-					"fontsize" : [ 30.0 ],
-					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
+					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
 					"fontname" : [ "AlternateGothic-NoOne" ],
+					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
 					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
-					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ]
+					"fontsize" : [ 30.0 ]
 				}
 ,
 				"parentstyle" : "",
