@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 276.0, 192.0, 1610.0, 865.0 ],
+		"rect" : [ 34.0, 77.0, 1468.0, 865.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,11 +40,73 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-112",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1176.320517778396606, 437.0, 150.0, 62.0 ],
+					"text" : "added limiter - just using preset but works pretty well but could be more fine tuned"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-108",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 1041.820517778396606, 412.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-107",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1041.820517778396606, 444.038462340831757, 78.0, 22.0 ],
+					"text" : "limEnabled 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-39",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1041.820517778396606, 479.842626214027405, 130.0, 23.0 ],
+					"text" : "choosePreset Drums"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "signal", "signal", "list", "list" ],
+					"patching_rect" : [ 944.820517778396606, 444.038462340831757, 71.0, 22.0 ],
+					"text" : "omx.comp~"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-81",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1050.320517778396606, 401.916945268947643, 70.0, 20.0 ],
+					"patching_rect" : [ 1050.320517778396606, 579.916945268947643, 70.0, 20.0 ],
 					"text" : "threshold"
 				}
 
@@ -56,7 +118,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2657.787559747695923, 222.616410603363079, 150.0, 47.0 ],
+					"patching_rect" : [ 2657.787559747695923, 222.616410603363079, 150.0, 48.0 ],
 					"text" : "look at the sequencer and reflect whatever status on seq to a matrix"
 				}
 
@@ -68,7 +130,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2419.098406076431274, 222.616410603363079, 150.0, 74.0 ],
+					"patching_rect" : [ 2419.098406076431274, 222.616410603363079, 152.0, 75.0 ],
 					"text" : "gather sequencer video data to a matrix 8x5 with either 0, 1, 2, 3 per step to indicate what light it should give"
 				}
 
@@ -80,7 +142,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 638.742110133171082, 555.038462340831757, 150.0, 74.0 ],
+					"patching_rect" : [ 638.742110133171082, 555.038462340831757, 151.0, 75.0 ],
 					"text" : "send out an impulse when drum pad hits or guitar gets recorded, for drum pad the velocity will control brightness"
 				}
 
@@ -94,7 +156,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 998.820517778396606, 401.916945268947643, 50.0, 22.0 ]
+					"patching_rect" : [ 998.820517778396606, 579.916945268947643, 50.0, 22.0 ]
 				}
 
 			}
@@ -117,7 +179,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1287.234033346176147, 704.255314111709595, 381.914891958236694, 114.0 ],
+					"patching_rect" : [ 1287.234033346176147, 704.255314111709595, 381.914891958236694, 117.0 ],
 					"text" : "Doing as separate sends/receives because when packing to lists there were 2 problems with bot pack and pak.\n\nPack would only trigger the list through is there was a kick in the row.\n\nPak would trigger the list through five times.\n\nBetter to use separate sends as this solved problem."
 				}
 
@@ -553,7 +615,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1147.715651988983154, 1319.544183790683746, 99.438198208808899, 33.0 ],
+					"patching_rect" : [ 1147.715651988983154, 1319.544183790683746, 99.438198208808899, 34.0 ],
 					"text" : "maybe cut lows when vel is low"
 				}
 
@@ -1768,7 +1830,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3197.153846025466919, 748.038462340831757, 155.0, 181.0 ],
+					"patching_rect" : [ 3197.153846025466919, 748.038462340831757, 155.0, 186.0 ],
 					"text" : "this will pack all the lists in a matrix and output to leds guiding the user to the presets\n\nsequencer info will be sent to this hidden sequencer in easy-mode which will only be used to send the list to the leds.\n\nshould maybe be done in javascript"
 				}
 
@@ -2958,7 +3020,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1152.153846025466919, 615.89317387342453, 111.0, 47.0 ],
+					"patching_rect" : [ 1152.153846025466919, 615.89317387342453, 111.0, 48.0 ],
 					"text" : "will be sent to LED strip showing playback"
 				}
 
@@ -3010,7 +3072,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2282.903064944914149, 556.9046731688195, 150.0, 141.0 ],
+					"patching_rect" : [ 2282.903064944914149, 556.9046731688195, 150.0, 144.0 ],
 					"text" : "we can make presets in the sequencer and use getrow to print the rows and copy the numbers to a message box.\n\nalternatively we use the preset object and connect it to the matrix. easier, but also more voulnerable."
 				}
 
@@ -3119,7 +3181,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1865.076979875564575, 600.538481950759888, 200.000001668930054, 33.0 ],
+					"patching_rect" : [ 1865.076979875564575, 600.538481950759888, 200.000001668930054, 34.0 ],
 					"text" : "sends 8*4 packets formatted as [seq_step, track_num, on_off]"
 				}
 
@@ -3131,7 +3193,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2179.807765066623688, 369.576600872665381, 150.0, 47.0 ],
+					"patching_rect" : [ 2179.807765066623688, 369.576600872665381, 150.0, 48.0 ],
 					"text" : "sends 8 packets of sequence number and note value"
 				}
 
@@ -3143,7 +3205,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2419.098406076431274, 339.157131314277649, 150.0, 33.0 ],
+					"patching_rect" : [ 2419.098406076431274, 339.157131314277649, 150.0, 34.0 ],
 					"text" : "camera control is excluded from the project"
 				}
 
@@ -3155,7 +3217,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 76.211541771888733, 305.705129206180573, 150.0, 33.0 ],
+					"patching_rect" : [ 76.211541771888733, 305.705129206180573, 150.0, 34.0 ],
 					"text" : "how many genres are we making?"
 				}
 
@@ -3178,7 +3240,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1935.325722694396973, 528.364480147521931, 150.0, 33.0 ],
+					"patching_rect" : [ 1935.325722694396973, 528.364480147521931, 150.0, 34.0 ],
 					"text" : "random button could be cool for adv mode"
 				}
 
@@ -3190,7 +3252,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 475.961554348468781, 722.115408718585968, 150.0, 33.0 ],
+					"patching_rect" : [ 475.961554348468781, 722.115408718585968, 150.0, 34.0 ],
 					"text" : "maybe this is cool for advanced mode"
 				}
 
@@ -3202,7 +3264,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 469.230784893035889, 827.538481295108795, 150.0, 33.0 ],
+					"patching_rect" : [ 469.230784893035889, 827.538481295108795, 150.0, 34.0 ],
 					"text" : "we don't need these controls"
 				}
 
@@ -3214,7 +3276,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 898.55580723285675, 196.210973193485302, 150.0, 33.0 ],
+					"patching_rect" : [ 898.55580723285675, 196.210973193485302, 150.0, 34.0 ],
 					"text" : "we don't need record button, will always be 'on'"
 				}
 
@@ -3226,7 +3288,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1232.692348837852478, 42.705129206180573, 150.0, 33.0 ],
+					"patching_rect" : [ 1232.692348837852478, 42.705129206180573, 150.0, 34.0 ],
 					"text" : "we don't need this, only track 5 will be recorded"
 				}
 
@@ -3249,7 +3311,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 99.551278471946716, 196.700851321220398, 150.0, 33.0 ],
+					"patching_rect" : [ 99.551278471946716, 196.700851321220398, 150.0, 34.0 ],
 					"text" : "track 5 will be recorded from guitar/bass"
 				}
 
@@ -3261,7 +3323,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 99.551278471946716, 153.846158981323242, 151.0, 33.0 ],
+					"patching_rect" : [ 99.551278471946716, 153.846158981323242, 151.0, 34.0 ],
 					"text" : "track 1-4 will be controlled via drum pad midi"
 				}
 
@@ -3525,7 +3587,7 @@
 					"name" : "LydLab_bpatch_1.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"offset" : [ 0.0, -260.0 ],
+					"offset" : [ 0.0, -870.0 ],
 					"patching_rect" : [ 2419.098406076431274, 518.79001213089748, 515.378307342529297, 232.157310724258423 ],
 					"viewvisibility" : 1
 				}
@@ -10709,7 +10771,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 130.0, 125.5, 153.0, 33.0 ],
+									"patching_rect" : [ 130.0, 125.5, 153.0, 34.0 ],
 									"text" : "converting toggle to button for GUI purpose"
 								}
 
@@ -11891,7 +11953,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 735.128210663795471, 18.846148252487183, 180.0, 74.0 ],
+					"patching_rect" : [ 735.128210663795471, 18.846148252487183, 180.0, 75.0 ],
 					"text" : "REC",
 					"textjustification" : 1
 				}
@@ -11950,7 +12012,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 450.0, 239.0, 103.846152305603027, 47.0 ],
-									"presentation_linecount" : 3,
 									"text" : "delay = prerecording to catch transients"
 								}
 
@@ -11963,7 +12024,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 25.0, 168.0, 109.0, 33.0 ],
-									"presentation_linecount" : 2,
 									"text" : "snapshoting audio to rms values"
 								}
 
@@ -12323,7 +12383,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 944.820517778396606, 440.728266944725078, 73.0, 22.0 ],
+					"patching_rect" : [ 944.820517778396606, 618.728266944725078, 73.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -12554,7 +12614,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 944.820517778396606, 349.42410307152943, 29.5, 22.0 ],
+					"patching_rect" : [ 944.820517778396606, 527.42410307152943, 29.5, 22.0 ],
 					"text" : "*~"
 				}
 
@@ -12746,6 +12806,29 @@
 					"destination" : [ "obj-61", 0 ],
 					"order" : 0,
 					"source" : [ "obj-106", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-107", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-107", 0 ],
+					"order" : 1,
+					"source" : [ "obj-108", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-39", 0 ],
+					"order" : 0,
+					"source" : [ "obj-108", 0 ]
 				}
 
 			}
@@ -13196,16 +13279,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
-					"order" : 1,
-					"source" : [ "obj-2", 0 ]
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-2", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-80", 0 ],
-					"order" : 0,
+					"destination" : [ "obj-29", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -13700,6 +13781,38 @@
 					"destination" : [ "obj-294", 0 ],
 					"order" : 0,
 					"source" : [ "obj-288", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"order" : 1,
+					"source" : [ "obj-29", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"order" : 1,
+					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-80", 0 ],
+					"order" : 0,
+					"source" : [ "obj-29", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-80", 0 ],
+					"order" : 0,
+					"source" : [ "obj-29", 0 ]
 				}
 
 			}
@@ -14268,6 +14381,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-66", 0 ],
 					"source" : [ "obj-380", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-39", 0 ]
 				}
 
 			}
@@ -14994,42 +15114,42 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "LydLab_bpatch_1.maxpat",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/FUZZ_prod",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/working - FUZZ_prod_version_121022",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "iconPlay.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/FUZZ_prod",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/working - FUZZ_prod_version_121022",
 				"patcherrelativepath" : ".",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "iconStop.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/FUZZ_prod",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/working - FUZZ_prod_version_121022",
 				"patcherrelativepath" : ".",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "melodySeq.js",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/FUZZ_prod",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/working - FUZZ_prod_version_121022",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "randomSeq.js",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/FUZZ_prod",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/working - FUZZ_prod_version_121022",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "seqTracker.js",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/FUZZ_prod",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/working - FUZZ_prod_version_121022",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
