@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1612.0, 919.0 ],
+		"rect" : [ 34.0, 77.0, 1168.0, 865.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,87 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-19",
+					"linecount" : 8,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 991.0, 107.325708150863647, 150.0, 117.0 ],
+					"text" : "Hugh: added limiter - just using preset but works pretty well but could be more fine tuned\n\nReplaced ezdac with ADC for 3 inputs: Body, neck, strings"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "signal", "signal", "signal" ],
+					"patching_rect" : [ 1198.820517778396606, 128.0, 65.0, 22.0 ],
+					"text" : "adc~ 1 2 3"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-108",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 1295.820517778396606, 265.287245810031891, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-107",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1295.820517778396606, 297.325708150863647, 78.0, 22.0 ],
+					"text" : "limEnabled 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-7",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1295.820517778396606, 333.129872024059296, 99.0, 23.0 ],
+					"text" : "choosePreset 4"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "signal", "signal", "list", "list" ],
+					"patching_rect" : [ 1198.820517778396606, 202.325708150863647, 71.0, 22.0 ],
+					"text" : "omx.comp~"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontsize" : 40.0,
 					"id" : "obj-247",
 					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2370.0, 404.370438694953918, 477.0, 319.0 ],
+					"patching_rect" : [ 2370.0, 404.370438694953918, 477.0, 328.0 ],
 					"text" : "OLD ARHIVED STUFF \n-->\n----->\n---------->\n---------------->\n--------------------->\n-------------------------->"
 				}
 
@@ -1294,7 +1368,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 682.751290738582611, 182.504901766777039, 150.0, 33.0 ],
+					"patching_rect" : [ 682.751290738582611, 182.504901766777039, 150.0, 34.0 ],
 					"text" : "for testing drum pad functionality"
 				}
 
@@ -1319,7 +1393,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 431.200000584125519, 381.052079558372498, 50.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Minimal"
 				}
 
@@ -1442,7 +1515,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 970.0, 305.254901766777039, 91.0, 47.0 ],
+					"patching_rect" : [ 970.0, 305.254901766777039, 91.0, 48.0 ],
 					"text" : "Takes MIDI from the four drum pads"
 				}
 
@@ -1454,7 +1527,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1137.194229990243912, 574.809065639972687, 150.0, 33.0 ],
+					"patching_rect" : [ 1137.194229990243912, 574.809065639972687, 150.0, 34.0 ],
 					"text" : "Send MIDI-Controller key change here"
 				}
 
@@ -1477,7 +1550,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1583.373712211847305, 1149.899132966995239, 103.0, 33.0 ],
+					"patching_rect" : [ 1583.373712211847305, 1149.899132966995239, 103.0, 34.0 ],
 					"text" : "0: Play from start of sample."
 				}
 
@@ -1512,7 +1585,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1189.194229990243912, 728.489763925235707, 87.0, 47.0 ],
+					"patching_rect" : [ 1189.194229990243912, 728.489763925235707, 87.0, 48.0 ],
 					"text" : "Send 0-24 here for key change"
 				}
 
@@ -1636,7 +1709,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1883.775127559900284, 1017.770080506801605, 150.0, 60.0 ],
+					"patching_rect" : [ 1883.775127559900284, 1017.770080506801605, 150.0, 62.0 ],
 					"text" : "If the melody sequencer outputs 0, stay silent, otherwise trigger envelope."
 				}
 
@@ -1660,7 +1733,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 778.742110133171082, 611.0, 150.0, 74.0 ],
+					"patching_rect" : [ 778.742110133171082, 611.0, 150.0, 75.0 ],
 					"text" : "Oliver: But the drum pad shouldn't change the sample, only the velocity? Why is it affecting which samples are replaced?"
 				}
 
@@ -1672,7 +1745,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 92.200000584125519, 314.052079558372498, 426.005770593881607, 60.0 ],
+					"patching_rect" : [ 92.200000584125519, 314.052079558372498, 426.005770593881607, 62.0 ],
 					"text" : "SwitchSamples looks for samples in ./resources/samples/%s/ where %s is the name of the folder containing the current genre samples. This is the same as the genre name, which comes from \"FUZZ Producer Station User Interface.maxpat\" through [r current_genre]."
 				}
 
@@ -1686,7 +1759,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 4414.927016377449036, 286.504901766777039, 160.0, 38.0 ],
+					"patching_rect" : [ 4414.927016377449036, 286.504901766777039, 160.0, 39.0 ],
 					"text" : "TRANSPORT & GLOBAL CONTOLS"
 				}
 
@@ -1720,7 +1793,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 588.0, 153.0, 640.0, 480.0 ],
+						"rect" : [ 587.0, 153.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2247,7 +2320,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 281.200000584125519, 7.479559898376465, 150.0, 33.0 ],
+					"patching_rect" : [ 281.200000584125519, 7.479559898376465, 150.0, 34.0 ],
 					"text" : "Oliver: Stuff I thought you might want to keep."
 				}
 
@@ -2259,7 +2332,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 572.653852164745331, 697.0, 150.0, 87.0 ],
+					"patching_rect" : [ 572.653852164745331, 697.0, 150.0, 89.0 ],
 					"text" : "Oliver: Didn't know what the zl.reg is doing. I think the cords should go from replace to the zl.reg? Make any changes you need."
 				}
 
@@ -2823,7 +2896,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1310.320517778396606, 262.395476281642914, 70.0, 74.0 ],
+					"patching_rect" : [ 1310.320517778396606, 366.159509062767029, 70.0, 75.0 ],
 					"text" : "threshold: needs to be adjusted on site"
 				}
 
@@ -2835,7 +2908,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 778.742110133171082, 528.038462340831757, 158.0, 74.0 ],
+					"patching_rect" : [ 778.742110133171082, 528.038462340831757, 158.0, 75.0 ],
 					"text" : "send out an impulse when drum pad hits or guitar gets recorded, for drum pad the velocity will control brightness"
 				}
 
@@ -2849,7 +2922,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1258.820517778396606, 262.395476281642914, 50.0, 22.0 ]
+					"patching_rect" : [ 1258.820517778396606, 366.159509062767029, 50.0, 22.0 ]
 				}
 
 			}
@@ -2860,7 +2933,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3967.234033346176147, 1028.255314111709595, 381.914891958236694, 114.0 ],
+					"patching_rect" : [ 3967.234033346176147, 1028.255314111709595, 381.914891958236694, 117.0 ],
 					"text" : "Doing as separate sends/receives because when packing to lists there were 2 problems with bot pack and pak.\n\nPack would only trigger the list through is there was a kick in the row.\n\nPak would trigger the list through five times.\n\nBetter to use separate sends as this solved problem."
 				}
 
@@ -3272,7 +3345,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 394.089364200830403, 1287.544183790683746, 99.438198208808899, 33.0 ],
+					"patching_rect" : [ 394.089364200830403, 1287.544183790683746, 99.438198208808899, 34.0 ],
 					"text" : "maybe cut lows when vel is low"
 				}
 
@@ -4487,7 +4560,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3855.820524096488953, 762.705129325389862, 155.0, 181.0 ],
+					"patching_rect" : [ 3855.820524096488953, 762.705129325389862, 155.0, 186.0 ],
 					"text" : "this will pack all the lists in a matrix and output to leds guiding the user to the presets\n\nsequencer info will be sent to this hidden sequencer in easy-mode which will only be used to send the list to the leds.\n\nshould maybe be done in javascript"
 				}
 
@@ -5160,7 +5233,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 4034.388503551483154, 752.89317387342453, 111.0, 47.0 ],
+					"patching_rect" : [ 4034.388503551483154, 752.89317387342453, 111.0, 48.0 ],
 					"text" : "will be sent to LED strip showing playback"
 				}
 
@@ -5212,7 +5285,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2941.569743015936183, 571.571340153377605, 150.0, 141.0 ],
+					"patching_rect" : [ 2941.569743015936183, 571.571340153377605, 150.0, 144.0 ],
 					"text" : "we can make presets in the sequencer and use getrow to print the rows and copy the numbers to a message box.\n\nalternatively we use the preset object and connect it to the matrix. easier, but also more voulnerable."
 				}
 
@@ -5321,7 +5394,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5030.311637401580811, 734.538481950759888, 200.000001668930054, 33.0 ],
+					"patching_rect" : [ 5030.311637401580811, 734.538481950759888, 200.000001668930054, 34.0 ],
 					"text" : "sends 8*4 packets formatted as [seq_step, track_num, on_off]"
 				}
 
@@ -5333,7 +5406,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5345.042422592639923, 503.576600872665381, 150.0, 47.0 ],
+					"patching_rect" : [ 5345.042422592639923, 503.576600872665381, 150.0, 48.0 ],
 					"text" : "sends 8 packets of sequence number and note value"
 				}
 
@@ -5345,7 +5418,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3077.765084147453308, 353.823798298835754, 150.0, 33.0 ],
+					"patching_rect" : [ 3077.765084147453308, 353.823798298835754, 150.0, 34.0 ],
 					"text" : "camera control is excluded from the project"
 				}
 
@@ -5357,7 +5430,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 83.211541771888733, 147.92907577753067, 150.0, 47.0 ],
+					"patching_rect" : [ 83.211541771888733, 147.92907577753067, 150.0, 48.0 ],
 					"text" : "How many genres are we making: as of October 16th, 11 are planned."
 				}
 
@@ -5369,7 +5442,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 4414.927016377449036, 327.504901766777039, 150.0, 33.0 ],
+					"patching_rect" : [ 4414.927016377449036, 327.504901766777039, 150.0, 34.0 ],
 					"text" : "should be synced to sequencer"
 				}
 
@@ -5381,7 +5454,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5100.560380220413208, 662.364480147521931, 150.0, 33.0 ],
+					"patching_rect" : [ 5100.560380220413208, 662.364480147521931, 150.0, 34.0 ],
 					"text" : "random button could be cool for adv mode"
 				}
 
@@ -5393,7 +5466,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 28.694229453802052, 1147.115408718585968, 150.0, 47.0 ],
+					"patching_rect" : [ 28.694229453802052, 1147.115408718585968, 150.0, 48.0 ],
 					"text" : "maybe this is cool for advanced mode as pitching is a fun effect"
 				}
 
@@ -5405,7 +5478,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1138.570517778396606, 42.689504206180573, 150.0, 47.0 ],
+					"patching_rect" : [ 1138.570517778396606, 42.689504206180573, 150.0, 48.0 ],
 					"text" : "we don't need record button, will always be 'on'. Should say [loadmess 1]"
 				}
 
@@ -5417,7 +5490,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 159.205771178007126, 723.586968600749969, 150.0, 74.0 ],
+					"patching_rect" : [ 159.205771178007126, 723.586968600749969, 150.0, 75.0 ],
 					"text" : "we don't need this, only track 5 will be recorded. Only for feedback while building to see if samples are loaded"
 				}
 
@@ -5440,7 +5513,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 83.211541771888733, 77.180400490760803, 150.0, 33.0 ],
+					"patching_rect" : [ 83.211541771888733, 77.180400490760803, 150.0, 34.0 ],
 					"text" : "track 5 will be recorded from guitar/bass"
 				}
 
@@ -5452,7 +5525,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 83.211541771888733, 34.325708150863647, 151.0, 33.0 ],
+					"patching_rect" : [ 83.211541771888733, 34.325708150863647, 151.0, 34.0 ],
 					"text" : "track 1-4 will be controlled via drum pad midi"
 				}
 
@@ -5647,7 +5720,7 @@
 					"name" : "LydLab_bpatch_1.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"offset" : [ 0.0, -260.0 ],
+					"offset" : [ 0.0, -870.0 ],
 					"patching_rect" : [ 3077.765084147453308, 533.456679115455586, 515.378307342529297, 232.157310724258423 ],
 					"viewvisibility" : 1
 				}
@@ -12113,7 +12186,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.580929160118103, 0.581002712249756, 0.580889523029327, 1.0 ],
-					"buffername" : "trk6",
+					"buffername" : "trk5",
 					"grid" : 500.0,
 					"gridcolor" : [ 0.349019607843137, 0.349019607843137, 0.349019607843137, 0.0 ],
 					"id" : "obj-113",
@@ -12121,7 +12194,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 6,
 					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
-					"patching_rect" : [ 1195.820517778396606, 332.557241380214691, 107.0, 52.0 ],
+					"patching_rect" : [ 1195.820517778396606, 436.321274161338806, 107.0, 52.0 ],
 					"selectioncolor" : [ 0.996078431372549, 0.8, 0.611764705882353, 1.0 ],
 					"waveformcolor" : [ 0.89, 0.69, 0.69, 1.0 ]
 				}
@@ -13198,7 +13271,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1006.0, 180.0, 640.0, 480.0 ],
+						"rect" : [ 855.0, 180.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -13233,7 +13306,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 450.0, 239.0, 103.846152305603027, 47.0 ],
+									"patching_rect" : [ 450.0, 239.0, 103.846152305603027, 48.0 ],
 									"text" : "delay = prerecording to catch transients"
 								}
 
@@ -13245,7 +13318,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 25.0, 168.0, 109.0, 33.0 ],
+									"patching_rect" : [ 25.0, 168.0, 109.0, 34.0 ],
 									"text" : "snapshoting audio to rms values"
 								}
 
@@ -13605,7 +13678,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1198.820517778396606, 301.206797957420349, 79.0, 22.0 ],
+					"patching_rect" : [ 1198.820517778396606, 404.970830738544464, 79.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -13836,7 +13909,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1198.820517778396606, 262.395476281642914, 29.5, 22.0 ],
+					"patching_rect" : [ 1198.820517778396606, 366.159509062767029, 29.5, 22.0 ],
 					"text" : "*~"
 				}
 
@@ -13951,17 +14024,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "ezadc~",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 1198.820517778396606, 148.902634084224701, 45.0, 45.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
@@ -14028,6 +14090,29 @@
 					"destination" : [ "obj-61", 0 ],
 					"order" : 1,
 					"source" : [ "obj-106", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-107", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-107", 0 ],
+					"order" : 1,
+					"source" : [ "obj-108", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"order" : 0,
+					"source" : [ "obj-108", 0 ]
 				}
 
 			}
@@ -14231,6 +14316,27 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-16", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-16", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"source" : [ "obj-160", 0 ]
 				}
@@ -14391,22 +14497,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-195", 0 ],
 					"source" : [ "obj-199", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
-					"order" : 1,
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-80", 0 ],
-					"order" : 0,
-					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -14914,6 +15004,38 @@
 					"destination" : [ "obj-294", 0 ],
 					"order" : 0,
 					"source" : [ "obj-288", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"order" : 1,
+					"source" : [ "obj-29", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"order" : 1,
+					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-80", 0 ],
+					"order" : 0,
+					"source" : [ "obj-29", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-80", 0 ],
+					"order" : 0,
+					"source" : [ "obj-29", 0 ]
 				}
 
 			}
@@ -15658,6 +15780,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-203", 0 ],
 					"source" : [ "obj-69", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
