@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1601.0, 811.000011146068573, 49.0, 22.0 ],
+					"text" : "r tempo"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-75",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -56,7 +68,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 693.333360999999968, -219.0, 173.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "fuzz-ui-genres_background.jpg"
 				}
 
@@ -177,7 +188,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2044.333360999999968, -204.899998098611832, 173.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"style" : "none",
 					"text" : "fuzz-ui-genres_background.jpg"
 				}
@@ -967,7 +977,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 881.333360999999968, -361.666635274887085, 150.0, 47.0 ],
+					"patching_rect" : [ 881.333360999999968, -361.666635274887085, 151.0, 47.0 ],
 					"text" : "Buttons graphics are not remembered. Set them on load."
 				}
 
@@ -1763,8 +1773,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 1.0, 0.608, 0.443, 1.0 ],
-									"bgoncolor" : [ 0.741, 0.451, 0.329, 1.0 ],
 									"blinktime" : 20,
 									"id" : "obj-5",
 									"maxclass" : "textbutton",
@@ -2680,8 +2688,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1546.0, 811.000011146068573, 63.0, 22.0 ],
-					"text" : "metro 250"
+					"patching_rect" : [ 1546.0, 811.000011146068573, 39.0, 22.0 ],
+					"text" : "metro"
 				}
 
 			}
@@ -2938,7 +2946,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-185", 2 ],
 					"midpoints" : [ 246.833340406417847, 840.0, 726.0, 840.0, 726.0, 408.0, 848.8333420753479, 408.0 ],
-					"order" : 0,
+					"order" : 4,
 					"source" : [ "obj-182", 0 ]
 				}
 
@@ -2947,7 +2955,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-186", 2 ],
 					"midpoints" : [ 246.833340406417847, 840.0, 222.0, 840.0, 222.0, 405.0, 543.166666984558105, 405.0 ],
-					"order" : 4,
+					"order" : 3,
 					"source" : [ "obj-182", 0 ]
 				}
 
@@ -2956,7 +2964,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-187", 2 ],
 					"midpoints" : [ 246.833340406417847, 840.0, 711.000004291534424, 840.0, 711.000004291534424, 528.0, 690.166666209697723, 528.0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-182", 0 ]
 				}
 
@@ -2965,7 +2973,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-189", 2 ],
 					"midpoints" : [ 246.833340406417847, 845.333333849906921, 222.0, 845.333333849906921, 222.0, 267.0, 690.166666209697723, 267.0 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-182", 0 ]
 				}
 
@@ -2974,7 +2982,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-219", 2 ],
 					"midpoints" : [ 246.833340406417847, 840.0, 719.000000238418579, 840.0, 719.000000238418579, 414.0, 690.166666209697723, 414.0 ],
-					"order" : 3,
+					"order" : 0,
 					"source" : [ "obj-182", 0 ]
 				}
 
@@ -3180,6 +3188,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-26", 1 ],
 					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-101", 1 ],
+					"source" : [ "obj-34", 0 ]
 				}
 
 			}
