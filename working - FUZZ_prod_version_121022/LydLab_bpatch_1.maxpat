@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
+			"minor" : 1,
 			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 534.0, 131.0, 560.0, 753.0 ],
+		"rect" : [ 34.0, 79.0, 1212.0, 687.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,7 +37,6 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-18",
@@ -115,7 +114,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-7",
-					"items" : [ "Off", ",", 1, "MON L", ",", 2, "MON R", ",", 3, "LINE 3", ",", 4, "LINE 4", ",", 5, "VIRTUAL 1", ",", 6, "VIRTUAL 2", ",", 7, "VIRTUAL 3", ",", 8, "VIRTUAL 4", ",", 9, "HP L", ",", 10, "HP R" ],
+					"items" : [ "Off", ",", 1, "Output 1", ",", 2, "Output 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -191,7 +190,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 1,
 							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -225,7 +224,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-43",
@@ -382,16 +380,12 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 184.591635286808014, 948.917328417301178, 68.0, 62.733327746391296 ],
 					"saved_attribute_attributes" : 					{
-						"activebgoncolor" : 						{
-							"expression" : ""
-						}
-,
 						"valueof" : 						{
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_longname" : "live.toggle[16]",
-							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.toggle[5]",
-							"parameter_type" : 2
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
+							"parameter_longname" : "live.toggle[16]",
+							"parameter_mmax" : 1
 						}
 
 					}
@@ -491,7 +485,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-44",
-					"items" : [ "Off", ",", 1, "MON L", ",", 2, "MON R", ",", 3, "LINE 3", ",", 4, "LINE 4", ",", 5, "VIRTUAL 1", ",", 6, "VIRTUAL 2", ",", 7, "VIRTUAL 3", ",", 8, "VIRTUAL 4", ",", 9, "HP L", ",", 10, "HP R" ],
+					"items" : [ "Off", ",", 1, "Output 1", ",", 2, "Output 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -518,7 +512,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-33",
-					"items" : [ "None", ",", "Display Audio", ",", "MacBook Pro-mikrofon", ",", "Microsoft Teams Audio", ",", "Soundflower (2ch)", ",", "Soundflower (64ch)", ",", "Universal Audio Thunderbolt", ",", "ZoomAudioDevice" ],
+					"items" : [ "Built-in Microphone", ",", "Soundflower (2ch)", ",", "Soundflower (64ch)" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -575,12 +569,12 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "clear", "clear" ],
+					"outlettype" : [ "", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 1,
 							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -614,7 +608,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -910,26 +903,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 10.038089215755463, 563.429543495178223, 58.549016177654266, 212.0 ],
 					"saved_attribute_attributes" : 					{
-						"activebgcolor" : 						{
-							"expression" : ""
-						}
-,
-						"activebgoncolor" : 						{
-							"expression" : ""
-						}
-,
-						"bgcolor" : 						{
-							"expression" : ""
-						}
-,
 						"valueof" : 						{
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_initial" : [ 0.0 ],
-							"parameter_initial_enable" : 1,
-							"parameter_longname" : "live.toggle[10]",
-							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.toggle[7]",
-							"parameter_type" : 2
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
+							"parameter_longname" : "live.toggle[10]",
+							"parameter_initial_enable" : 1,
+							"parameter_mmax" : 1,
+							"parameter_initial" : [ 0.0 ]
 						}
 
 					}
@@ -942,7 +923,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1127,18 +1108,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 70.587105393409729, 82.917328417301178, 74.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
-						"activebgoncolor" : 						{
-							"expression" : ""
-						}
-,
 						"valueof" : 						{
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_initial" : [ 0.0 ],
-							"parameter_initial_enable" : 1,
-							"parameter_longname" : "live.toggle[9]",
-							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.toggle[7]",
-							"parameter_type" : 2
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
+							"parameter_longname" : "live.toggle[9]",
+							"parameter_initial_enable" : 1,
+							"parameter_mmax" : 1,
+							"parameter_initial" : [ 0.0 ]
 						}
 
 					}
@@ -1166,7 +1143,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 223.666729092597961, 511.0, 85.0, 22.0 ],
+					"patching_rect" : [ 257.666729092597961, 506.0, 85.0, 22.0 ],
 					"text" : "r meloPatData"
 				}
 
@@ -1272,6 +1249,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.325490196078431, 0.325490196078431, 0.325490196078431, 1.0 ],
+					"hint" : "",
 					"id" : "obj-47",
 					"maxclass" : "itable",
 					"name" : "",
@@ -1285,7 +1263,7 @@
 					"presentation_rect" : [ 70.587105393409729, 563.429543495178223, 435.863208125744677, 212.0 ],
 					"range" : 12,
 					"size" : 8,
-					"table_data" : [ 0, 3, 4, 5, 6, 7, 8, 9, 10 ]
+					"table_data" : [ 0, 8, 8, 6, 0, 5, 0, 0, 8 ]
 				}
 
 			}
@@ -1335,7 +1313,7 @@
 					"id" : "obj-227",
 					"ignoreclick" : 1,
 					"maxclass" : "live.tab",
-					"num_lines_patching" : 4,
+					"num_lines_patching" : 5,
 					"num_lines_presentation" : 5,
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1345,33 +1323,13 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 10.038089215755463, 263.507972359657288, 58.549016177654266, 223.0 ],
 					"saved_attribute_attributes" : 					{
-						"activebgcolor" : 						{
-							"expression" : ""
-						}
-,
-						"activebgoncolor" : 						{
-							"expression" : ""
-						}
-,
-						"bgcolor" : 						{
-							"expression" : ""
-						}
-,
-						"bgoncolor" : 						{
-							"expression" : ""
-						}
-,
-						"bordercolor" : 						{
-							"expression" : ""
-						}
-,
 						"valueof" : 						{
-							"parameter_enum" : [ "Lyd 1", "Lyd 2", "Lyd 3", "Lyd 4", "Lyd 5" ],
-							"parameter_longname" : "live.tab[5]",
-							"parameter_mmax" : 4,
 							"parameter_shortname" : "live.tab",
+							"parameter_enum" : [ "Lyd 1", "Lyd 2", "Lyd 3", "Lyd 4", "Lyd 5" ],
 							"parameter_type" : 2,
-							"parameter_unitstyle" : 9
+							"parameter_unitstyle" : 9,
+							"parameter_longname" : "live.tab[5]",
+							"parameter_mmax" : 4
 						}
 
 					}
@@ -1615,16 +1573,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-67", 0 ],
-					"order" : 0,
-					"source" : [ "obj-47", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-82", 0 ],
-					"order" : 1,
 					"source" : [ "obj-47", 0 ]
 				}
 
@@ -1703,42 +1652,16 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-104" : [ "live.toggle[9]", "live.toggle[7]", 0 ],
-			"obj-153" : [ "live.toggle[16]", "live.toggle[5]", 0 ],
-			"obj-227" : [ "live.tab[5]", "live.tab", 0 ],
-			"obj-6" : [ "live.toggle[10]", "live.toggle[7]", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "melodySeq.js",
-				"bootpath" : "~/Dropbox/MCT/MCT4033/FUZZ_prod",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "BLACK",
 				"default" : 				{
 					"accentcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 0.0 ],
-					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"editing_bgcolor" : [ 0.10399004817009, 0.090992286801338, 0.09461422264576, 1.0 ],
-					"fontname" : [ "Ableton Sans Medium" ],
+					"textcolor" : [ 0.999889016151428, 1.0, 0.999841034412384, 1.0 ],
 					"fontsize" : [ 12.0 ],
 					"locked_bgcolor" : [ 0.105882352941176, 0.090196078431373, 0.094117647058824, 1.0 ],
-					"textcolor" : [ 0.999889016151428, 1.0, 0.999841034412384, 1.0 ]
+					"editing_bgcolor" : [ 0.10399004817009, 0.090992286801338, 0.09461422264576, 1.0 ],
+					"fontname" : [ "Ableton Sans Medium" ],
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

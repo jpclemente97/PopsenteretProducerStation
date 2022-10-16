@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 798.0, 93.0, 284.0, 687.0 ],
+		"rect" : [ 263.0, 79.0, 451.0, 687.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,7 +39,43 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"comment" : "Bang on mouse up.",
+					"id" : "obj-20",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ -209.0, 82.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ -170.0, 112.0, 150.0, 20.0 ],
+					"text" : "Bang to press button"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "Bang to press button.",
+					"id" : "obj-10",
+					"index" : 0,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ -209.0, 34.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "Item Symbol",
 					"id" : "obj-7",
 					"index" : 0,
 					"maxclass" : "outlet",
@@ -515,7 +551,7 @@
 			}
 , 			{
 				"box" : 				{
-					"alpha" : 0.713689940116915,
+					"alpha" : 0.0,
 					"autofit" : 1,
 					"forceaspect" : 1,
 					"id" : "obj-8",
@@ -532,6 +568,13 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-78", 0 ],
 					"midpoints" : [ 412.5, 141.0, 549.0, 141.0, 549.0, 102.0, 572.5, 102.0 ],
@@ -558,6 +601,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-36", 0 ],
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-20", 0 ]
 				}
 
 			}
@@ -844,7 +894,7 @@
 		"dependency_cache" : [ 			{
 				"name" : "fuzz-ui-btn_genre_glow.png",
 				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/UI Assets/resources/images",
-				"patcherrelativepath" : "./resources/images",
+				"patcherrelativepath" : "../../UI Assets/resources/images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
@@ -858,10 +908,10 @@
 , 			{
 				"name" : "Large Text",
 				"default" : 				{
-					"fontsize" : [ 64.0 ],
-					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
-					"fontname" : [ "AlternateGothic-NoOne" ],
 					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
+					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
+					"fontsize" : [ 64.0 ],
+					"fontname" : [ "AlternateGothic-NoOne" ],
 					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ]
 				}
 ,
@@ -871,11 +921,11 @@
 , 			{
 				"name" : "Medium Text",
 				"default" : 				{
-					"fontsize" : [ 36.0 ],
-					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
-					"fontname" : [ "AlternateGothic-NoOne" ],
 					"fontface" : [ 0 ],
 					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
+					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
+					"fontsize" : [ 36.0 ],
+					"fontname" : [ "AlternateGothic-NoOne" ],
 					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ]
 				}
 ,
@@ -885,10 +935,10 @@
 , 			{
 				"name" : "Small Text",
 				"default" : 				{
-					"fontsize" : [ 30.0 ],
-					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
-					"fontname" : [ "AlternateGothic-NoOne" ],
 					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
+					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
+					"fontsize" : [ 30.0 ],
+					"fontname" : [ "AlternateGothic-NoOne" ],
 					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ]
 				}
 ,
