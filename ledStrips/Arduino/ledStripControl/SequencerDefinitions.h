@@ -22,11 +22,11 @@
 #define ROLAND 3
 #define HIPHOP 4
 
-short popPattern[] = { 0, 1, 2, 8, 9, 10, 16, 17, 18, 24, 25, 26, 32, 33, 34 };
-short housePattern[] = { 3, 4, 5, 11, 12, 13, 19, 20, 21, 27, 28, 29, 35, 36, 37 };
-short minimalPattern[] = { 6, 7, 8, 14, 15, 16, 22, 23, 24, 30, 31, 32, 38, 39, 0 };
-short rolandPattern[] = { 1, 2, 3, 8, 9, 10, 16, 17, 18, 24, 25, 26, 32, 33, 34 };
-short hiphopPattern[] = { 1, 2, 3, 8, 9, 10, 16, 17, 18, 24, 25, 26, 32, 33, 34 };
+short popPattern[] = { 15, 16, 17, 18, 19, 20, 21, 22, 23, 26, 30, 32, 34, 36, 38 };
+short housePattern[] = { 12, 15, 17, 19, 21, 23, 30, 32, 34, 36, 38 };
+short minimalPattern[] = { 11, 14, 17, 21, 26, 30, 32, 34, 36, 38 };
+short rolandPattern[] = { 12, 15, 16, 18, 20, 22, 28, 32, 35, 38 };
+short hiphopPattern[] = { 14, 16, 18, 19, 22, 23, 28, 32, 38 };
 
 int popPatternSize = 15;
 int housePatternSize = 15;
