@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-111",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2192.0, 912.0, 34.0, 22.0 ],
+					"text" : "write"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-175",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -135,13 +147,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-149",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1891.0, 883.0, 50.0, 35.0 ],
-					"text" : "MINIMAL"
+					"patching_rect" : [ 1891.0, 883.0, 50.0, 49.0 ],
+					"text" : "\"DRUM 'N BASS\""
 				}
 
 			}
@@ -646,13 +658,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-80",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1617.0, 846.000008940696716, 50.0, 35.0 ],
-					"text" : "225.56391"
+					"patching_rect" : [ 1617.0, 846.000008940696716, 50.0, 22.0 ],
+					"text" : "250."
 				}
 
 			}
@@ -2862,6 +2873,13 @@
 					"midpoints" : [ 1730.0, 896.266673564910889, 1512.5, 896.266673564910889 ],
 					"order" : 1,
 					"source" : [ "obj-110", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-108", 0 ],
+					"source" : [ "obj-111", 0 ]
 				}
 
 			}
