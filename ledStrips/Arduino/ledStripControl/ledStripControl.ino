@@ -106,27 +106,6 @@ void changeGenrePattern (short genrePattern[], int patternSize) {
   }
 }
 
-//void genreChangeTest(short newGenre) {
-//  // Clear all led rows except for the step row
-//  for (int i = 0; i < LED_ROWS - 1; ++i) {
-//    for (int j=0; i<LED_COUNT; i++)
-//    {
-//      if (!sequencerLedStates[j])
-//        ledArray[i].setPixelColor(j, 0);
-//    }
-//  }
-//  if (newGenre == POP)
-//    changeGenrePattern(popPattern, popPatternSize);
-//  else if (newGenre == HOUSE)
-//    changeGenrePattern(housePattern, housePatternSize);
-//  else if (newGenre == MINIMAL)
-//    changeGenrePattern(minimalPattern, minimalPatternSize);
-//  else if (newGenre == ROLAND)
-//    changeGenrePattern(rolandPattern, rolandPatternSize);
-//  else if (newGenre == HIPHOP)
-//    changeGenrePattern(hiphopPattern, hiphopPatternSize);
-//}
-
 void holeCovered() {
   short reading = readSerialPort();
   short endByte = readSerialPort();
@@ -136,14 +115,16 @@ void holeCovered() {
     
   int rowIndex = floor(reading / 8);
   int ledIndex = reading % 8;
-  
-  if (currentSequencerPattern[reading])
-    ledArray[rowIndex].setPixelColor(ledIndex, GREEN);
-  else
-    ledArray[rowIndex].setPixelColor(ledIndex, WHITE);
 
-  ledArray[rowIndex].show();
-  sequencerLedStates[reading] = true;
+  if(sequencerLedStates[reading] == false) {
+    if (currentSequencerPattern[reading])
+      ledArray[rowIndex].setPixelColor(ledIndex, GREEN);
+    else
+      ledArray[rowIndex].setPixelColor(ledIndex, WHITE);
+  
+    ledArray[rowIndex].show();
+    sequencerLedStates[reading] = true;
+  }
 }
 
 void holeUncovered() {
@@ -156,14 +137,15 @@ void holeUncovered() {
   int rowIndex = floor(reading / 8);
   int ledIndex = reading % 8;  
 
-  unsigned long color;
-  if (currentSequencerPattern[reading])
-    ledArray[rowIndex].setPixelColor(ledIndex, RED);
-  else
-    ledArray[rowIndex].setPixelColor(ledIndex, 0);
-
-  ledArray[rowIndex].show();
-  sequencerLedStates[reading] = false;
+  if(sequencerLedStates[reading] == true) {
+    if (currentSequencerPattern[reading])
+      ledArray[rowIndex].setPixelColor(ledIndex, RED);
+    else
+      ledArray[rowIndex].setPixelColor(ledIndex, 0);
+  
+    ledArray[rowIndex].show();
+    sequencerLedStates[reading] = false;
+  }
 }
 
 void setup()
@@ -205,27 +187,23 @@ void loop()
   if (tomIndicatorLedOn) {
     tomIndicatorLedOn = checkLedTimeOn(currentClock, tomClock, 4);
   }
-
-  // Now check new serial commands
-  while (Serial.available()) {
-    // Determine what command is being sent
-    // Binary format: command byte, message, end byte
-    short command = Serial.read();
-    if (command == STEP_CHANGE) {
-      stepChange();
-    }
-    else if (command == GENRE_CHANGE) {
-      genreChange();
-    }
-    else if (command == HOLE_COVERED) {
-      holeCovered();
-    }
-    else if (command == HOLE_UNCOVERED) {
-      holeUncovered();
-    }
-    else if (command == HIT) {
-      hit();
-    }
+  // Determine what command is being sent
+  // Binary format: command byte, message, end byte
+  short command = Serial.read();
+  if (command == STEP_CHANGE) {
+    stepChange();
+  }
+  else if (command == GENRE_CHANGE) {
+    genreChange();
+  }
+  else if (command == HOLE_COVERED) {
+    holeCovered();
+  }
+  else if (command == HOLE_UNCOVERED) {
+    holeUncovered();
+  }
+  else if (command == HIT) {
+    hit();
   }
 }
 
@@ -250,7 +228,6 @@ void hit() {
 short readSerialPort() {
   int iterationWithoutReading = 0;
   while (iterationWithoutReading < 1000) {
-    delay(1);
     if (Serial.available()) {
       short reading = Serial.read();
       return reading;
