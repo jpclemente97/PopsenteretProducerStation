@@ -130,8 +130,9 @@ void changeGenrePattern (short genrePattern[], int patternSize) {
 void holeCovered() {
   short reading = readSerialPort();
   short endByte = readSerialPort();
-  if (reading == ERROR_BYTE || endByte == ERROR_BYTE)
+  if (reading == ERROR_BYTE || endByte != END) {
     return;
+  }
     
   int rowIndex = floor(reading / 8);
   int ledIndex = reading % 8;
@@ -148,8 +149,9 @@ void holeCovered() {
 void holeUncovered() {
   short reading = readSerialPort();
   short endByte = readSerialPort();
-  if (reading == ERROR_BYTE || endByte == ERROR_BYTE)
+  if (reading == ERROR_BYTE || endByte != END) {
     return;
+  }
 
   int rowIndex = floor(reading / 8);
   int ledIndex = reading % 8;  
@@ -181,7 +183,7 @@ void setup()
   pinMode(KICK_ROW_PIN, OUTPUT);
   
   // Initialize serial connection to Max
-  Serial.begin(9600);
+  Serial.begin(115200);
 
   //genreChangeTest(POP);
 }
@@ -211,7 +213,6 @@ void loop()
     // Determine what command is being sent
     // Binary format: command byte, message, end byte
     short command = Serial.read();
-    Serial.print("Command = " + String(command));
     if (command == STEP_CHANGE) {
       stepChange();
     }
@@ -227,9 +228,6 @@ void loop()
     else if (command == HIT) {
       hit();
     }
-//    else {
-//      Serial.print("Error! Not a valid command");
-//    }
   }
 }
 
@@ -254,6 +252,7 @@ void hit() {
 short readSerialPort() {
   int iterationWithoutReading = 0;
   while (iterationWithoutReading < 1000) {
+    delay(50);
     if (Serial.available()) {
       short reading = Serial.read();
       return reading;
