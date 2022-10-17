@@ -184,8 +184,6 @@ void setup()
   
   // Initialize serial connection to Max
   Serial.begin(115200);
-
-  //genreChangeTest(POP);
 }
 
 void loop()
@@ -252,7 +250,7 @@ void hit() {
 short readSerialPort() {
   int iterationWithoutReading = 0;
   while (iterationWithoutReading < 1000) {
-    delay(50);
+    delay(1);
     if (Serial.available()) {
       short reading = Serial.read();
       return reading;
