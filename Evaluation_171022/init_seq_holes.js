@@ -105,21 +105,26 @@ function bang(){
 		}
 	}
 	else if (inlet == 1){
+		
 		for (x in led_list){
+			
 			for (y in led_list[x]){
-				//post('x', x)
+				
 				var on_val = led_list[x][y]
-				//post(on_val)
-				//post(on_val)
-				//post('index', parseInt(x)*8+parseInt(y))
+				
 				var led_index = parseInt(x)*8+parseInt(y)
+				
 				if (on_val == 0){
+					
 					var out_val = [53, led_index, 255]
+					
 					outlet(3, out_val)
 				}
-			//post(led_list[x])
+				
 				else if (on_val == 1){
+					
 					var out_val = [52, led_index, 255]
+					
 					outlet(3, out_val)
 				}
 			}
