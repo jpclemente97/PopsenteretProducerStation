@@ -31,6 +31,7 @@ def main():
 		if(success):
 			break
 		for param2 in reversed(range(1, 150)):
+
 			circles = cv2.HoughCircles(blur,
 					cv2.HOUGH_GRADIENT, 1, 20, param1 = param1,
 					param2 = param2, minRadius = 40, maxRadius = 100)
@@ -47,9 +48,25 @@ def main():
 				elif len(centerPixelCoordinates) != 40:
 					print(str(len(centerPixelCoordinates)) + " circles found")
 				else:
+					print(param1)
+					print(param2)
+					frame_copy = frame
+					for pt in circles[0, :]:
+						a, b, r = int(pt[0]), int(pt[1]), int(pt[2])
+
+						# Draw the circumference of the circle.
+						cv2.circle(frame_copy, (a, b), r, (0, 255, 0), 2)
+
+						# Draw a small circle (of radius 1) to show the center.
+						cv2.circle(frame_copy, (a, b), 1, (0, 0, 255), 3)
+
+						circles = np.uint16(np.around(circles))
+						
+					cv2.imshow("Detected Circle", frame_copy)
+					cv2.waitKey(0)
 					# Sort by their y values so we can get all 8 circles on each row
 					centerPixelCoordinates.sort(key=firstSort)
-
+					
 					# Separate into 5 rows of 8 corresponding to each row of the sequencer
 					coordinatesDict = {
 						"guitar": centerPixelCoordinates[0:8],
@@ -63,67 +80,21 @@ def main():
 					for key, value in coordinatesDict.items():
 						value.sort(key=secondSort)
 
-					# Check if all the center pixels are in a grid formation
-					if gridDetector(coordinatesDict):
-						frame_copy = frame
-						for pt in circles[0, :]:
-							a, b, r = int(pt[0]), int(pt[1]), int(pt[2])
+					# Write the json file
+					with open("../Evaluation_171022/seq.json", "w") as f:
+						json.dump(coordinatesDict, f)
+						
+					# Write the CSV file
+					with open('../Evaluation_171022/seq.csv', 'w', newline='') as f:
+						writer = csv.writer(f)
+						for key, value in coordinatesDict.items():
+							for coordinate in value:
+								writer.writerow(coordinate)
+					print("Success! Find results in seq.json and seq.csv")
+					success = True
+					break
 
-							# Draw the circumference of the circle.
-							cv2.circle(frame_copy, (a, b), r, (0, 255, 0), 2)
-
-							# Draw a small circle (of radius 1) to show the center.
-							cv2.circle(frame_copy, (a, b), 1, (0, 0, 255), 3)
-
-							circles = np.uint16(np.around(circles))
-							
-						cv2.imshow("Detected Circle", frame_copy)
-						cv2.waitKey(0)
-
-						# Write the json file
-						with open("../working - FUZZ_prod_version_121022/seq.json", "w") as f:
-							json.dump(coordinatesDict, f)
-							
-						# Write the CSV file
-						with open('../working - FUZZ_prod_version_121022/seq.csv', 'w', newline='') as f:
-							writer = csv.writer(f)
-							for key, value in coordinatesDict.items():
-								for coordinate in value:
-									writer.writerow(coordinate)
-						print("Success! Find results in seq.json and seq.csv")
-						success = True
-						break
-					else:
-						print("Grid search failed")
-
-def gridDetector(coordinatesDict):
-	# Check grid columns (x axis)
-	for i in range(0, 8):
-		minPixelX = 999999
-		maxPixelX = 0
-		for key, centerPixelCoordinates in coordinatesDict.items():
-			if centerPixelCoordinates[i][0] < minPixelX:
-				minPixelX = centerPixelCoordinates[i][0]
-			elif centerPixelCoordinates[i][0] > maxPixelX:
-				maxPixelX = centerPixelCoordinates[i][0]
-
-		if ((maxPixelX - minPixelX) > 50):
-			return False
-
-	# Check grid rows (y axis)
-	for key, centerPixelCoordinates in coordinatesDict.items():
-		minPixelY = 999999
-		maxPixelY = 0
-		for coordinate in centerPixelCoordinates:
-			if coordinate[1] < minPixelY:
-				minPixelY = coordinate[1]
-			elif coordinate[1] > maxPixelY:
-				maxPixelY = coordinate[1]
-
-		if ((maxPixelY - minPixelY) > 50):
-			return False
-
-	return True
+# TODO: grid/overlap checker & have user confirmation to say if the 40 circles are correct or not
 
 
 if __name__ == "__main__":
