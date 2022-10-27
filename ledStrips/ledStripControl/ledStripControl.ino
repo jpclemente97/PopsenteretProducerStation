@@ -1,5 +1,5 @@
 #include <Adafruit_NeoPixel.h>
-#include "WS2812_Definitions.h"
+#include "ColorDefinitions.h"
 #include "SequencerDefinitions.h"
 #include <time.h>
 
