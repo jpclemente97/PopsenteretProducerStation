@@ -10,7 +10,7 @@
 #define GUITAR_ROW_PIN 6
 #define STEP_ROW_PIN 7
 
-#define LED_COUNT 8
+#define LED_COUNT 14
 
 #define LED_ROWS 6
 
@@ -28,9 +28,7 @@ bool sequencerLedStates[40] = { false };
 bool currentSequencerPattern[40] = { false };
 
 unsigned long guitarClock, snareClock, kickClock, hihatClock, tomClock;
-bool guitarIndicatorLedOn = false, snareIndicatorLedOn = false, kickIndicatorLedOn = false, 
-  hihatIndicatorLedOn = false, tomIndicatorLedOn = false;
-
+bool indicatorLedsOn[5] = {false, false, false, false, false};
 short currentGenre = POP;
 
 void clearLEDs(int index)
@@ -178,20 +176,20 @@ void loop()
 {
   // Check and turn off indicator LEDs first
   unsigned long currentClock = millis();
-  if (guitarIndicatorLedOn) {
-    guitarIndicatorLedOn = checkLedTimeOn(currentClock, guitarClock, 0);
+  if (indicatorLedsOn[0]) {
+    indicatorLedsOn[0] = checkLedTimeOn(currentClock, guitarClock, 0);
   }
-  if (snareIndicatorLedOn) {
-    snareIndicatorLedOn = checkLedTimeOn(currentClock, snareClock, 1);
+  if (indicatorLedsOn[1]) {
+    indicatorLedsOn[1] = checkLedTimeOn(currentClock, snareClock, 1);
   }
-  if (kickIndicatorLedOn) {
-    kickIndicatorLedOn = checkLedTimeOn(currentClock, kickClock, 2);
+  if (indicatorLedsOn[2]) {
+    indicatorLedsOn[2] = checkLedTimeOn(currentClock, kickClock, 2);
   }
-  if (hihatIndicatorLedOn) {
-    hihatIndicatorLedOn = checkLedTimeOn(currentClock, hihatClock, 3);
+  if (indicatorLedsOn[3]) {
+    indicatorLedsOn[3] = checkLedTimeOn(currentClock, hihatClock, 3);
   }
-  if (tomIndicatorLedOn) {
-    tomIndicatorLedOn = checkLedTimeOn(currentClock, tomClock, 4);
+  if (indicatorLedsOn[4]) {
+    indicatorLedsOn[4] = checkLedTimeOn(currentClock, tomClock, 4);
   }
   // Determine what command is being sent
   // Binary format: command byte, message, end byte
@@ -230,6 +228,7 @@ void hit() {
     ledArray[row].setPixelColor(i, WHITE);
   }
   ledArray[row].show();
+  indicatorLedsOn[row] = true;
 }
 
 short readSerialPort() {
