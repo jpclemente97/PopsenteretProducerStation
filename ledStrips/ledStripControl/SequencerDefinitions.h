@@ -34,6 +34,6 @@ const int minimalPatternSize = 15;
 const int rolandPatternSize = 15;
 const int hiphopPatternSize = 15;
 
-const int indicatorLedsStart = 41;
+const int indicatorLedsStart = 8;
 // null, null, kick, snare, hihat, tom, guitar
-const int indicatorLedsEnd[] = { 0, 0, 100, 100, 100, 100, 100 };
+const int indicatorLedsEnd[] = { 100, 100, 100, 100, 100 };
