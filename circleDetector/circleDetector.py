@@ -81,11 +81,11 @@ def main():
 						cv2.waitKey(0)
 
 						# Write the json file
-						with open("../working - FUZZ_prod_version_121022/seq.json", "w") as f:
+						with open("../Dev_241022/seq.json", "w") as f:
 							json.dump(coordinatesDict, f)
 							
 						# Write the CSV file
-						with open('../working - FUZZ_prod_version_121022/seq.csv', 'w', newline='') as f:
+						with open('../Dev_241022/seq.csv', 'w', newline='') as f:
 							writer = csv.writer(f)
 							for key, value in coordinatesDict.items():
 								for coordinate in value:
