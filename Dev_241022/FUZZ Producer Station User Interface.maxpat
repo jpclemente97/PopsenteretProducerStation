@@ -762,12 +762,12 @@
 					"pictures" : [ "./resources/images/iconPlay.png", "./resources/images/iconStop.png" ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1,
-							"parameter_shortname" : "live.tab[4]",
-							"parameter_enum" : [ "play", "stop" ],
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 9,
-							"parameter_longname" : "live.tab[4]"
+							"parameter_longname" : "live.tab[4]",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.tab[4]",
+							"parameter_enum" : [ "play", "stop" ]
 						}
 
 					}
@@ -820,13 +820,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-80",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1617.0, 846.000008940696716, 50.0, 35.0 ],
-					"text" : "361.445783"
+					"patching_rect" : [ 1617.0, 846.000008940696716, 50.0, 22.0 ],
+					"text" : "250."
 				}
 
 			}
@@ -1427,7 +1426,7 @@
 					"maxclass" : "dial",
 					"mode" : 2,
 					"mult" : 0.01,
-					"needlecolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
+					"needlecolor" : [ 1.0, 0.52156862745098, 0.309803921568627, 1.0 ],
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
@@ -1449,7 +1448,7 @@
 					"maxclass" : "dial",
 					"mode" : 2,
 					"mult" : 0.01,
-					"needlecolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
+					"needlecolor" : [ 1.0, 0.52156862745098, 0.309803921568627, 1.0 ],
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
@@ -1471,7 +1470,7 @@
 					"maxclass" : "dial",
 					"mode" : 2,
 					"mult" : 0.01,
-					"needlecolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
+					"needlecolor" : [ 1.0, 0.52156862745098, 0.309803921568627, 1.0 ],
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
@@ -1493,7 +1492,7 @@
 					"maxclass" : "dial",
 					"mode" : 2,
 					"mult" : 0.01,
-					"needlecolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
+					"needlecolor" : [ 1.0, 0.52156862745098, 0.309803921568627, 1.0 ],
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
@@ -4186,11 +4185,11 @@
 		"styles" : [ 			{
 				"name" : "BLACK",
 				"default" : 				{
-					"accentcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 0.0 ],
-					"textcolor" : [ 0.999889016151428, 1.0, 0.999841034412384, 1.0 ],
-					"fontsize" : [ 12.0 ],
-					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"locked_bgcolor" : [ 0.105882352941176, 0.090196078431373, 0.094117647058824, 1.0 ],
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor" : [ 0.999889016151428, 1.0, 0.999841034412384, 1.0 ],
+					"accentcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 0.0 ],
+					"fontsize" : [ 12.0 ],
 					"editing_bgcolor" : [ 0.10399004817009, 0.090992286801338, 0.09461422264576, 1.0 ],
 					"fontname" : [ "Ableton Sans Medium" ]
 				}
