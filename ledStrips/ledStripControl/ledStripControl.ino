@@ -225,7 +225,7 @@ bool checkLedTimeOn(unsigned long currentClock, unsigned long guitarClock, int l
 
 void hit() {
   short row = readSerialPort();
-  short velocity = readSerialPort();
+  short endLed = indicatorLedsEnd[row];
   for (int i = indicatorLedsStart; i < indicatorLedsEnd; ++i) {
     ledArray[row].setPixelColor(i, WHITE);
   }
