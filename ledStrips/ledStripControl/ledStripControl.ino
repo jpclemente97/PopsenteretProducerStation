@@ -169,7 +169,7 @@ void setup()
   pinMode(KICK_ROW_PIN, OUTPUT);
   
   // Initialize serial connection to Max
-  Serial.begin(115200);
+  Serial.begin(96000);
 }
 
 void loop()
