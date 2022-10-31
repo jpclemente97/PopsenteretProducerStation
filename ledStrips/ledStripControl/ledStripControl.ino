@@ -213,7 +213,7 @@ void loop()
 
 bool checkLedTimeOn(unsigned long currentClock, unsigned long guitarClock, int ledArrayIndex) {
   unsigned long timeOn = currentClock - guitarClock;
-  if (timeOn >= 250) {
+  if (timeOn >= 500) {
     short endLed = indicatorLedsEnd[ledArrayIndex];
     for (int i=indicatorLedsStart; i < endLed; i++)
     {
