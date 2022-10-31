@@ -35,7 +35,5 @@ const int rolandPatternSize = 15;
 const int hiphopPatternSize = 15;
 
 const int indicatorLedsStart = 41;
-const int indicatorLedsEnd = 100;
-const int guitarBodyIndicatorLedsEnd = 100;
-const int guitarStringsIndicatorLedsEnd = 110;
-const int guitarNeckIndicatorLedsEnd = 120;
+// null, null, kick, snare, hihat, tom, guitar
+const int indicatorLedsEnd[] = { 0, 0, 100, 100, 100, 100, 100 };
