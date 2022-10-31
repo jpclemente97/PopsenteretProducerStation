@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-117",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1058.0, 593.0, 50.0, 22.0 ],
+					"text" : "80 127"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-78",
 					"maxclass" : "newobj",
 					"numinlets" : 4,
@@ -102,7 +114,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 235.0, 123.0, 29.5, 22.0 ],
-									"text" : "2"
+									"text" : "1"
 								}
 
 							}
@@ -114,7 +126,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 187.0, 118.0, 29.5, 22.0 ],
-									"text" : "1"
+									"text" : "2"
 								}
 
 							}
@@ -789,7 +801,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1738.0, 314.5, 50.0, 22.0 ],
-					"text" : "2"
+					"text" : "7"
 				}
 
 			}
@@ -4139,7 +4151,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 98.0, 194.0, 39.0, 22.0 ],
-									"text" : "== 82"
+									"text" : "== 81"
 								}
 
 							}
@@ -4353,7 +4365,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 98.0, 194.0, 39.0, 22.0 ],
-									"text" : "== 42"
+									"text" : "== 80"
 								}
 
 							}
@@ -4567,7 +4579,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 98.0, 194.0, 39.0, 22.0 ],
-									"text" : "== 36"
+									"text" : "== 69"
 								}
 
 							}
@@ -4781,7 +4793,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 98.0, 194.0, 39.0, 22.0 ],
-									"text" : "== 37"
+									"text" : "== 39"
 								}
 
 							}
@@ -6139,7 +6151,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "bang", "bang", "bang", "bang", "" ],
 					"patching_rect" : [ 269.527558237314167, 1058.705129206180573, 91.0, 22.0 ],
-					"text" : "sel 37 36 42 82"
+					"text" : "sel 39 69 80 81"
 				}
 
 			}
@@ -6537,7 +6549,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-9",
@@ -7566,7 +7577,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-117", 1 ],
+					"order" : 0,
+					"source" : [ "obj-156", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-162", 0 ],
+					"order" : 1,
 					"source" : [ "obj-156", 0 ]
 				}
 
