@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 263.0, 79.0, 451.0, 687.0 ],
+		"rect" : [ 443.0, 79.0, 451.0, 687.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -436,6 +436,8 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.925, 0.114, 0.141, 1.0 ],
+					"bgoncolor" : [ 0.569, 0.063, 0.078, 1.0 ],
 					"blinktime" : 20,
 					"id" : "obj-5",
 					"maxclass" : "textbutton",
@@ -508,8 +510,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 244.0, 226.0, 168.0, 22.0 ],
-					"text" : "bgoncolor 0.91 0.282 0.333 1."
+					"patching_rect" : [ 244.0, 226.0, 175.0, 22.0 ],
+					"text" : "bgoncolor 0.569 0.063 0.078 1."
 				}
 
 			}
@@ -520,8 +522,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 243.0, 196.0, 155.0, 22.0 ],
-					"text" : "bgcolor 0.91 0.282 0.333 1."
+					"patching_rect" : [ 243.0, 196.0, 160.0, 22.0 ],
+					"text" : "bgcolor 0.925 0.114 0.141 1."
 				}
 
 			}
@@ -532,8 +534,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 64.0, 226.0, 175.0, 22.0 ],
-					"text" : "bgoncolor 0.741 0.451 0.329 1."
+					"patching_rect" : [ 64.0, 228.0, 175.0, 22.0 ],
+					"text" : "bgoncolor 0.682 0.416 0.302 1."
 				}
 
 			}
@@ -544,8 +546,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 64.0, 196.0, 141.0, 22.0 ],
-					"text" : "bgcolor 1. 0.608 0.443 1."
+					"patching_rect" : [ 64.0, 196.0, 135.0, 22.0 ],
+					"text" : "bgcolor 1. 0.522 0.31 1."
 				}
 
 			}
@@ -560,7 +562,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 48.0, 305.0, 147.0, 147.0 ],
-					"pic" : "Macintosh HD:/Users/olivergetz/Documents/MCT/Fall 2022/Applied Music Tech/UI Assets/resources/images/fuzz-ui-btn_genre_glow.png",
+					"pic" : "Macintosh HD:/Users/olivergetz/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images/fuzz-ui-btn_genre_glow.png",
 					"presentation" : 1,
 					"presentation_rect" : [ 2.25, 2.25, 120.5, 120.5 ]
 				}
@@ -893,8 +895,8 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "fuzz-ui-btn_genre_glow.png",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/UI Assets/resources/images",
-				"patcherrelativepath" : "../../UI Assets/resources/images",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
@@ -908,11 +910,11 @@
 , 			{
 				"name" : "Large Text",
 				"default" : 				{
-					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
-					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
 					"fontsize" : [ 64.0 ],
 					"fontname" : [ "AlternateGothic-NoOne" ],
-					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ]
+					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
+					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
+					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ]
 				}
 ,
 				"parentstyle" : "Medium Text",
@@ -921,12 +923,12 @@
 , 			{
 				"name" : "Medium Text",
 				"default" : 				{
-					"fontface" : [ 0 ],
-					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
-					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
 					"fontsize" : [ 36.0 ],
 					"fontname" : [ "AlternateGothic-NoOne" ],
-					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ]
+					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
+					"fontface" : [ 0 ],
+					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
+					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ]
 				}
 ,
 				"parentstyle" : "Small Text",
@@ -935,11 +937,11 @@
 , 			{
 				"name" : "Small Text",
 				"default" : 				{
-					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
-					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
 					"fontsize" : [ 30.0 ],
 					"fontname" : [ "AlternateGothic-NoOne" ],
-					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ]
+					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
+					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
+					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
