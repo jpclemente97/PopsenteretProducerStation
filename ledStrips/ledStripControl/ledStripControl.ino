@@ -3,11 +3,11 @@
 #include "SequencerDefinitions.h"
 #include <time.h>
 
-#define GUITAR_ROW_PIN 2
-#define TOM_ROW_PIN 3
+#define KICK_ROW_PIN 2
+#define SNARE_ROW_PIN 3
 #define HIHAT_ROW_PIN 4
-#define SNARE_ROW_PIN 5
-#define KICK_ROW_PIN 6
+#define TOM_ROW_PIN 5
+#define GUITAR_ROW_PIN 6
 #define STEP_ROW_PIN 7
 
 #define LED_COUNT 8
@@ -30,8 +30,6 @@ bool currentSequencerPattern[40] = { false };
 unsigned long guitarClock, snareClock, kickClock, hihatClock, tomClock;
 bool guitarIndicatorLedOn = false, snareIndicatorLedOn = false, kickIndicatorLedOn = false, 
   hihatIndicatorLedOn = false, tomIndicatorLedOn = false;
-const int indicatorLedsStart = 41;
-const int indicatorLedsEnd = 100;
 
 short currentGenre = POP;
 
@@ -46,6 +44,8 @@ void clearLEDs(int index)
 void stepChange() {
   clearLEDs(5);
   short ledIndex = readSerialPort();
+  // Hacky way to invert the values
+  ledIndex = abs(ledIndex - 7);
   short endByte = readSerialPort();
   if (ledIndex == ERROR_BYTE || endByte == ERROR_BYTE)
     return;
@@ -64,7 +64,8 @@ void genreChange() {
   for (int i = 0; i < 40; ++i) {
     if (!sequencerLedStates[i]) {
       int rowIndex = floor(i / 8);
-      int ledIndex = i % 8;
+      // Hacky way to invert the values
+      int ledIndex = abs((i % 8) - 7);
       ledArray[rowIndex].setPixelColor(ledIndex, 0);
     }
   }
@@ -94,7 +95,8 @@ void changeGenrePattern (short genrePattern[], int patternSize) {
     short patternElement = genrePattern[i];
     currentSequencerPattern[patternElement] = true;
     int rowIndex = floor(patternElement / 8);
-    int ledIndex = patternElement % 8;
+    // Hacky way to invert the values
+    int ledIndex = abs((patternElement % 8) - 7);
     if (sequencerLedStates[patternElement])
       ledArray[rowIndex].setPixelColor(ledIndex, GREEN);
      else
@@ -114,7 +116,8 @@ void holeCovered() {
   }
     
   int rowIndex = floor(reading / 8);
-  int ledIndex = reading % 8;
+  // Hacky way to invert the values
+  int ledIndex = abs((reading % 8) - 7);
 
   if(sequencerLedStates[reading] == false) {
     if (currentSequencerPattern[reading])
@@ -135,7 +138,8 @@ void holeUncovered() {
   }
 
   int rowIndex = floor(reading / 8);
-  int ledIndex = reading % 8;  
+  // Hacky way to invert the values
+  int ledIndex = abs((reading % 8) - 7);
 
   if(sequencerLedStates[reading] == true) {
     if (currentSequencerPattern[reading])
@@ -154,6 +158,8 @@ void setup()
   for (int i = 0; i < LED_ROWS; ++i) {
     ledArray[i].begin();
     clearLEDs(i);
+    // Change to half brightness
+    ledArray[i].setBrightness(50);
     ledArray[i].show();
   }
 
@@ -165,7 +171,7 @@ void setup()
   pinMode(KICK_ROW_PIN, OUTPUT);
   
   // Initialize serial connection to Max
-  Serial.begin(115200);
+  Serial.begin(96000);
 }
 
 void loop()

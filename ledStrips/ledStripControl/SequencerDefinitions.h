@@ -28,8 +28,14 @@ short minimalPattern[] = { 11, 14, 17, 21, 26, 30, 32, 34, 36, 38 };
 short rolandPattern[] = { 12, 15, 16, 18, 20, 22, 28, 32, 35, 38 };
 short hiphopPattern[] = { 14, 16, 18, 19, 22, 23, 28, 32, 38 };
 
-int popPatternSize = 15;
-int housePatternSize = 15;
-int minimalPatternSize = 15;
-int rolandPatternSize = 15;
-int hiphopPatternSize = 15;
+const int popPatternSize = 15;
+const int housePatternSize = 15;
+const int minimalPatternSize = 15;
+const int rolandPatternSize = 15;
+const int hiphopPatternSize = 15;
+
+const int indicatorLedsStart = 41;
+const int indicatorLedsEnd = 100;
+const int guitarBodyIndicatorLedsEnd = 100;
+const int guitarStringsIndicatorLedsEnd = 110;
+const int guitarNeckIndicatorLedsEnd = 120;
