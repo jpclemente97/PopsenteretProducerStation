@@ -33,7 +33,7 @@ def main():
 		for param2 in reversed(range(1, 150)):
 			circles = cv2.HoughCircles(blur,
 					cv2.HOUGH_GRADIENT, 1, 20, param1 = param1,
-					param2 = param2, minRadius = 40, maxRadius = 100)
+					param2 = param2, minRadius = 5, maxRadius = 100)
 
 			if circles is not None:
 				centerPixelCoordinates = []
