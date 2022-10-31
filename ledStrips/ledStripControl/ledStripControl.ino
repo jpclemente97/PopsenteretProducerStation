@@ -159,7 +159,7 @@ void setup()
     ledArray[i].begin();
     clearLEDs(i);
     // Change to half brightness
-    ledArray[i].setBrightness(127);
+    ledArray[i].setBrightness(50);
     ledArray[i].show();
   }
 
