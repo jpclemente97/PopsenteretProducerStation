@@ -214,7 +214,11 @@ void loop()
 bool checkLedTimeOn(unsigned long currentClock, unsigned long guitarClock, int ledArrayIndex) {
   unsigned long timeOn = currentClock - guitarClock;
   if (timeOn >= 250) {
-    clearLEDs(ledArrayIndex);
+    short endLed = indicatorLedsEnd[ledArrayIndex];
+    for (int i=indicatorLedsStart; i < endLed; i++)
+    {
+      ledArray[ledArrayIndex].setPixelColor(i, 0);
+    }
     ledArray[ledArrayIndex].show();
     return false;
   }
@@ -224,7 +228,7 @@ bool checkLedTimeOn(unsigned long currentClock, unsigned long guitarClock, int l
 void hit() {
   short row = readSerialPort();
   short endLed = indicatorLedsEnd[row];
-  for (int i = indicatorLedsStart; i < indicatorLedsEnd; ++i) {
+  for (int i = indicatorLedsStart; i < endLed; ++i) {
     ledArray[row].setPixelColor(i, WHITE);
   }
   ledArray[row].show();
