@@ -60,12 +60,13 @@ void genreChange() {
   
   // Clear all led rows except for the step row
   for (int i = 0; i < 40; ++i) {
-    if (!sequencerLedStates[i]) {
-      int rowIndex = floor(i / 8);
-      // Hacky way to invert the values
-      int ledIndex = abs((i % 8) - 7);
+    int rowIndex = floor(i / 8);
+    // Hacky way to invert the values
+    int ledIndex = abs((i % 8) - 7);
+    if (sequencerLedStates[i])
+      ledArray[rowIndex].setPixelColor(ledIndex, WHITE);
+    else
       ledArray[rowIndex].setPixelColor(ledIndex, 0);
-    }
   }
   
   if (currentGenre != newGenre) {

@@ -36,4 +36,4 @@ const int hiphopPatternSize = 15;
 
 const int indicatorLedsStart = 8;
 // null, null, kick, snare, hihat, tom, guitar
-const int indicatorLedsEnd[] = { 100, 100, 100, 100, 100 };
+const int indicatorLedsEnd[] = { 14, 14, 14, 14, 14 };
