@@ -27,7 +27,7 @@ Adafruit_NeoPixel ledArray[6] = {guitarLeds, tomLeds, hihatLeds, snareLeds, kick
 bool sequencerLedStates[40] = { false };
 bool currentSequencerPattern[40] = { false };
 
-unsigned long guitarClock, snareClock, kickClock, hihatClock, tomClock;
+unsigned long clocks[] = { 0, 0, 0, 0, 0 };
 bool indicatorLedsOn[5] = {false, false, false, false, false};
 short currentGenre = POP;
 
@@ -178,19 +178,19 @@ void loop()
   // Check and turn off indicator LEDs first
   unsigned long currentClock = millis();
   if (indicatorLedsOn[0]) {
-    indicatorLedsOn[0] = checkLedTimeOn(currentClock, guitarClock, 0);
+    indicatorLedsOn[0] = checkLedTimeOn(currentClock, clocks[0], 0);
   }
   if (indicatorLedsOn[1]) {
-    indicatorLedsOn[1] = checkLedTimeOn(currentClock, snareClock, 1);
+    indicatorLedsOn[1] = checkLedTimeOn(currentClock, clocks[1], 1);
   }
   if (indicatorLedsOn[2]) {
-    indicatorLedsOn[2] = checkLedTimeOn(currentClock, kickClock, 2);
+    indicatorLedsOn[2] = checkLedTimeOn(currentClock, clocks[2], 2);
   }
   if (indicatorLedsOn[3]) {
-    indicatorLedsOn[3] = checkLedTimeOn(currentClock, hihatClock, 3);
+    indicatorLedsOn[3] = checkLedTimeOn(currentClock, clocks[3], 3);
   }
   if (indicatorLedsOn[4]) {
-    indicatorLedsOn[4] = checkLedTimeOn(currentClock, tomClock, 4);
+    indicatorLedsOn[4] = checkLedTimeOn(currentClock, clocks[4], 4);
   }
   // Determine what command is being sent
   // Binary format: command byte, message, end byte
@@ -208,12 +208,12 @@ void loop()
     holeUncovered();
   }
   else if (command == HIT) {
-    hit();
+    hit(currentClock);
   }
 }
 
-bool checkLedTimeOn(unsigned long currentClock, unsigned long guitarClock, int ledArrayIndex) {
-  unsigned long timeOn = currentClock - guitarClock;
+bool checkLedTimeOn(unsigned long currentClock, unsigned long instrumentClock, int ledArrayIndex) {
+  unsigned long timeOn = currentClock - instrumentClock;
   if (timeOn >= 500) {
     short endLed = indicatorLedsEnd[ledArrayIndex];
     for (int i=indicatorLedsStart; i < endLed; i++)
@@ -226,8 +226,9 @@ bool checkLedTimeOn(unsigned long currentClock, unsigned long guitarClock, int l
   return true;
 }
 
-void hit() {
+void hit(unsigned long currentClock) {
   short row = readSerialPort();
+  clocks[row] = currentClock;
   short endLed = indicatorLedsEnd[row];
   for (int i = indicatorLedsStart; i < endLed; ++i) {
     ledArray[row].setPixelColor(i, WHITE);
