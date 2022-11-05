@@ -56,7 +56,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -86,12 +86,24 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 513.0, 86.0, 61.0, 22.0 ],
+									"text" : "r seq_idle"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-186",
 									"maxclass" : "newobj",
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 443.0, 100.0, 60.0, 22.0 ],
+									"patching_rect" : [ 443.0, 86.0, 60.0, 22.0 ],
 									"text" : "r key_idle"
 								}
 
@@ -103,7 +115,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 369.0, 100.0, 69.0, 22.0 ],
+									"patching_rect" : [ 369.0, 86.0, 69.0, 22.0 ],
 									"text" : "r drum_idle"
 								}
 
@@ -115,7 +127,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 291.0, 100.0, 71.0, 22.0 ],
+									"patching_rect" : [ 291.0, 86.0, 71.0, 22.0 ],
 									"text" : "r audio_idle"
 								}
 
@@ -138,7 +150,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 187.0, 100.0, 92.0, 22.0 ],
+									"patching_rect" : [ 187.0, 86.0, 92.0, 22.0 ],
 									"text" : "FX_autoDefault"
 								}
 
@@ -221,7 +233,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 50.0, 100.0, 126.0, 22.0 ],
+									"patching_rect" : [ 50.0, 86.0, 126.0, 22.0 ],
 									"text" : "metro 1000 @active 1"
 								}
 
@@ -234,12 +246,19 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 187.0, 347.0, 30.0, 30.0 ]
+									"patching_rect" : [ 187.0, 298.0, 30.0, 30.0 ]
 								}
 
 							}
  ],
 						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-83", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-83", 0 ],
 									"source" : [ "obj-182", 0 ]
@@ -299,13 +318,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-83", 0 ],
 									"source" : [ "obj-84", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-83", 0 ],
-									"source" : [ "obj-95", 0 ]
 								}
 
 							}
@@ -3141,7 +3153,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1052.0, 1369.0, 58.0, 22.0 ],
+					"patching_rect" : [ 1087.0, 1357.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -3153,7 +3165,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 851.194229990243912, 1369.0, 58.0, 22.0 ],
+					"patching_rect" : [ 896.194229990243912, 1369.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -3239,7 +3251,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1052.0, 1407.0, 29.5, 22.0 ],
+					"patching_rect" : [ 1087.0, 1403.0, 29.5, 22.0 ],
 					"text" : "-9.2"
 				}
 
@@ -3253,7 +3265,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1052.0, 1443.788462340831757, 50.0, 22.0 ]
+					"patching_rect" : [ 1087.0, 1439.788462340831757, 50.0, 22.0 ]
 				}
 
 			}
@@ -3264,7 +3276,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 851.194229990243912, 1407.0, 29.5, 22.0 ],
+					"patching_rect" : [ 896.194229990243912, 1407.0, 29.5, 22.0 ],
 					"text" : "-7."
 				}
 
@@ -3278,7 +3290,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 851.194229990243912, 1443.788462340831757, 50.0, 22.0 ]
+					"patching_rect" : [ 896.194229990243912, 1443.788462340831757, 50.0, 22.0 ]
 				}
 
 			}
@@ -3579,8 +3591,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1157.194229990243912, 1381.0, 79.0, 22.0 ],
-					"text" : "drum_pad_fx"
+					"patching_rect" : [ 1157.194229990243912, 1381.0, 119.0, 22.0 ],
+					"text" : "drum_pad_fx_reverb"
 				}
 
 			}
@@ -3591,8 +3603,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 961.194229990243912, 1381.0, 79.0, 22.0 ],
-					"text" : "drum_pad_fx"
+					"patching_rect" : [ 961.194229990243912, 1381.0, 119.0, 22.0 ],
+					"text" : "drum_pad_fx_reverb"
 				}
 
 			}
@@ -3603,8 +3615,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 748.194229990243912, 1381.0, 79.0, 22.0 ],
-					"text" : "drum_pad_fx"
+					"patching_rect" : [ 748.194229990243912, 1381.0, 119.0, 22.0 ],
+					"text" : "drum_pad_fx_reverb"
 				}
 
 			}
@@ -3615,8 +3627,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 515.194229990243912, 1381.0, 79.0, 22.0 ],
-					"text" : "drum_pad_fx"
+					"patching_rect" : [ 515.194229990243912, 1381.0, 119.0, 22.0 ],
+					"text" : "drum_pad_fx_reverb"
 				}
 
 			}
@@ -4234,7 +4246,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 991.0, 161.325708150863647, 151.0, 114.0 ],
+					"patching_rect" : [ 999.0, 164.325708150863647, 151.0, 114.0 ],
 					"text" : "Hugh: added limiter - just using preset but works pretty well but could be more fine tuned\n\nReplaced ezdac with ADC for 3 inputs: Body, neck, strings"
 				}
 
@@ -5978,7 +5990,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1167.694229990243912, 1338.371796071529388, 47.0, 22.0 ],
+					"patching_rect" : [ 1171.694229990243912, 1338.371796071529388, 47.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -6211,7 +6223,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 971.694229990243912, 1338.371796071529388, 47.0, 22.0 ],
+					"patching_rect" : [ 975.694229990243912, 1338.371796071529388, 47.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -6444,7 +6456,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 758.694229990243912, 1342.371796071529388, 47.0, 22.0 ],
+					"patching_rect" : [ 766.694229990243912, 1342.371796071529388, 47.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -6719,7 +6731,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 741.742110133171082, 315.100258529186249, 67.0, 22.0 ],
+					"patching_rect" : [ 741.742110133171082, 337.100258529186249, 67.0, 22.0 ],
 					"text" : "unpack 0 0"
 				}
 
@@ -7132,7 +7144,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 675.534053176641464, 315.100258529186249, 54.239597976207733, 22.0 ],
+					"patching_rect" : [ 681.534053176641464, 337.100258529186249, 54.239597976207733, 22.0 ],
 					"text" : "48 4"
 				}
 
@@ -9943,10 +9955,6 @@
 			"obj-143::obj-349" : [ "live.dial[17]", "Pitch - 3", 0 ],
 			"obj-143::obj-356" : [ "live.toggle[3]", "live.toggle", 0 ],
 			"obj-143::obj-358" : [ "live.dial[16]", "Pitch - 4", 0 ],
-			"obj-187::obj-12" : [ "live.dial[1]", "reduce", 0 ],
-			"obj-188::obj-12" : [ "live.dial[2]", "reduce", 0 ],
-			"obj-190::obj-12" : [ "live.dial[3]", "reduce", 0 ],
-			"obj-191::obj-12" : [ "live.dial[4]", "reduce", 0 ],
 			"obj-21" : [ "live.gain~", "Volum", 0 ],
 			"obj-303" : [ "live.slider", "PITCH", 0 ],
 			"obj-304" : [ "live.slider[1]", "DELAY", 0 ],
@@ -9965,18 +9973,6 @@
 				"obj-116::obj-51" : 				{
 					"parameter_longname" : "live.dial[20]"
 				}
-,
-				"obj-188::obj-12" : 				{
-					"parameter_longname" : "live.dial[2]"
-				}
-,
-				"obj-190::obj-12" : 				{
-					"parameter_longname" : "live.dial[3]"
-				}
-,
-				"obj-191::obj-12" : 				{
-					"parameter_longname" : "live.dial[4]"
-				}
 
 			}
 ,
@@ -9991,7 +9987,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "drum_pad_fx.maxpat",
+				"name" : "drum_pad_fx_reverb.maxpat",
 				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

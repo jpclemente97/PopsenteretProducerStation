@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -45,7 +45,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 745.0, 301.0, 77.0, 22.0 ],
+					"patching_rect" : [ 778.0, 329.492230117321014, 77.0, 22.0 ],
 					"text" : "loadmess 80"
 				}
 
@@ -68,7 +68,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 26.0, 447.006610751152039, 150.0, 34.0 ],
+					"patching_rect" : [ 26.0, 447.006610751152039, 150.0, 33.0 ],
 					"text" : "Receive step count from sound patch"
 				}
 
@@ -92,7 +92,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1076.122571468353271, 214.041410446166992, 70.0, 22.0 ],
+					"patching_rect" : [ 1100.122571468353271, 214.041410446166992, 70.0, 22.0 ],
 					"text" : "loadmess 1"
 				}
 
@@ -115,7 +115,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 421.0, 765.0, 152.0, 48.0 ],
+					"patching_rect" : [ 421.0, 765.0, 152.0, 47.0 ],
 					"text" : "Processing all 48 holes at once to get values to send to arduino for LED control"
 				}
 
@@ -127,7 +127,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 614.0, 642.0, 152.0, 34.0 ],
+					"patching_rect" : [ 614.0, 642.0, 152.0, 33.0 ],
 					"text" : "Send hole covered data to arduino for LED control"
 				}
 
@@ -139,7 +139,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 14.0, 220.709837198257446, 150.0, 34.0 ],
+					"patching_rect" : [ 14.0, 220.709837198257446, 150.0, 33.0 ],
 					"text" : "Sequencer Controls - still here for testing"
 				}
 
@@ -151,7 +151,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 87.0, 860.183663487434387, 150.0, 34.0 ],
+					"patching_rect" : [ 87.0, 860.183663487434387, 150.0, 33.0 ],
 					"text" : "Group together coordinates of column"
 				}
 
@@ -163,7 +163,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 181.0, 1085.0, 150.0, 48.0 ],
+					"patching_rect" : [ 181.0, 1085.0, 150.0, 47.0 ],
 					"text" : "Process bounding box for column, pack together, send to js for formatting"
 				}
 
@@ -175,7 +175,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 411.877428531646729, 557.236010909080505, 150.0, 34.0 ],
+					"patching_rect" : [ 411.877428531646729, 557.236010909080505, 150.0, 33.0 ],
 					"text" : "Metro for reading for hole covered LED on/off"
 				}
 
@@ -187,7 +187,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 966.625851333141327, 405.0, 233.0, 34.0 ],
+					"patching_rect" : [ 966.625851333141327, 405.0, 233.0, 33.0 ],
 					"text" : "Matrices to be used to get sequencer and LED ON/OFF"
 				}
 
@@ -221,7 +221,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1279.0, 21.0, 150.0, 48.0 ],
+					"patching_rect" : [ 1279.0, 21.0, 150.0, 47.0 ],
 					"text" : "Unused Code that hasn't been deleted over here >>>>>>>>>>>>>>>>>"
 				}
 
@@ -256,8 +256,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 383.0, 597.709837198257446, 119.0, 22.0 ],
-					"text" : "qmetro 10 @active 1"
+					"patching_rect" : [ 383.0, 597.709837198257446, 126.0, 22.0 ],
+					"text" : "qmetro 150 @active 1"
 				}
 
 			}
@@ -290,7 +290,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 202.5, 538.445848107337952, 150.0, 75.0 ],
+					"patching_rect" : [ 202.5, 538.445848107337952, 150.0, 74.0 ],
 					"text" : "1-index the javascript, because for some reason that make the sequencer play the right step instead of the step behind"
 				}
 
@@ -590,7 +590,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 16.0, 642.0, 106.0, 22.0 ],
+					"patching_rect" : [ 16.0, 628.709837198257446, 106.0, 22.0 ],
 					"text" : "set_vid_dim $1 $2"
 				}
 
@@ -602,7 +602,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 16.0, 610.0, 57.0, 22.0 ],
+					"patching_rect" : [ 16.0, 596.709837198257446, 57.0, 22.0 ],
 					"text" : "r vid_dim"
 				}
 
@@ -736,7 +736,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1253.377428531646729, 196.984033584594727, 150.0, 34.0 ],
+					"patching_rect" : [ 1253.377428531646729, 196.984033584594727, 150.0, 33.0 ],
 					"text" : "experiment with format and CPU"
 				}
 
@@ -760,7 +760,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1434.5, 615.631316065788269, 150.0, 117.0 ],
+					"patching_rect" : [ 1434.5, 615.631316065788269, 150.0, 114.0 ],
 					"text" : "super cpu heavy computation to carry out on a fast clock. maybe we would have to detect movement in the frame and make that movement/change trigger a LED control computation"
 				}
 
@@ -820,7 +820,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 710.0, 355.0, 186.0, 48.0 ],
+					"patching_rect" : [ 710.0, 355.0, 186.0, 47.0 ],
 					"text" : "Threshold for sequence on/off - set between 0-255 (0 black, 255 white) - default at 50"
 				}
 
@@ -926,7 +926,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 523.377428531646729, 373.006610751152039, 77.0, 75.0 ],
+					"patching_rect" : [ 523.377428531646729, 373.006610751152039, 77.0, 74.0 ],
 					"text" : "bang to snapshot seq and print to console"
 				}
 
@@ -951,8 +951,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 425.0, 369.006610751152039, 23.0, 77.0 ],
-					"text" : "0 0 0 0 0"
+					"patching_rect" : [ 425.0, 369.006610751152039, 23.0, 76.0 ],
+					"text" : "1 1 1 1 0"
 				}
 
 			}
@@ -1047,7 +1047,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1434.5, 779.5, 151.0, 227.0 ],
+					"patching_rect" : [ 1434.5, 779.5, 151.0, 221.0 ],
 					"text" : "with the matrix set to @thru 0 the square mean gets the value it should be looking for and then the image is banged. this way the values for the current steps is active and not the previous\n\nfor cpu efficiancy we can potentially use just one [square_mean] for the seq_playback by applying the same method as for \"THE EYE\" looking at the sequencer status"
 				}
 
@@ -1261,7 +1261,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1547,13 +1547,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-26",
-					"items" : [ "(null) - 640 x 480", ",", "(null) - 1280 x 720", ",", "Y'CbCr 4:2:2 - yuvy - 640 x 480", ",", "Y'CbCr 4:2:2 - yuvy - 1280 x 720" ],
+					"items" : [ "Y'CbCr 4:2:2 - yuvs - 1280 x 720", ",", "Y'CbCr 4:2:2 - uyvy - 1280 x 720", ",", "Y'CbCr 4:2:0 - 420v - 1280 x 720", ",", "Y'CbCr 4:2:2 - yuvs - 640 x 480", ",", "Y'CbCr 4:2:2 - uyvy - 640 x 480", ",", "Y'CbCr 4:2:0 - 420v - 640 x 480", ",", "Y'CbCr 4:2:2 - yuvs - 320 x 240", ",", "Y'CbCr 4:2:2 - uyvy - 320 x 240", ",", "Y'CbCr 4:2:0 - 420v - 320 x 240" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1227.122571468353271, 238.041410446166992, 211.5, 22.0 ]
+					"patching_rect" : [ 1227.122571468353271, 242.709837198257446, 211.5, 22.0 ]
 				}
 
 			}
@@ -1574,13 +1574,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-6",
-					"items" : [ "Webcam", ",", "USB Camera" ],
+					"items" : "FaceTime HD Camera",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1076.122571468353271, 238.041410446166992, 145.0, 22.0 ]
+					"patching_rect" : [ 1076.122571468353271, 242.709837198257446, 145.0, 22.0 ]
 				}
 
 			}
@@ -1938,7 +1938,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-114", 0 ],
-					"midpoints" : [ 145.0, 792.0, 318.0, 792.0, 318.0, 744.0, 930.0, 744.0, 930.0, 480.0, 952.5, 480.0 ],
+					"midpoints" : [ 145.0, 803.0, 318.0, 803.0, 318.0, 744.0, 930.0, 744.0, 930.0, 480.0, 952.5, 480.0 ],
 					"source" : [ "obj-113", 1 ]
 				}
 
@@ -2580,7 +2580,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-97", 0 ],
-					"midpoints" : [ 25.5, 633.0, 25.5, 633.0 ],
+					"midpoints" : [ 25.5, 619.709837198257446, 25.5, 619.709837198257446 ],
 					"source" : [ "obj-91", 0 ]
 				}
 
@@ -2628,7 +2628,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 25.5, 675.0, 120.0, 675.0, 120.0, 672.0, 134.5, 672.0 ],
 					"source" : [ "obj-97", 0 ]
 				}
 
