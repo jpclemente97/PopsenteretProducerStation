@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 3,
-			"revision" : 1,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -39,18 +39,6 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 385.0, 179.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "newobj",
@@ -142,8 +130,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 69.0, 314.0, 244.0, 22.0 ],
-					"text" : "jit.matrix slice 1 char 320 240 @usesrcdim 1"
+					"patching_rect" : [ 69.0, 314.0, 231.0, 22.0 ],
+					"text" : "jit.matrix slice 1 char 10 10 @usesrcdim 1"
 				}
 
 			}
@@ -312,17 +300,9 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"order" : 0,
-					"source" : [ "obj-17", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-162", 1 ],
 					"midpoints" : [ 394.5, 177.0, 134.500012468353248, 177.0 ],
-					"order" : 4,
+					"order" : 3,
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -331,7 +311,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-163", 1 ],
 					"midpoints" : [ 394.5, 177.0, 180.000012468353248, 177.0 ],
-					"order" : 3,
+					"order" : 2,
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -340,7 +320,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-171", 1 ],
 					"midpoints" : [ 394.5, 177.0, 301.0, 177.0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -349,7 +329,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-172", 1 ],
 					"midpoints" : [ 394.5, 177.0, 257.0, 177.0 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-17", 0 ]
 				}
 
