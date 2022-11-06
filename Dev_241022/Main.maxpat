@@ -250,6 +250,8 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-1::obj-303" : [ "live.slider", "PITCH", 0 ],
+			"obj-1::obj-304" : [ "live.slider[1]", "DELAY", 0 ],
 			"obj-1::obj-95" : [ "live.tab[4]", "live.tab[4]", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
@@ -272,6 +274,13 @@
 			}
 , 			{
 				"name" : "FUZZ_UI-Genre_Button.maxpat",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "FX_autoDefault.maxpat",
 				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
