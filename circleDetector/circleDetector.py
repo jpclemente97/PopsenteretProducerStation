@@ -1,6 +1,5 @@
 import cv2
 import numpy as np
-import json
 import csv
 
 def firstSort(coordinates):
@@ -79,10 +78,6 @@ def main():
 							
 						cv2.imshow("Detected Circle", frame_copy)
 						cv2.waitKey(0)
-
-						# Write the json file
-						with open("../Dev_241022/seq.json", "w") as f:
-							json.dump(coordinatesDict, f)
 							
 						# Write the CSV file
 						with open('../Dev_241022/seq.csv', 'w', newline='') as f:
@@ -90,7 +85,7 @@ def main():
 							for key, value in coordinatesDict.items():
 								for coordinate in value:
 									writer.writerow(coordinate)
-						print("Success! Find results in seq.json and seq.csv")
+						print("Success! Find results in seq.csv")
 						success = True
 						break
 					else:
