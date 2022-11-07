@@ -14,7 +14,7 @@ Adafruit_NeoPixel ledArray[6] = {guitarLeds, tomLeds, hihatLeds, snareLeds, kick
 
 // All 40 values initialized to false
 bool sequencerLedStates[40] = { false };
-bool currentSequencerPattern[40] = { 0 };
+bool currentSequencerPattern[40] = { false };
 
 unsigned long clocks[] = { 0, 0, 0, 0, 0 };
 bool indicatorLedsOn[5] = {false, false, false, false, false};
@@ -25,7 +25,7 @@ const int indicatorLedsEnd[] = { 14, 14, 14, 14, 14 };
 
 void clearLEDs(int index)
 {
-  for (int i=0; i<LED_COUNT; i++)
+  for (int i = 0; i < LED_COUNT; i++)
   {
     ledArray[index].setPixelColor(i, 0);
   }
@@ -39,7 +39,7 @@ void stepChange() {
   short endByte = readSerialPort();
   if (ledIndex == ERROR_BYTE || endByte == ERROR_BYTE)
     return;
-  
+
   ledArray[5].setPixelColor(ledIndex, WHITE);
   ledArray[5].show();
 }
@@ -47,6 +47,7 @@ void stepChange() {
 void genreChange() {
   // Clear all led rows except for the step row
   for (int i = 0; i < 40; ++i) {
+    currentSequencerPattern[i] = false;
     int rowIndex = floor(i / 8);
     // Hacky way to invert the values
     int ledIndex = abs((i % 8) - 7);
@@ -55,7 +56,7 @@ void genreChange() {
     else
       ledArray[rowIndex].setPixelColor(ledIndex, 0);
   }
-  
+
   short maxReadings = 40;
   short readings = 0;
   while (readings <= maxReadings) {
@@ -85,17 +86,17 @@ void holeCovered() {
   if (reading == ERROR_BYTE || endByte != END) {
     return;
   }
-    
+
   int rowIndex = floor(reading / 8);
   // Hacky way to invert the values
   int ledIndex = abs((reading % 8) - 7);
 
-  if(sequencerLedStates[reading] == false) {
+  if (sequencerLedStates[reading] == false) {
     if (currentSequencerPattern[reading])
       ledArray[rowIndex].setPixelColor(ledIndex, GREEN);
     else
       ledArray[rowIndex].setPixelColor(ledIndex, WHITE);
-  
+
     ledArray[rowIndex].show();
     sequencerLedStates[reading] = true;
   }
@@ -112,12 +113,12 @@ void holeUncovered() {
   // Hacky way to invert the values
   int ledIndex = abs((reading % 8) - 7);
 
-  if(sequencerLedStates[reading] == true) {
+  if (sequencerLedStates[reading] == true) {
     if (currentSequencerPattern[reading])
       ledArray[rowIndex].setPixelColor(ledIndex, RED);
     else
       ledArray[rowIndex].setPixelColor(ledIndex, 0);
-  
+
     ledArray[rowIndex].show();
     sequencerLedStates[reading] = false;
   }
@@ -140,7 +141,7 @@ void setup()
   pinMode(HIHAT_ROW_PIN, OUTPUT);
   pinMode(SNARE_ROW_PIN, OUTPUT);
   pinMode(KICK_ROW_PIN, OUTPUT);
-  
+
   // Initialize serial connection to Max
   Serial.begin(96000);
 }
@@ -188,7 +189,7 @@ bool checkLedTimeOn(unsigned long currentClock, unsigned long instrumentClock, i
   unsigned long timeOn = currentClock - instrumentClock;
   if (timeOn >= 500) {
     short endLed = indicatorLedsEnd[ledArrayIndex];
-    for (int i=indicatorLedsStart; i < endLed; i++)
+    for (int i = indicatorLedsStart; i < endLed; i++)
     {
       ledArray[ledArrayIndex].setPixelColor(i, 0);
     }
