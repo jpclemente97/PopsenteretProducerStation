@@ -69,8 +69,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 278.0, 84.0, 154.0, 22.0 ],
-					"text" : "if $f1 < 0.66 then 0 else $f1"
+					"patching_rect" : [ 278.0, 84.0, 147.0, 22.0 ],
+					"text" : "if $f1 < 0.7 then 0 else $f1"
 				}
 
 			}
