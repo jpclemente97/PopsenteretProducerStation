@@ -91,7 +91,6 @@ void genreChange() {
 
 bool checkGenrePatternRows() {
   if (currentGenrePatternRow <= 4) {
-    // Check if 
     for (int i = 32 - (currentGenrePatternRow * 8); i < 40 - (currentGenrePatternRow * 8); ++i) {
       if (currentSequencerPattern[i]) {
         if (!sequencerLedStates[i])
@@ -129,14 +128,16 @@ void holeCovered() {
   int ledIndex = abs((reading % 8) - 7);
 
   if (sequencerLedStates[reading] == false) {
-    if (currentSequencerPattern[reading] && reading > (32 - (currentGenrePatternRow * 8)))
+    if (currentSequencerPattern[reading] && reading >= (32 - (currentGenrePatternRow * 8)))
       ledArray[rowIndex].setPixelColor(ledIndex, GREEN);
     else
       ledArray[rowIndex].setPixelColor(ledIndex, WHITE);
   
     sequencerLedStates[reading] = true;
     while (checkGenrePatternRows());
-    ledArray[rowIndex].show();
+    for (int i = 0; i < 6; ++i) {
+      ledArray[i].show();
+    }
   }
 
   
@@ -154,7 +155,7 @@ void holeUncovered() {
   int ledIndex = abs((reading % 8) - 7);
 
   if(sequencerLedStates[reading] == true) {
-    if (currentSequencerPattern[reading] && reading > (32 - (currentGenrePatternRow * 8)))
+    if (currentSequencerPattern[reading] && reading >= (32 - (currentGenrePatternRow * 8)))
       ledArray[rowIndex].setPixelColor(ledIndex, RED);
     else
       ledArray[rowIndex].setPixelColor(ledIndex, 0);
