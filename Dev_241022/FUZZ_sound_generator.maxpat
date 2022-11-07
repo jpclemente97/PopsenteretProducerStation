@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
+			"minor" : 1,
 			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1257.0, 937.0 ],
+		"rect" : [ -11.0, 79.0, 1257.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,7 +37,6 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-159",
@@ -340,8 +339,17 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
-					"outlettype" : [ "signal", "" ],
+					"outlettype" : [ "signal", "list" ],
 					"patching_rect" : [ 1279.320517778396606, 353.0, 63.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"enabled" : [ 1 ],
+						"pitchshift" : [ 2.0 ],
+						"pitchshiftcent" : [ 1200 ],
+						"quality" : "best",
+						"reportlatency" : 0,
+						"usecents" : 0
+					}
+,
 					"text" : "pitchshift~"
 				}
 
@@ -383,7 +391,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 1,
 							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -417,7 +425,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-1",
@@ -845,7 +852,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 1,
 							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -879,7 +886,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-95",
@@ -1338,9 +1344,9 @@
 				"box" : 				{
 					"id" : "obj-113",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 945.0, 1811.538462340831757, 128.0, 22.0 ],
 					"text" : "r~ decon_guit_monitor"
 				}
@@ -1428,7 +1434,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 1,
 							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -1462,7 +1468,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-108",
@@ -1631,7 +1636,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 1,
 							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -1665,7 +1670,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-2",
@@ -1813,7 +1817,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 1,
 							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -1847,7 +1851,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -2549,19 +2552,11 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1437.194229990243912, 293.433978974819183, 87.0, 74.0 ],
 					"saved_attribute_attributes" : 					{
-						"activebgcolor" : 						{
-							"expression" : ""
-						}
-,
-						"activebgoncolor" : 						{
-							"expression" : ""
-						}
-,
 						"valueof" : 						{
-							"parameter_enum" : [ "off", "on" ],
 							"parameter_longname" : "live.toggle[2]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.toggle",
+							"parameter_enum" : [ "off", "on" ],
 							"parameter_type" : 2
 						}
 
@@ -2593,7 +2588,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 1,
 							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -2627,7 +2622,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-14",
@@ -3330,8 +3324,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1979.194229990243912, 681.0, 45.0, 20.0 ],
-					"text" : "0 = Off"
+					"patching_rect" : [ 1979.194229990243912, 681.0, 78.0, 20.0 ],
+					"text" : "0 and 1 = Off"
 				}
 
 			}
@@ -3343,7 +3337,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 1939.194229990243912, 681.0, 29.5, 22.0 ],
-					"text" : "- 1"
+					"text" : "- 2"
 				}
 
 			}
@@ -3529,7 +3523,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 1,
 							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -3563,7 +3557,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -3981,13 +3974,13 @@
 						"styles" : [ 							{
 								"name" : "BLACK",
 								"default" : 								{
-									"accentcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 0.0 ],
-									"color" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"editing_bgcolor" : [ 0.10399004817009, 0.090992286801338, 0.09461422264576, 1.0 ],
 									"fontname" : [ "Ableton Sans Medium" ],
-									"fontsize" : [ 12.0 ],
 									"locked_bgcolor" : [ 0.105882352941176, 0.090196078431373, 0.094117647058824, 1.0 ],
-									"textcolor" : [ 0.999889016151428, 1.0, 0.999841034412384, 1.0 ]
+									"color" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"textcolor" : [ 0.999889016151428, 1.0, 0.999841034412384, 1.0 ],
+									"editing_bgcolor" : [ 0.10399004817009, 0.090992286801338, 0.09461422264576, 1.0 ],
+									"fontsize" : [ 12.0 ],
+									"accentcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 0.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3997,9 +3990,9 @@
 								"name" : "Descriptive Text",
 								"default" : 								{
 									"fontname" : [ "AlternateGothic-NoOne" ],
-									"fontsize" : [ 36.0 ],
+									"textjustification" : [ 1 ],
 									"textcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
-									"textjustification" : [ 1 ]
+									"fontsize" : [ 36.0 ]
 								}
 ,
 								"parentstyle" : "Title Text",
@@ -4009,9 +4002,9 @@
 								"name" : "Title Text",
 								"default" : 								{
 									"fontname" : [ "AlternateGothic-NoOne" ],
-									"fontsize" : [ 72.0 ],
+									"textjustification" : [ 1 ],
 									"textcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
-									"textjustification" : [ 1 ]
+									"fontsize" : [ 72.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4186,7 +4179,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 1,
 							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -4220,7 +4213,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -4783,6 +4775,21 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 1400.199849971702861, 1298.371796071529388, 76.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"basictuning" : 440,
+						"followglobaltempo" : 0,
+						"formantcorrection" : 0,
+						"loopend" : [ 0.0, "ms" ],
+						"loopstart" : [ 0.0, "ms" ],
+						"mode" : "basic",
+						"originallength" : [ 0.0, "ticks" ],
+						"originaltempo" : 120.0,
+						"phase" : [ 0.0, "ticks" ],
+						"pitchcorrection" : 0,
+						"quality" : "basic",
+						"timestretch" : [ 0 ]
+					}
+,
 					"text" : "groove~ trk5"
 				}
 
@@ -4822,7 +4829,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 1,
 							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -4856,7 +4863,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-1",
@@ -5055,7 +5061,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 1,
 							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -5089,7 +5095,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-2",
@@ -5288,7 +5293,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 1,
 							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -5322,7 +5327,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-1",
@@ -5521,7 +5525,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 1,
 							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -5555,7 +5559,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-1",
@@ -5897,7 +5900,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 1,
 							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -5931,7 +5934,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-371",
@@ -6250,7 +6252,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 1,
 							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -6284,7 +6286,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -6806,6 +6807,21 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 2739.900126725435257, 685.894619941711426, 76.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"basictuning" : 440,
+						"followglobaltempo" : 0,
+						"formantcorrection" : 0,
+						"loopend" : [ 0.0, "ms" ],
+						"loopstart" : [ 0.0, "ms" ],
+						"mode" : "basic",
+						"originallength" : [ 0.0, "ticks" ],
+						"originaltempo" : 120.0,
+						"phase" : [ 0.0, "ticks" ],
+						"pitchcorrection" : 0,
+						"quality" : "basic",
+						"timestretch" : [ 0 ]
+					}
+,
 					"text" : "groove~ trk6"
 				}
 
@@ -7018,6 +7034,21 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 1157.194229990243912, 1298.371796071529388, 76.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"basictuning" : 440,
+						"followglobaltempo" : 0,
+						"formantcorrection" : 0,
+						"loopend" : [ 0.0, "ms" ],
+						"loopstart" : [ 0.0, "ms" ],
+						"mode" : "basic",
+						"originallength" : [ 0.0, "ticks" ],
+						"originaltempo" : 120.0,
+						"phase" : [ 0.0, "ticks" ],
+						"pitchcorrection" : 0,
+						"quality" : "basic",
+						"timestretch" : [ 0 ]
+					}
+,
 					"text" : "groove~ trk4"
 				}
 
@@ -7066,6 +7097,21 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 961.194229990243912, 1294.705129206180573, 76.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"basictuning" : 440,
+						"followglobaltempo" : 0,
+						"formantcorrection" : 0,
+						"loopend" : [ 0.0, "ms" ],
+						"loopstart" : [ 0.0, "ms" ],
+						"mode" : "basic",
+						"originallength" : [ 0.0, "ticks" ],
+						"originaltempo" : 120.0,
+						"phase" : [ 0.0, "ticks" ],
+						"pitchcorrection" : 0,
+						"quality" : "basic",
+						"timestretch" : [ 0 ]
+					}
+,
 					"text" : "groove~ trk3"
 				}
 
@@ -7114,6 +7160,21 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 748.194229990243912, 1298.371796071529388, 76.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"basictuning" : 440,
+						"followglobaltempo" : 0,
+						"formantcorrection" : 0,
+						"loopend" : [ 0.0, "ms" ],
+						"loopstart" : [ 0.0, "ms" ],
+						"mode" : "basic",
+						"originallength" : [ 0.0, "ticks" ],
+						"originaltempo" : 120.0,
+						"phase" : [ 0.0, "ticks" ],
+						"pitchcorrection" : 0,
+						"quality" : "basic",
+						"timestretch" : [ 0 ]
+					}
+,
 					"text" : "groove~ trk2"
 				}
 
@@ -7166,9 +7227,9 @@
 					"patching_rect" : [ 898.194229990243912, 1894.038462340831757, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~",
 							"parameter_mmax" : 6.0,
-							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "Volum",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
@@ -7188,6 +7249,21 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 515.194229990243912, 1298.371796071529388, 76.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"basictuning" : 440,
+						"followglobaltempo" : 0,
+						"formantcorrection" : 0,
+						"loopend" : [ 0.0, "ms" ],
+						"loopstart" : [ 0.0, "ms" ],
+						"mode" : "basic",
+						"originallength" : [ 0.0, "ticks" ],
+						"originaltempo" : 120.0,
+						"phase" : [ 0.0, "ticks" ],
+						"pitchcorrection" : 0,
+						"quality" : "basic",
+						"timestretch" : [ 0 ]
+					}
+,
 					"text" : "groove~ trk1"
 				}
 
@@ -8723,9 +8799,9 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-116::obj-51" : [ "live.dial[20]", "live.dial", 0 ],
-			"obj-21" : [ "live.gain~", "Volum", 0 ],
 			"obj-77" : [ "live.toggle[2]", "live.toggle", 0 ],
+			"obj-21" : [ "live.gain~", "Volum", 0 ],
+			"obj-116::obj-51" : [ "live.dial[20]", "live.dial", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -8736,34 +8812,33 @@
 				}
 
 			}
-,
-			"inherited_shortname" : 1
+
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "FX_autoDefault.maxpat",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "drum_pad_fx_reverb.maxpat",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fade_to_grey_1.maxpat",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "FX_autoDefault.maxpat",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freePlay_keys_voice.maxpat",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -8773,13 +8848,13 @@
 		"styles" : [ 			{
 				"name" : "BLACK",
 				"default" : 				{
-					"accentcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 0.0 ],
-					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"editing_bgcolor" : [ 0.10399004817009, 0.090992286801338, 0.09461422264576, 1.0 ],
 					"fontname" : [ "Ableton Sans Medium" ],
-					"fontsize" : [ 12.0 ],
 					"locked_bgcolor" : [ 0.105882352941176, 0.090196078431373, 0.094117647058824, 1.0 ],
-					"textcolor" : [ 0.999889016151428, 1.0, 0.999841034412384, 1.0 ]
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor" : [ 0.999889016151428, 1.0, 0.999841034412384, 1.0 ],
+					"editing_bgcolor" : [ 0.10399004817009, 0.090992286801338, 0.09461422264576, 1.0 ],
+					"fontsize" : [ 12.0 ],
+					"accentcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 0.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -8789,9 +8864,9 @@
 				"name" : "Descriptive Text",
 				"default" : 				{
 					"fontname" : [ "AlternateGothic-NoOne" ],
-					"fontsize" : [ 36.0 ],
+					"textjustification" : [ 1 ],
 					"textcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
-					"textjustification" : [ 1 ]
+					"fontsize" : [ 36.0 ]
 				}
 ,
 				"parentstyle" : "Title Text",
@@ -8801,9 +8876,9 @@
 				"name" : "Title Text",
 				"default" : 				{
 					"fontname" : [ "AlternateGothic-NoOne" ],
-					"fontsize" : [ 72.0 ],
+					"textjustification" : [ 1 ],
 					"textcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
-					"textjustification" : [ 1 ]
+					"fontsize" : [ 72.0 ]
 				}
 ,
 				"parentstyle" : "",
