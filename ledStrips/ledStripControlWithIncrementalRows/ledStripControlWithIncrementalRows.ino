@@ -128,17 +128,18 @@ void holeCovered() {
   // Hacky way to invert the values
   int ledIndex = abs((reading % 8) - 7);
 
-  if(sequencerLedStates[reading] == false) {
-    if (currentSequencerPattern[reading])
+  if (sequencerLedStates[reading] == false) {
+    if (currentSequencerPattern[reading] && reading > (32 - (currentGenrePatternRow * 8)))
       ledArray[rowIndex].setPixelColor(ledIndex, GREEN);
     else
       ledArray[rowIndex].setPixelColor(ledIndex, WHITE);
   
-    ledArray[rowIndex].show();
     sequencerLedStates[reading] = true;
+    while (checkGenrePatternRows());
+    ledArray[rowIndex].show();
   }
 
-  while (checkGenrePatternRows());
+  
 }
 
 void holeUncovered() {
@@ -153,7 +154,7 @@ void holeUncovered() {
   int ledIndex = abs((reading % 8) - 7);
 
   if(sequencerLedStates[reading] == true) {
-    if (currentSequencerPattern[reading])
+    if (currentSequencerPattern[reading] && reading > (32 - (currentGenrePatternRow * 8)))
       ledArray[rowIndex].setPixelColor(ledIndex, RED);
     else
       ledArray[rowIndex].setPixelColor(ledIndex, 0);
