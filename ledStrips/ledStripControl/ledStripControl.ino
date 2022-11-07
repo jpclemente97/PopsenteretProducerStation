@@ -3,17 +3,6 @@
 #include "SequencerDefinitions.h"
 #include <time.h>
 
-#define KICK_ROW_PIN 2
-#define SNARE_ROW_PIN 3
-#define HIHAT_ROW_PIN 4
-#define TOM_ROW_PIN 5
-#define GUITAR_ROW_PIN 6
-#define STEP_ROW_PIN 7
-
-#define LED_COUNT 14
-
-#define LED_ROWS 6
-
 Adafruit_NeoPixel guitarLeds = Adafruit_NeoPixel(LED_COUNT, GUITAR_ROW_PIN, NEO_GRB + NEO_KHZ800);
 Adafruit_NeoPixel tomLeds = Adafruit_NeoPixel(LED_COUNT, TOM_ROW_PIN, NEO_GRB + NEO_KHZ800);
 Adafruit_NeoPixel hihatLeds = Adafruit_NeoPixel(LED_COUNT, HIHAT_ROW_PIN, NEO_GRB + NEO_KHZ800);
@@ -23,13 +12,16 @@ Adafruit_NeoPixel stepLeds = Adafruit_NeoPixel(LED_COUNT, STEP_ROW_PIN, NEO_GRB 
 
 Adafruit_NeoPixel ledArray[6] = {guitarLeds, tomLeds, hihatLeds, snareLeds, kickLeds, stepLeds};
 
-// All 48 values initialized to 0
+// All 40 values initialized to false
 bool sequencerLedStates[40] = { false };
-bool currentSequencerPattern[40] = { false };
+bool currentSequencerPattern[40] = { 0 };
 
 unsigned long clocks[] = { 0, 0, 0, 0, 0 };
 bool indicatorLedsOn[5] = {false, false, false, false, false};
-short currentGenre = POP;
+
+const int indicatorLedsStart = 8;
+// null, null, kick, snare, hihat, tom, guitar
+const int indicatorLedsEnd[] = { 14, 14, 14, 14, 14 };
 
 void clearLEDs(int index)
 {
@@ -53,11 +45,6 @@ void stepChange() {
 }
 
 void genreChange() {
-  short newGenre = readSerialPort();
-  short endByte = readSerialPort();
-  if (newGenre == ERROR_BYTE || endByte == ERROR_BYTE)
-    return;
-  
   // Clear all led rows except for the step row
   for (int i = 0; i < 40; ++i) {
     int rowIndex = floor(i / 8);
@@ -69,42 +56,27 @@ void genreChange() {
       ledArray[rowIndex].setPixelColor(ledIndex, 0);
   }
   
-  if (currentGenre != newGenre) {
-    if (newGenre == POP)
-      changeGenrePattern(popPattern, popPatternSize);
-    else if (newGenre == HOUSE)
-      changeGenrePattern(housePattern, housePatternSize);
-    else if (newGenre == MINIMAL)
-      changeGenrePattern(minimalPattern, minimalPatternSize);
-    else if (newGenre == ROLAND)
-      changeGenrePattern(rolandPattern, rolandPatternSize);
-    else if (newGenre == HIPHOP)
-      changeGenrePattern(hiphopPattern, hiphopPatternSize);
-    else
-      return;
-     currentGenre = newGenre;
-  }
-}
+  short maxReadings = 40;
+  short readings = 0;
+  while (readings <= maxReadings) {
+    short patternIndex = readSerialPort();
+    if (patternIndex == END)
+      break;
 
-void changeGenrePattern (short genrePattern[], int patternSize) {
-  for (int i = 0; i < 40; ++i) {
-    currentSequencerPattern[i] = false;
-  }
-  for (int i = 0; i < patternSize; ++i) {
-    short patternElement = genrePattern[i];
-    currentSequencerPattern[patternElement] = true;
-    int rowIndex = floor(patternElement / 8);
+    currentSequencerPattern[patternIndex] = true;
+    int rowIndex = floor(patternIndex / 8);
     // Hacky way to invert the values
-    int ledIndex = abs((patternElement % 8) - 7);
-    if (sequencerLedStates[patternElement])
+    int ledIndex = abs((patternIndex % 8) - 7);
+    if (sequencerLedStates[patternIndex])
       ledArray[rowIndex].setPixelColor(ledIndex, GREEN);
-     else
-        ledArray[rowIndex].setPixelColor(ledIndex, RED);
+    else
+      ledArray[rowIndex].setPixelColor(ledIndex, RED);
   }
 
   for (int i = 0; i < 6; ++i) {
     ledArray[i].show();
   }
+
 }
 
 void holeCovered() {
