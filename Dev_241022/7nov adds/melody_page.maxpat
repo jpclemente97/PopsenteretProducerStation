@@ -40,6 +40,57 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 134.0, 427.0, 92.0, 22.0 ],
+					"text" : "s freeplay_keys"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 136.5, 327.0, 81.0, 20.0 ],
+					"text" : "FREE PLAY"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"activebgoncolor" : [ 0.89, 0.69, 0.69, 1.0 ],
+					"id" : "obj-14",
+					"maxclass" : "live.toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 134.0, 343.586812605697673, 68.0, 62.733327746391296 ],
+					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_longname" : "live.toggle[1]",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.toggle[5]",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"varname" : "live.toggle[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-9",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
@@ -287,7 +338,7 @@
 					"presentation_rect" : [ 85.587105393409729, 578.429543495178223, 435.863208125744677, 212.0 ],
 					"range" : 12,
 					"size" : 8,
-					"table_data" : [ 0, 6, 2, 3, 3, 9, 4, 2, 0 ]
+					"table_data" : [ 0, 2, 4, 0, 7, 10, 0, 4, 11 ]
 				}
 
 			}
@@ -833,7 +884,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 168.0, 148.047002874999976, 75.0, 22.0 ],
+					"patching_rect" : [ 168.0, 130.047002874999976, 75.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -882,6 +933,13 @@
 					"destination" : [ "obj-65", 0 ],
 					"order" : 0,
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-14", 0 ]
 				}
 
 			}
@@ -998,6 +1056,7 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-14" : [ "live.toggle[1]", "live.toggle[5]", 0 ],
 			"obj-151" : [ "live.toggle[15]", "live.toggle[5]", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
