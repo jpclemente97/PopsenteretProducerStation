@@ -161,11 +161,11 @@
 					"name" : "FUZZ Producer Station User Interface.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 3,
-					"offset" : [ -1280.0, 0.0 ],
+					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang", "bang", "bang" ],
 					"patching_rect" : [ -1.176470637321472, -6.470588505268097, 1280.0, 720.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -1.016049325466156, -1.026739180088043, 1280.0, 720.0 ],
+					"presentation_rect" : [ -6.516049325466156, -0.026739180088043, 1280.0, 720.0 ],
 					"viewvisibility" : 1
 				}
 
