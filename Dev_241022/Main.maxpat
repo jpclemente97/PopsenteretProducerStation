@@ -356,6 +356,13 @@
 				"type" : "PNG",
 				"implicit" : 1
 			}
+, 			{
+				"name" : "genre_name_reader.maxpat",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
  ],
 		"autosave" : 0,
 		"styles" : [ 			{
@@ -366,10 +373,10 @@
 , 			{
 				"name" : "Title Text",
 				"default" : 				{
+					"fontsize" : [ 72.0 ],
 					"fontname" : [ "AlternateGothic-NoOne" ],
 					"textjustification" : [ 1 ],
-					"textcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
-					"fontsize" : [ 72.0 ]
+					"textcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

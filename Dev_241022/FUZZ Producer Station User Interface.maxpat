@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 3,
+			"minor" : 1,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 42.0, 85.0, 1721.0, 1019.0 ],
+		"rect" : [ 34.0, 79.0, 701.0, 687.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,7 +37,6 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"bgmode" : 0,
@@ -47,7 +46,6 @@
 					"enablevscroll" : 0,
 					"id" : "obj-61",
 					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "FUZZ_UI-Genre_Button.maxpat",
 					"numinlets" : 4,
@@ -70,7 +68,6 @@
 					"enablevscroll" : 0,
 					"id" : "obj-34",
 					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "FUZZ_UI-Genre_Button.maxpat",
 					"numinlets" : 4,
@@ -93,7 +90,6 @@
 					"enablevscroll" : 0,
 					"id" : "obj-52",
 					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "FUZZ_UI-Genre_Button.maxpat",
 					"numinlets" : 4,
@@ -116,7 +112,6 @@
 					"enablevscroll" : 0,
 					"id" : "obj-57",
 					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "FUZZ_UI-Genre_Button.maxpat",
 					"numinlets" : 4,
@@ -139,7 +134,6 @@
 					"enablevscroll" : 0,
 					"id" : "obj-60",
 					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "FUZZ_UI-Genre_Button.maxpat",
 					"numinlets" : 4,
@@ -246,7 +240,6 @@
 					"enablevscroll" : 0,
 					"id" : "obj-3",
 					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "FUZZ_UI-Genre_Button.maxpat",
 					"numinlets" : 4,
@@ -271,7 +264,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1720.583347999999887, 540.000016999999843, 5.75, 66.333332000000041 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1720.583347999999887, 540.000016999999957, 5.75, 66.333331999999999 ],
+					"presentation_rect" : [ 1800.583350384185678, 540.000016999999957, 5.75, 66.333331999999999 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -288,7 +281,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1902.166686000000027, 113.000017, 6.0, 66.333331999999999 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1902.166686000000027, 113.000017, 6.0, 66.333331999999999 ],
+					"presentation_rect" : [ 2016.166686000000027, 107.566664965042165, 6.0, 66.333331999999999 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -410,16 +403,15 @@
 					"enablevscroll" : 0,
 					"id" : "obj-56",
 					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "FUZZ_UI-Melody.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
+					"offset" : [ -320.0, 0.0 ],
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 1325.666666000000077, 121.999999833333334, 319.333328500930747, 477.999996439163112 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1325.666666000000077, 122.0, 319.333328999999992, 477.99999600000001 ],
+					"presentation_rect" : [ 1379.666666000000077, 122.799999952316284, 319.333328999999992, 477.99999600000001 ],
 					"viewvisibility" : 1
 				}
 
@@ -534,7 +526,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1908.00001599999996, 113.000016999999957, 63.333331999999999, 66.333331999999999 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1904.00001599999996, 117.000017834464984, 63.333331999999999, 66.333331999999999 ]
+					"presentation_rect" : [ 2018.00001599999996, 111.566665799507149, 63.333331999999999, 66.333331999999999 ]
 				}
 
 			}
@@ -550,7 +542,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1657.25001599999996, 540.000016999999843, 63.333331999999999, 66.333331999999999 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1657.25001599999996, 540.000016999999957, 63.333331999999999, 66.333331999999999 ]
+					"presentation_rect" : [ 1737.250018384185751, 540.000016999999957, 63.333331999999999, 66.333331999999999 ]
 				}
 
 			}
@@ -561,7 +553,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 635.0, 958.252306997776031, 269.0, 34.0 ],
+					"patching_rect" : [ 635.0, 958.252306997776031, 269.0, 33.0 ],
 					"text" : "Arduino Genre Change > Sends to arduinoSend patch"
 				}
 
@@ -682,9 +674,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1791.833360999999968, 212.399998000000011, 105.0, 50.0 ],
+					"patching_rect" : [ 1791.833360999999968, 212.399998000000011, 105.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1786.166691273628203, 198.733331441879272, 105.0, 50.0 ],
+					"presentation_rect" : [ 1891.0, 202.733331441879272, 54.0, 40.0 ],
 					"style" : "Descriptive Text",
 					"text" : "HJEM",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
@@ -698,7 +690,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1036.0, 1194.0, 150.0, 34.0 ],
+					"patching_rect" : [ 1036.0, 1194.0, 150.0, 33.0 ],
 					"text" : "The slider minimum adds 50. This compensates."
 				}
 
@@ -717,9 +709,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1083.833342432975769, 1107.752306997776031, 57.0, 52.0 ],
+					"patching_rect" : [ 1083.833342432975769, 1107.752306997776031, 57.0, 42.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1786.166691273628203, 504.166685990116207, 62.999998450279236, 52.0 ],
+					"presentation_rect" : [ 1881.500024527488677, 496.166685692092869, 62.999998450279236, 42.0 ],
 					"textcolor" : [ 1.0, 0.52156862745098, 0.309803921568627, 1.0 ],
 					"tricolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 0.0 ]
 				}
@@ -740,7 +732,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1000.5, 1153.200227439403534, 145.0, 28.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1788.833360165534941, 390.666688057441661, 52.333327174186707, 248.999995269302417 ],
+					"presentation_rect" : [ 1886.833360165534941, 392.666688057441661, 52.333327174186707, 248.999995269302417 ],
 					"size" : 201.0
 				}
 
@@ -991,7 +983,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 831.371841073036194, 1037.0, 160.0, 39.0 ],
+					"patching_rect" : [ 831.371841073036194, 1037.0, 160.0, 38.0 ],
 					"text" : "TRANSPORT & GLOBAL CONTOLS"
 				}
 
@@ -1003,7 +995,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 831.371841073036194, 1078.0, 150.0, 34.0 ],
+					"patching_rect" : [ 831.371841073036194, 1078.0, 150.0, 33.0 ],
 					"text" : "should be synced to sequencer"
 				}
 
@@ -1034,17 +1026,13 @@
 					"patching_rect" : [ 831.371841073036194, 1115.752306997776031, 132.09375, 65.447920441627502 ],
 					"pictures" : [ "./resources/images/iconPlay.png", "./resources/images/iconStop.png" ],
 					"saved_attribute_attributes" : 					{
-						"activebgoncolor" : 						{
-							"expression" : ""
-						}
-,
 						"valueof" : 						{
-							"parameter_enum" : [ "play", "stop" ],
-							"parameter_longname" : "live.tab[4]",
-							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.tab[4]",
+							"parameter_enum" : [ "play", "stop" ],
 							"parameter_type" : 2,
-							"parameter_unitstyle" : 9
+							"parameter_unitstyle" : 9,
+							"parameter_longname" : "live.tab[4]",
+							"parameter_mmax" : 1
 						}
 
 					}
@@ -1062,10 +1050,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1739.166690999999901, 354.666688000000022, 148.0, 116.0 ],
+					"patching_rect" : [ 1739.166690999999901, 354.666688000000022, 80.0, 89.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 1739.166691273628203, 354.666688057441718, 148.0, 116.0 ],
+					"presentation_rect" : [ 1839.000023752628294, 353.000000000000057, 148.0, 34.0 ],
 					"style" : "Descriptive Text",
 					"text" : "HASTIGHET (BPM)",
 					"textcolor" : [ 1.0, 0.52156862745098, 0.309803921568627, 1.0 ]
@@ -1103,7 +1090,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1000.5, 994.0, 150.0, 103.0 ],
+					"patching_rect" : [ 1000.5, 994.0, 150.0, 100.0 ],
 					"text" : "Need to implement BPM control. This will be set and sequence step from counter sent to video sequencer and melody sequencer. Just leaving this here at the moment"
 				}
 
@@ -1117,7 +1104,6 @@
 					"enablevscroll" : 0,
 					"id" : "obj-79",
 					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "FUZZ_UI-Genre_Button.maxpat",
 					"numinlets" : 4,
@@ -1486,7 +1472,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 881.333360999999968, -361.666635274887085, 151.0, 48.0 ],
+					"patching_rect" : [ 881.333360999999968, -361.666635274887085, 151.0, 47.0 ],
 					"text" : "Buttons graphics are not remembered. Set them on load."
 				}
 
@@ -1550,7 +1536,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1754.833360999999968, 91.399998999999994, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1749.166691273628203, 80.733331799507141, 128.0, 128.0 ]
+					"presentation_rect" : [ 1854.0, 84.733331799507141, 128.0, 128.0 ]
 				}
 
 			}
@@ -1587,7 +1573,6 @@
 					"enablevscroll" : 0,
 					"id" : "obj-219",
 					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "FUZZ_UI-Genre_Button.maxpat",
 					"numinlets" : 4,
@@ -1608,7 +1593,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 861.333360910415649, 828.333334445953369, 161.0, 34.0 ],
+					"patching_rect" : [ 861.333360910415649, 828.333334445953369, 161.0, 33.0 ],
 					"text" : "Bang: Switch to melody and FX view."
 				}
 
@@ -1694,7 +1679,6 @@
 					"enablevscroll" : 0,
 					"id" : "obj-189",
 					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "FUZZ_UI-Genre_Button.maxpat",
 					"numinlets" : 4,
@@ -1717,7 +1701,6 @@
 					"enablevscroll" : 0,
 					"id" : "obj-187",
 					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "FUZZ_UI-Genre_Button.maxpat",
 					"numinlets" : 4,
@@ -1740,7 +1723,6 @@
 					"enablevscroll" : 0,
 					"id" : "obj-185",
 					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "FUZZ_UI-Genre_Button.maxpat",
 					"numinlets" : 4,
@@ -1785,9 +1767,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 548.0, 68.000000999999997, 184.0, 138.0 ],
+					"patching_rect" : [ 548.0, 68.000000999999997, 96.0, 106.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 460.0, 52.000000999999997, 361.0, 50.0 ],
+					"presentation_rect" : [ 460.0, 52.000000999999997, 361.0, 40.0 ],
 					"style" : "Title Text",
 					"text" : "VELG EN SJANGER!",
 					"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
@@ -1858,16 +1840,15 @@
 					"enablevscroll" : 0,
 					"id" : "obj-27",
 					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "FUZZ_UI-FX.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
+					"offset" : [ -332.0, 0.0 ],
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 2002.666685907951432, 121.999999833333334, 333.666667119209251, 489.33334928587584 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2002.666685907951432, 121.999999833333334, 333.666667119209251, 488.33334928587584 ],
+					"presentation_rect" : [ 2132.666685907951432, 118.799999952316284, 331.000000373069724, 488.333349285875784 ],
 					"viewvisibility" : 1
 				}
 
@@ -1875,16 +1856,15 @@
 , 			{
 				"box" : 				{
 					"autofit" : 1,
-					"forceaspect" : 1,
 					"id" : "obj-139",
 					"maxclass" : "fpic",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 1282.0, 0.0, 1084.0, 722.666666666666629 ],
+					"patching_rect" : [ 1282.0, 0.0, 1280.0, 720.0 ],
 					"pic" : "fuzz-ui-fx_melody_background.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 1282.0, 0.0, 1084.0, 722.666666666666629 ]
+					"presentation_rect" : [ 1282.0, 0.0, 1280.0, 720.0 ]
 				}
 
 			}
@@ -3114,123 +3094,136 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-27::obj-48" : [ "pictslider", "pictslider", 0 ],
 			"obj-95" : [ "live.tab[4]", "live.tab[4]", 0 ],
+			"obj-27::obj-48" : [ "pictslider", "pictslider", 0 ],
 			"parameterbanks" : 			{
 
 			}
-,
-			"inherited_shortname" : 1
+
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "FUZZ-Tutorial-FX.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
-				"patcherrelativepath" : "./resources/images",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "FUZZ-Tutorial-Melody.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
+				"name" : "fuzz-ui-fx_melody_background.png",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
 				"patcherrelativepath" : "./resources/images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "FUZZ_UI-FX.maxpat",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "FUZZ_UI-Genre_Button.maxpat",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "FUZZ_UI-Melody.maxpat",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fuzz-ui-btn_fx_close_help.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
-				"patcherrelativepath" : "./resources/images",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fuzz-ui-btn_fx_help.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
-				"patcherrelativepath" : "./resources/images",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fuzz-ui-btn_melody_close_help.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
-				"patcherrelativepath" : "./resources/images",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fuzz-ui-btn_melody_help.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
-				"patcherrelativepath" : "./resources/images",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fuzz-ui-btn_menu_genres_circle.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
-				"patcherrelativepath" : "./resources/images",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fuzz-ui-btn_menu_reset.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
-				"patcherrelativepath" : "./resources/images",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fuzz-ui-fx_melody_background.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
-				"patcherrelativepath" : "./resources/images",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fuzz-ui-genres_background.jpg",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
-				"patcherrelativepath" : "./resources/images",
-				"type" : "JPEG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fuzz-ui_bg-fx.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "FUZZ-Tutorial-FX.png",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-btn_fx_close_help.png",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
 				"patcherrelativepath" : "./resources/images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fuzz-ui_bg-xy.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-the_biggest_knob.png",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-genres_background.jpg",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
+				"type" : "JPEG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "FUZZ_UI-Genre_Button.maxpat",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-btn_genre_glow.png",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-btn_menu_genres_circle.png",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-btn_menu_reset.png",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-btn_melody_help.png",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-btn_fx_help.png",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "FUZZ_UI-Melody.maxpat",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "FUZZ-Tutorial-Melody.png",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-btn_melody_close_help.png",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
 				"patcherrelativepath" : "./resources/images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "genre_name_reader.maxpat",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -3240,13 +3233,13 @@
 		"styles" : [ 			{
 				"name" : "BLACK",
 				"default" : 				{
-					"accentcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 0.0 ],
-					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"editing_bgcolor" : [ 0.10399004817009, 0.090992286801338, 0.09461422264576, 1.0 ],
-					"fontname" : [ "Ableton Sans Medium" ],
 					"fontsize" : [ 12.0 ],
 					"locked_bgcolor" : [ 0.105882352941176, 0.090196078431373, 0.094117647058824, 1.0 ],
-					"textcolor" : [ 0.999889016151428, 1.0, 0.999841034412384, 1.0 ]
+					"fontname" : [ "Ableton Sans Medium" ],
+					"editing_bgcolor" : [ 0.10399004817009, 0.090992286801338, 0.09461422264576, 1.0 ],
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor" : [ 0.999889016151428, 1.0, 0.999841034412384, 1.0 ],
+					"accentcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 0.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3255,10 +3248,10 @@
 , 			{
 				"name" : "Descriptive Text",
 				"default" : 				{
-					"fontname" : [ "AlternateGothic-NoOne" ],
 					"fontsize" : [ 36.0 ],
-					"textcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
-					"textjustification" : [ 1 ]
+					"fontname" : [ "AlternateGothic-NoOne" ],
+					"textjustification" : [ 1 ],
+					"textcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ]
 				}
 ,
 				"parentstyle" : "Title Text",
@@ -3267,10 +3260,10 @@
 , 			{
 				"name" : "Title Text",
 				"default" : 				{
-					"fontname" : [ "AlternateGothic-NoOne" ],
 					"fontsize" : [ 72.0 ],
-					"textcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
-					"textjustification" : [ 1 ]
+					"fontname" : [ "AlternateGothic-NoOne" ],
+					"textjustification" : [ 1 ],
+					"textcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
