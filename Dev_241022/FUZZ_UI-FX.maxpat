@@ -263,23 +263,11 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"parameter_enable" : 1,
+					"parameter_enable" : 0,
 					"patching_rect" : [ 876.333360999999968, 516.0, 534.0, 454.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -2.777563534406653, 0.0, 334.666666500000019, 487.961536000000024 ],
 					"rightvalue" : 0,
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_initial" : [ 50, 0 ],
-							"parameter_initial_enable" : 1,
-							"parameter_invisible" : 1,
-							"parameter_longname" : "pictslider",
-							"parameter_shortname" : "pictslider",
-							"parameter_type" : 3
-						}
-
-					}
-,
 					"topvalue" : 200,
 					"varname" : "pictslider"
 				}
@@ -998,7 +986,6 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-48" : [ "pictslider", "pictslider", 0 ],
 			"parameterbanks" : 			{
 
 			}
