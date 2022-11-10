@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 3,
-			"revision" : 1,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 229.0, 79.0, 701.0, 687.0 ],
+		"rect" : [ 229.0, 85.0, 701.0, 687.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -251,13 +251,14 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.105882352941176, 0.6, 0.545098039215686, 1.0 ],
-					"bkgndpict" : "Macintosh HD:/Users/henrikharaldsensveen1992/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images/fuzz-ui_bg-xy.png",
+					"bkgndpict" : "C:/Users/Popit/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images/fuzz-ui_bg-xy.png",
 					"bottomvalue" : 50,
 					"color" : [ 1.0, 0.52156862745098, 0.309803921568627, 1.0 ],
 					"elementcolor" : [ 0.909803921568627, 0.282352941176471, 0.333333333333333, 1.0 ],
+					"horizontaltracking" : 0.5,
 					"id" : "obj-48",
 					"inactiveimage" : 0,
-					"knobpict" : "Macintosh HD:/Users/henrikharaldsensveen1992/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images/fuzz-ui-the_biggest_knob.png",
+					"knobpict" : "C:/Users/Popit/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images/fuzz-ui-the_biggest_knob.png",
 					"leftvalue" : 100,
 					"maxclass" : "pictslider",
 					"numinlets" : 2,
@@ -269,7 +270,8 @@
 					"presentation_rect" : [ -2.777563534406653, 0.0, 334.666666500000019, 487.961536000000024 ],
 					"rightvalue" : 0,
 					"topvalue" : 200,
-					"varname" : "pictslider"
+					"varname" : "pictslider",
+					"verticaltracking" : 0.5
 				}
 
 			}
@@ -291,7 +293,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 72.0, 601.0, 150.0, 74.0 ],
+					"patching_rect" : [ 72.0, 601.0, 150.0, 75.0 ],
 					"text" : "Due to the physical orientation of the screen, max value needs to be to the left, and min value needs to be to the right."
 				}
 
@@ -985,14 +987,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"parameterbanks" : 			{
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
 		"dependency_cache" : [ 			{
 				"name" : "FUZZ-Tutorial-FX.png",
 				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
