@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 3,
+			"minor" : 1,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 42.0, 85.0, 1780.0, 1273.0 ],
+		"rect" : [ 34.0, 79.0, 1212.0, 687.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,8 +37,18 @@
 		"tags" : "",
 		"style" : "FUZZ Producer Station",
 		"subpatcher_template" : "",
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 275.0, 493.0, 85.0, 22.0 ],
+					"text" : "s genre_name"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-20",
 					"maxclass" : "button",
@@ -176,7 +186,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ -16.0, 25.5, 64.0, 48.0 ],
+					"patching_rect" : [ -16.0, 25.5, 64.0, 47.0 ],
 					"text" : "Text Style to control size."
 				}
 
@@ -250,7 +260,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 437.0, 34.0, 150.0, 48.0 ],
+					"patching_rect" : [ 437.0, 34.0, 150.0, 47.0 ],
 					"text" : "Send 1 to enable pulsing, 0 to disable. Off by default."
 				}
 
@@ -780,6 +790,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"order" : 0,
+					"source" : [ "obj-5", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
 					"order" : 1,
 					"source" : [ "obj-5", 0 ]
@@ -797,6 +815,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
+					"order" : 1,
 					"source" : [ "obj-5", 1 ]
 				}
 
@@ -875,7 +894,14 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
+		"dependency_cache" : [ 			{
+				"name" : "fuzz-ui-btn_genre_glow.png",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+ ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "FUZZ Producer Station",
@@ -885,11 +911,11 @@
 , 			{
 				"name" : "Large Text",
 				"default" : 				{
-					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
-					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
-					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
 					"fontname" : [ "AlternateGothic-NoOne" ],
-					"fontsize" : [ 64.0 ]
+					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
+					"fontsize" : [ 64.0 ],
+					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
+					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ]
 				}
 ,
 				"parentstyle" : "Medium Text",
@@ -898,12 +924,12 @@
 , 			{
 				"name" : "Medium Text",
 				"default" : 				{
-					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
-					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
-					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
-					"fontface" : [ 0 ],
 					"fontname" : [ "AlternateGothic-NoOne" ],
-					"fontsize" : [ 36.0 ]
+					"fontface" : [ 0 ],
+					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
+					"fontsize" : [ 36.0 ],
+					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
+					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ]
 				}
 ,
 				"parentstyle" : "Small Text",
@@ -912,11 +938,11 @@
 , 			{
 				"name" : "Small Text",
 				"default" : 				{
-					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
-					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
-					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
 					"fontname" : [ "AlternateGothic-NoOne" ],
-					"fontsize" : [ 30.0 ]
+					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
+					"fontsize" : [ 30.0 ],
+					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
+					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
