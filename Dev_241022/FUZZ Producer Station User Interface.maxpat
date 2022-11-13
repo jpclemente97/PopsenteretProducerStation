@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 580.0, 1160.0, 828.0 ],
+		"rect" : [ 215.0, 79.0, 808.0, 828.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,104 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-80",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1327.000039219856262, 961.586812605697673, 150.0, 60.0 ],
+					"text" : "this should grey out the melody sequencer and make it ignore clicks maybe"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-71",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1646.0, 975.58681260569756, 77.0, 33.0 ],
+					"text" : "random melody"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-69",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1583.0, 961.586812605697673, 61.0, 61.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-67",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1583.0, 1045.0, 87.0, 22.0 ],
+					"text" : "s genre_select"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1473.0, 1045.0, 92.0, 22.0 ],
+					"text" : "s freeplay_keys"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1475.5, 945.0, 81.0, 20.0 ],
+					"text" : "FREE PLAY"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"activebgoncolor" : [ 0.979696869850159, 0.435989111661911, 0.270083546638489, 1.0 ],
+					"id" : "obj-66",
+					"maxclass" : "live.toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 1473.0, 961.586812605697673, 68.0, 62.733327746391296 ],
+					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_longname" : "live.toggle[1]",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.toggle[5]",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"varname" : "live.toggle[1]"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-63",
 					"maxclass" : "newobj",
@@ -238,7 +336,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 1839.000023999999939, 263.999984860420227, 148.000023999999939, 57.333334445953369 ],
 					"style" : "Descriptive Text",
-					"text" : "HOUSE",
+					"text" : "POP",
 					"textoncolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
 				}
 
@@ -3276,6 +3374,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-66", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-67", 0 ],
+					"source" : [ "obj-69", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-73", 0 ],
 					"source" : [ "obj-72", 0 ]
 				}
@@ -3485,6 +3597,7 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-66" : [ "live.toggle[1]", "live.toggle[5]", 0 ],
 			"obj-95" : [ "live.tab[4]", "live.tab[4]", 0 ],
 			"parameterbanks" : 			{
 
