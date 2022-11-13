@@ -39,6 +39,51 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 210.666669249534607, 826.0, 68.0, 20.0 ],
+					"text" : "Video View"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 95.166669249534607, 826.0, 95.0, 20.0 ],
+					"text" : "Melody/FX View"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 13.0, 826.0, 71.0, 20.0 ],
+					"text" : "Genre View"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 210.666669249534607, 796.000023722648621, 82.0, 22.0 ],
+					"text" : "offset -2560 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-10",
 					"maxclass" : "button",
 					"numinlets" : 1,
@@ -56,7 +101,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 153.0, 874.0, 70.0, 22.0 ],
+					"patching_rect" : [ 198.0, 949.0, 70.0, 22.0 ],
 					"text" : "fullscreen 1"
 				}
 
@@ -68,7 +113,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 125.666669249534607, 842.059999999999945, 58.0, 22.0 ],
+					"patching_rect" : [ 170.666669249534607, 917.059999999999945, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -80,7 +125,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 106.0, 912.0, 67.0, 22.0 ],
+					"patching_rect" : [ 151.0, 987.0, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -93,7 +138,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 64.818181693553925, 874.0, 70.0, 22.0 ],
+					"patching_rect" : [ 109.818181693553925, 949.0, 70.0, 22.0 ],
 					"text" : "fullscreen 0"
 				}
 
@@ -147,7 +192,7 @@
 					"name" : "FUZZ Producer Station User Interface.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"offset" : [ -1280.0, 0.0 ],
+					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang", "bang" ],
 					"patching_rect" : [ -1.176470637321472, -6.470588505268097, 1280.0, 720.0 ],
 					"presentation" : 1,
@@ -195,6 +240,13 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -222,8 +274,12 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-1::obj-66" : [ "live.toggle[1]", "live.toggle[5]", 0 ],
 			"obj-1::obj-95" : [ "live.tab[4]", "live.tab[4]", 0 ],
-			"obj-1::obj-27::obj-48" : [ "pictslider", "pictslider", 0 ],
+			"obj-1::obj-70::obj-21" : [ "live.gain~", "Volum", 0 ],
+			"obj-1::obj-70::obj-116::obj-51" : [ "live.dial", "live.dial", 0 ],
+			"obj-1::obj-68::obj-106" : [ "live.tab", "live.tab", 0 ],
+			"obj-1::obj-70::obj-77" : [ "live.toggle[2]", "live.toggle", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -363,6 +419,69 @@
 				"type" : "JSON",
 				"implicit" : 1
 			}
+, 			{
+				"name" : "seq_video.maxpat",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "init_seq_holes.js",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "square_mean.maxpat",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "FUZZ_sound_generator.maxpat",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "drum_pad_fx_reverb.maxpat",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fade_to_grey_1.maxpat",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "FX_autoDefault.maxpat",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "freePlay_keys_voice.maxpat",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "arduinoSend.maxpat",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
  ],
 		"autosave" : 0,
 		"styles" : [ 			{
@@ -373,10 +492,10 @@
 , 			{
 				"name" : "Title Text",
 				"default" : 				{
+					"textcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
 					"fontsize" : [ 72.0 ],
-					"fontname" : [ "AlternateGothic-NoOne" ],
 					"textjustification" : [ 1 ],
-					"textcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ]
+					"fontname" : [ "AlternateGothic-NoOne" ]
 				}
 ,
 				"parentstyle" : "",
