@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -40.0, 86.0, 808.0, 828.0 ],
+		"rect" : [ 215.0, 79.0, 808.0, 828.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,39 +39,6 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-77",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 338.16667628288269, 1274.0, 77.0, 22.0 ],
-					"text" : "arduinoSend"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-70",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 338.16667628288269, 1195.0, 137.0, 22.0 ],
-					"text" : "FUZZ_sound_generator"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-68",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 338.16667628288269, 1235.0, 63.0, 22.0 ],
-					"text" : "seq_video"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-80",
 					"linecount" : 4,
@@ -369,7 +336,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 1839.000023999999939, 263.999984860420227, 148.000023999999939, 57.333334445953369 ],
 					"style" : "Descriptive Text",
-					"text" : "TONAL",
+					"text" : "POP",
 					"textoncolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ]
 				}
 
@@ -3631,10 +3598,6 @@
  ],
 		"parameters" : 		{
 			"obj-66" : [ "live.toggle[1]", "live.toggle[5]", 0 ],
-			"obj-68::obj-106" : [ "live.tab", "live.tab", 0 ],
-			"obj-70::obj-116::obj-51" : [ "live.dial", "live.dial", 0 ],
-			"obj-70::obj-21" : [ "live.gain~", "Volum", 0 ],
-			"obj-70::obj-77" : [ "live.toggle[2]", "live.toggle", 0 ],
 			"obj-95" : [ "live.tab[4]", "live.tab[4]", 0 ],
 			"parameterbanks" : 			{
 
@@ -3673,48 +3636,6 @@
 			}
 , 			{
 				"name" : "FUZZ_UI-Melody.maxpat",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "FUZZ_sound_generator.maxpat",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "FX_autoDefault.maxpat",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "arduinoSend.maxpat",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "drum_pad_fx_reverb.maxpat",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fade_to_grey_1.maxpat",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "freePlay_keys_voice.maxpat",
 				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
@@ -3799,27 +3720,6 @@
 			}
 , 			{
 				"name" : "genre_name_reader.maxpat",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "init_seq_holes.js",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "seq_video.maxpat",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "square_mean.maxpat",
 				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
