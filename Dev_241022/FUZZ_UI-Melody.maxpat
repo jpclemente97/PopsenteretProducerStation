@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
+			"minor" : 1,
 			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1212.0, 687.0 ],
+		"rect" : [ 34.0, 79.0, 701.0, 687.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,7 +37,6 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-29",
@@ -73,7 +72,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 1,
 							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -107,7 +106,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-11",
@@ -855,7 +853,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 647.5, 714.416670449078083, 52.0, 35.0 ],
-					"text" : "genre_9"
+					"text" : "genre_0"
 				}
 
 			}
@@ -876,8 +874,8 @@
 					"id" : "obj-108",
 					"maxclass" : "preset",
 					"numinlets" : 1,
-					"numoutlets" : 5,
-					"outlettype" : [ "preset", "int", "preset", "int", "" ],
+					"numoutlets" : 4,
+					"outlettype" : [ "preset", "int", "preset", "int" ],
 					"patching_rect" : [ 707.5, 783.616672344505787, 100.0, 40.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
@@ -976,12 +974,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-80",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 373.5, 677.416679389774799, 50.0, 22.0 ],
-					"text" : "120."
+					"patching_rect" : [ 373.5, 677.416679389774799, 50.0, 35.0 ],
+					"text" : "176.470588"
 				}
 
 			}
@@ -1016,7 +1015,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 219.0, 846.416670449078083, 50.0, 22.0 ],
-					"text" : "7"
+					"text" : "5"
 				}
 
 			}
@@ -1076,7 +1075,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offcolor" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
-					"oncolor" : [ 1.0, 0.992156862745098, 0.509803921568627, 1.0 ],
+					"oncolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 548.5, 783.616672344505787, 29.0, 29.0 ],
@@ -1093,7 +1092,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offcolor" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
-					"oncolor" : [ 1.0, 0.992156862745098, 0.509803921568627, 1.0 ],
+					"oncolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 589.5, 783.616672344505787, 29.0, 29.0 ],
@@ -1110,7 +1109,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offcolor" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
-					"oncolor" : [ 1.0, 0.992156862745098, 0.509803921568627, 1.0 ],
+					"oncolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 467.5, 783.616672344505787, 29.0, 29.0 ],
@@ -1127,7 +1126,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offcolor" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
-					"oncolor" : [ 1.0, 0.992156862745098, 0.509803921568627, 1.0 ],
+					"oncolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 508.5, 783.616672344505787, 29.0, 29.0 ],
@@ -1144,7 +1143,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offcolor" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
-					"oncolor" : [ 1.0, 0.992156862745098, 0.509803921568627, 1.0 ],
+					"oncolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 383.5, 783.616672344505787, 29.0, 29.0 ],
@@ -1161,7 +1160,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offcolor" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
-					"oncolor" : [ 1.0, 0.992156862745098, 0.509803921568627, 1.0 ],
+					"oncolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 424.5, 783.616672344505787, 29.0, 29.0 ],
@@ -1178,7 +1177,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offcolor" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
-					"oncolor" : [ 1.0, 0.992156862745098, 0.509803921568627, 1.0 ],
+					"oncolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 302.5, 783.616672344505787, 29.0, 29.0 ],
@@ -1195,7 +1194,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offcolor" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
-					"oncolor" : [ 1.0, 0.992156862745098, 0.509803921568627, 1.0 ],
+					"oncolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 343.5, 783.616672344505787, 29.0, 29.0 ],
@@ -1715,14 +1714,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "FUZZ-Tutorial-Melody.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
 				"patcherrelativepath" : "./resources/images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fuzz-ui-btn_melody_close_help.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
 				"patcherrelativepath" : "./resources/images",
 				"type" : "PNG",
 				"implicit" : 1
@@ -1732,13 +1731,13 @@
 		"styles" : [ 			{
 				"name" : "BLACK",
 				"default" : 				{
-					"accentcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 0.0 ],
-					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"editing_bgcolor" : [ 0.10399004817009, 0.090992286801338, 0.09461422264576, 1.0 ],
-					"fontname" : [ "Ableton Sans Medium" ],
+					"textcolor" : [ 0.999889016151428, 1.0, 0.999841034412384, 1.0 ],
 					"fontsize" : [ 12.0 ],
+					"accentcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 0.0 ],
+					"editing_bgcolor" : [ 0.10399004817009, 0.090992286801338, 0.09461422264576, 1.0 ],
 					"locked_bgcolor" : [ 0.105882352941176, 0.090196078431373, 0.094117647058824, 1.0 ],
-					"textcolor" : [ 0.999889016151428, 1.0, 0.999841034412384, 1.0 ]
+					"fontname" : [ "Ableton Sans Medium" ],
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1747,9 +1746,9 @@
 , 			{
 				"name" : "Descriptive Text",
 				"default" : 				{
-					"fontname" : [ "AlternateGothic-NoOne" ],
-					"fontsize" : [ 36.0 ],
 					"textcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
+					"fontsize" : [ 36.0 ],
+					"fontname" : [ "AlternateGothic-NoOne" ],
 					"textjustification" : [ 1 ]
 				}
 ,
@@ -1759,9 +1758,9 @@
 , 			{
 				"name" : "Title Text",
 				"default" : 				{
-					"fontname" : [ "AlternateGothic-NoOne" ],
-					"fontsize" : [ 72.0 ],
 					"textcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
+					"fontsize" : [ 72.0 ],
+					"fontname" : [ "AlternateGothic-NoOne" ],
 					"textjustification" : [ 1 ]
 				}
 ,
