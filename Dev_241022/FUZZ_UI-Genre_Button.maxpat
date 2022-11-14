@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1212.0, 687.0 ],
+		"rect" : [ 34.0, 79.0, 701.0, 687.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -435,9 +435,10 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 0.522, 0.31, 1.0 ],
+					"bgcolor" : [ 0.925, 0.114, 0.141, 1.0 ],
+					"bgoncolor" : [ 0.569, 0.063, 0.078, 1.0 ],
 					"blinktime" : 20,
-					"fontsize" : 20.0,
+					"fontsize" : 14.0,
 					"id" : "obj-5",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -449,8 +450,8 @@
 					"presentation_rect" : [ 15.5, 15.5, 94.0, 94.0 ],
 					"rounded" : 120.0,
 					"style" : "Small Text",
-					"text" : "DRUM 'N BASS",
-					"texton" : "POP",
+					"text" : "",
+					"texton" : "",
 					"truncate" : 0,
 					"usebgoncolor" : 1
 				}
@@ -474,8 +475,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 92.0, 168.0, 87.0, 20.0 ],
-					"text" : "Inactive Genre"
+					"patching_rect" : [ 92.0, 168.0, 119.0, 20.0 ],
+					"text" : "Inactive Genre Color"
 				}
 
 			}
@@ -485,8 +486,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 271.0, 166.0, 78.0, 20.0 ],
-					"text" : "Active Genre"
+					"patching_rect" : [ 271.0, 166.0, 110.0, 20.0 ],
+					"text" : "Active Genre Color"
 				}
 
 			}
@@ -695,7 +696,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"midpoints" : [ -129.5, 189.0, -129.0, 189.0, -129.0, 306.0, 73.5, 306.0 ],
+					"midpoints" : [ -129.5, 313.5, 73.5, 313.5 ],
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -904,6 +905,33 @@
  ],
 		"autosave" : 0,
 		"styles" : [ 			{
+				"name" : "BLACK",
+				"default" : 				{
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"accentcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 0.0 ],
+					"textcolor" : [ 0.999889016151428, 1.0, 0.999841034412384, 1.0 ],
+					"fontsize" : [ 12.0 ],
+					"locked_bgcolor" : [ 0.105882352941176, 0.090196078431373, 0.094117647058824, 1.0 ],
+					"editing_bgcolor" : [ 0.10399004817009, 0.090992286801338, 0.09461422264576, 1.0 ],
+					"fontname" : [ "Ableton Sans Medium" ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "Descriptive Text",
+				"default" : 				{
+					"textcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
+					"textjustification" : [ 1 ],
+					"fontsize" : [ 36.0 ],
+					"fontname" : [ "AlternateGothic-NoOne" ]
+				}
+,
+				"parentstyle" : "Title Text",
+				"multi" : 0
+			}
+, 			{
 				"name" : "FUZZ Producer Station",
 				"parentstyle" : "",
 				"multi" : 0
@@ -911,11 +939,11 @@
 , 			{
 				"name" : "Large Text",
 				"default" : 				{
-					"fontname" : [ "AlternateGothic-NoOne" ],
-					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
-					"fontsize" : [ 64.0 ],
 					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
-					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ]
+					"fontsize" : [ 64.0 ],
+					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
+					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
+					"fontname" : [ "AlternateGothic-NoOne" ]
 				}
 ,
 				"parentstyle" : "Medium Text",
@@ -924,12 +952,12 @@
 , 			{
 				"name" : "Medium Text",
 				"default" : 				{
-					"fontname" : [ "AlternateGothic-NoOne" ],
 					"fontface" : [ 0 ],
-					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
-					"fontsize" : [ 36.0 ],
 					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
-					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ]
+					"fontsize" : [ 36.0 ],
+					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
+					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
+					"fontname" : [ "AlternateGothic-NoOne" ]
 				}
 ,
 				"parentstyle" : "Small Text",
@@ -938,11 +966,23 @@
 , 			{
 				"name" : "Small Text",
 				"default" : 				{
-					"fontname" : [ "AlternateGothic-NoOne" ],
-					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
-					"fontsize" : [ 30.0 ],
 					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
-					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ]
+					"fontsize" : [ 30.0 ],
+					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
+					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
+					"fontname" : [ "AlternateGothic-NoOne" ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "Title Text",
+				"default" : 				{
+					"textcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
+					"textjustification" : [ 1 ],
+					"fontsize" : [ 72.0 ],
+					"fontname" : [ "AlternateGothic-NoOne" ]
 				}
 ,
 				"parentstyle" : "",

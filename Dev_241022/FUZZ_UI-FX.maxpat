@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 3,
+			"minor" : 1,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 229.0, 85.0, 701.0, 687.0 ],
+		"rect" : [ 229.0, 79.0, 701.0, 687.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,7 +37,6 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-60",
@@ -251,14 +250,14 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.105882352941176, 0.6, 0.545098039215686, 1.0 ],
-					"bkgndpict" : "C:/Users/Popit/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images/fuzz-ui_bg-xy.png",
+					"bkgndpict" : "Macintosh HD:/Users/olivergetz/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images/fuzz-ui_bg-xy.png",
 					"bottomvalue" : 50,
 					"color" : [ 1.0, 0.52156862745098, 0.309803921568627, 1.0 ],
 					"elementcolor" : [ 0.909803921568627, 0.282352941176471, 0.333333333333333, 1.0 ],
 					"horizontaltracking" : 0.5,
 					"id" : "obj-48",
 					"inactiveimage" : 0,
-					"knobpict" : "C:/Users/Popit/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images/fuzz-ui-the_biggest_knob.png",
+					"knobpict" : "",
 					"leftvalue" : 100,
 					"maxclass" : "pictslider",
 					"numinlets" : 2,
@@ -293,7 +292,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 72.0, 601.0, 150.0, 75.0 ],
+					"patching_rect" : [ 72.0, 601.0, 150.0, 74.0 ],
 					"text" : "Due to the physical orientation of the screen, max value needs to be to the left, and min value needs to be to the right."
 				}
 
@@ -988,36 +987,29 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "fuzz-ui_bg-fx.png",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "FUZZ-Tutorial-FX.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
 				"patcherrelativepath" : "./resources/images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fuzz-ui-btn_fx_close_help.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
-				"patcherrelativepath" : "./resources/images",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fuzz-ui-the_biggest_knob.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
-				"patcherrelativepath" : "./resources/images",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fuzz-ui_bg-fx.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
 				"patcherrelativepath" : "./resources/images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fuzz-ui_bg-xy.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
+				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
 				"patcherrelativepath" : "./resources/images",
 				"type" : "PNG",
 				"implicit" : 1
@@ -1027,13 +1019,13 @@
 		"styles" : [ 			{
 				"name" : "BLACK",
 				"default" : 				{
-					"accentcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 0.0 ],
 					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"editing_bgcolor" : [ 0.10399004817009, 0.090992286801338, 0.09461422264576, 1.0 ],
-					"fontname" : [ "Ableton Sans Medium" ],
+					"accentcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 0.0 ],
+					"textcolor" : [ 0.999889016151428, 1.0, 0.999841034412384, 1.0 ],
 					"fontsize" : [ 12.0 ],
 					"locked_bgcolor" : [ 0.105882352941176, 0.090196078431373, 0.094117647058824, 1.0 ],
-					"textcolor" : [ 0.999889016151428, 1.0, 0.999841034412384, 1.0 ]
+					"editing_bgcolor" : [ 0.10399004817009, 0.090992286801338, 0.09461422264576, 1.0 ],
+					"fontname" : [ "Ableton Sans Medium" ]
 				}
 ,
 				"parentstyle" : "",
@@ -1042,10 +1034,10 @@
 , 			{
 				"name" : "Descriptive Text",
 				"default" : 				{
-					"fontname" : [ "AlternateGothic-NoOne" ],
-					"fontsize" : [ 36.0 ],
 					"textcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
-					"textjustification" : [ 1 ]
+					"textjustification" : [ 1 ],
+					"fontsize" : [ 36.0 ],
+					"fontname" : [ "AlternateGothic-NoOne" ]
 				}
 ,
 				"parentstyle" : "Title Text",
@@ -1054,10 +1046,10 @@
 , 			{
 				"name" : "Title Text",
 				"default" : 				{
-					"fontname" : [ "AlternateGothic-NoOne" ],
-					"fontsize" : [ 72.0 ],
 					"textcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
-					"textjustification" : [ 1 ]
+					"textjustification" : [ 1 ],
+					"fontsize" : [ 72.0 ],
+					"fontname" : [ "AlternateGothic-NoOne" ]
 				}
 ,
 				"parentstyle" : "",
