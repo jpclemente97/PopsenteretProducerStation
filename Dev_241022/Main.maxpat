@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 1,
+			"minor" : 3,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-18",
@@ -188,11 +189,12 @@
 					"enablevscroll" : 0,
 					"id" : "obj-1",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "FUZZ Producer Station User Interface.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"offset" : [ 0.0, 0.0 ],
+					"offset" : [ -1280.0, 0.0 ],
 					"outlettype" : [ "bang", "bang" ],
 					"patching_rect" : [ -1.176470637321472, -6.470588505268097, 1280.0, 720.0 ],
 					"presentation" : 1,
@@ -275,209 +277,210 @@
  ],
 		"parameters" : 		{
 			"obj-1::obj-66" : [ "live.toggle[1]", "live.toggle[5]", 0 ],
-			"obj-1::obj-95" : [ "live.tab[4]", "live.tab[4]", 0 ],
-			"obj-1::obj-70::obj-21" : [ "live.gain~", "Volum", 0 ],
-			"obj-1::obj-70::obj-116::obj-51" : [ "live.dial", "live.dial", 0 ],
 			"obj-1::obj-68::obj-106" : [ "live.tab", "live.tab", 0 ],
+			"obj-1::obj-70::obj-116::obj-51" : [ "live.dial", "live.dial", 0 ],
+			"obj-1::obj-70::obj-21" : [ "live.gain~", "Volum", 0 ],
 			"obj-1::obj-70::obj-77" : [ "live.toggle[2]", "live.toggle", 0 ],
+			"obj-1::obj-95" : [ "live.tab[4]", "live.tab[4]", 0 ],
 			"parameterbanks" : 			{
 
 			}
-
+,
+			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "FUZZ Producer Station User Interface.maxpat",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "fuzz-ui-fx_melody_background.png",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
+				"name" : "FUZZ-Tutorial-FX.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "FUZZ-Tutorial-Melody.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
 				"patcherrelativepath" : "./resources/images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "FUZZ_UI-FX.maxpat",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fuzz-ui_bg-fx.png",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
-				"patcherrelativepath" : "./resources/images",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "FUZZ-Tutorial-FX.png",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
-				"patcherrelativepath" : "./resources/images",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fuzz-ui-btn_fx_close_help.png",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
-				"patcherrelativepath" : "./resources/images",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fuzz-ui_bg-xy.png",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
-				"patcherrelativepath" : "./resources/images",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fuzz-ui-the_biggest_knob.png",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
-				"patcherrelativepath" : "./resources/images",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fuzz-ui-genres_background.jpg",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
-				"patcherrelativepath" : "./resources/images",
-				"type" : "JPEG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "FUZZ_UI-Genre_Button.maxpat",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fuzz-ui-btn_genre_glow.png",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
-				"patcherrelativepath" : "./resources/images",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fuzz-ui-btn_menu_genres_circle.png",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
-				"patcherrelativepath" : "./resources/images",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fuzz-ui-btn_menu_reset.png",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
-				"patcherrelativepath" : "./resources/images",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fuzz-ui-btn_melody_help.png",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
-				"patcherrelativepath" : "./resources/images",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fuzz-ui-btn_fx_help.png",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
-				"patcherrelativepath" : "./resources/images",
-				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "FUZZ_UI-Melody.maxpat",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "FUZZ-Tutorial-Melody.png",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
-				"patcherrelativepath" : "./resources/images",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fuzz-ui-btn_melody_close_help.png",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
-				"patcherrelativepath" : "./resources/images",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "genre_name_reader.maxpat",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "seq_video.maxpat",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "init_seq_holes.js",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "square_mean.maxpat",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "FUZZ_sound_generator.maxpat",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "drum_pad_fx_reverb.maxpat",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fade_to_grey_1.maxpat",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "FX_autoDefault.maxpat",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "freePlay_keys_voice.maxpat",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "arduinoSend.maxpat",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "drum_pad_fx_reverb.maxpat",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fade_to_grey_1.maxpat",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "freePlay_keys_voice.maxpat",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-btn_fx_close_help.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-btn_fx_help.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-btn_melody_close_help.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-btn_melody_help.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-btn_menu_genres_circle.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-btn_menu_reset.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-fx_melody_background.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-genres_background.jpg",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
+				"type" : "JPEG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-the_biggest_knob.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui_bg-fx.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui_bg-xy.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "genre_name_reader.maxpat",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "init_seq_holes.js",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "seq_video.maxpat",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "square_mean.maxpat",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "videoTest.maxpat",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -492,10 +495,10 @@
 , 			{
 				"name" : "Title Text",
 				"default" : 				{
-					"textcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
+					"fontname" : [ "AlternateGothic-NoOne" ],
 					"fontsize" : [ 72.0 ],
-					"textjustification" : [ 1 ],
-					"fontname" : [ "AlternateGothic-NoOne" ]
+					"textcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
+					"textjustification" : [ 1 ]
 				}
 ,
 				"parentstyle" : "",
