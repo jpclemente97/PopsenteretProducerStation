@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 3,
-			"revision" : 1,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 42.0, 79.0, 1257.0, 937.0 ],
+		"rect" : [ 42.0, 85.0, 1257.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,24 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 862.527558237314224, 1600.038462340831757, 47.0, 22.0 ],
+					"text" : "*~ 0.66"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-210",
 					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2052.083255052566528, 818.5, 150.0, 60.0 ],
+					"patching_rect" : [ 2052.083255052566528, 818.5, 150.0, 62.0 ],
 					"text" : "melody is activated by pressing a key on the keyboard. Will not play unless key is held down"
 				}
 
@@ -68,7 +80,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1486.916663885116577, 1423.958279013633728, 77.083336114883423, 60.0 ],
+					"patching_rect" : [ 1486.916663885116577, 1423.958279013633728, 77.083336114883423, 62.0 ],
 					"text" : "stop notes when switchong modes"
 				}
 
@@ -80,8 +92,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1566.0, 1267.0, 69.791669726371765, 33.0 ],
-					"presentation_linecount" : 2,
+					"patching_rect" : [ 1566.0, 1267.0, 69.791669726371765, 34.0 ],
 					"text" : "freeplay toggle 0/1"
 				}
 
@@ -93,7 +104,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1766.152562409639359, 1253.0, 66.666669845581055, 47.0 ],
+					"patching_rect" : [ 1766.152562409639359, 1253.0, 66.666669845581055, 48.0 ],
 					"text" : "velocity from keyboard"
 				}
 
@@ -105,7 +116,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1687.837625116109848, 1253.0, 69.791669726371765, 47.0 ],
+					"patching_rect" : [ 1687.837625116109848, 1253.0, 69.791669726371765, 48.0 ],
 					"text" : "velocity from sequencer"
 				}
 
@@ -117,7 +128,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1866.666595458984375, 1365.583333253860474, 150.0, 47.0 ],
+					"patching_rect" : [ 1866.666595458984375, 1365.583333253860474, 150.0, 48.0 ],
 					"text" : "monophonic for seq-mode, poly for freeplay"
 				}
 
@@ -295,8 +306,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1645.820517778396606, 1539.0, 47.0, 22.0 ],
-					"text" : "*~ 0.66"
+					"patching_rect" : [ 1645.820517778396606, 1539.0, 30.0, 22.0 ],
+					"text" : "*~ 1"
 				}
 
 			}
@@ -575,7 +586,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1037,7 +1048,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1271,7 +1282,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 214.444229453802052, 1308.948742091655731, 150.0, 33.0 ],
+					"patching_rect" : [ 214.444229453802052, 1308.948742091655731, 150.0, 34.0 ],
 					"text" : "First FX is pitching all the sounds"
 				}
 
@@ -1371,7 +1382,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1532,7 +1543,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1432.570520401000977, 453.909508347511292, 70.0, 87.0 ],
+					"patching_rect" : [ 1432.570520401000977, 453.909508347511292, 70.0, 89.0 ],
 					"text" : "for adjusting thresholds for the guitar parts. "
 				}
 
@@ -1574,7 +1585,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1756,7 +1767,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2548,7 +2559,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2892,7 +2903,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1939.194229990243912, 413.820731997489929, 150.0, 33.0 ],
+					"patching_rect" : [ 1939.194229990243912, 413.820731997489929, 150.0, 34.0 ],
 					"text" : "Send MIDI note from controller to change key."
 				}
 
@@ -2950,7 +2961,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1991.194229990243912, 514.967869291465718, 87.0, 47.0 ],
+					"patching_rect" : [ 1991.194229990243912, 514.967869291465718, 87.0, 48.0 ],
 					"text" : "Send 0-24 here for key change"
 				}
 
@@ -3146,7 +3157,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2709.25, 392.0, 214.0, 33.0 ],
+					"patching_rect" : [ 2709.25, 392.0, 214.0, 34.0 ],
 					"text" : "Send note as frequency to Groove~ in \"FUZZ_Prod_1.maxpat\""
 				}
 
@@ -3169,7 +3180,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1804.194229990243912, 822.5, 91.0, 47.0 ],
+					"patching_rect" : [ 1804.194229990243912, 822.5, 91.0, 48.0 ],
 					"text" : "Trigger melody sample envelope"
 				}
 
@@ -3332,7 +3343,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 999.0, 164.325708150863647, 151.0, 114.0 ],
+					"patching_rect" : [ 999.0, 164.325708150863647, 151.0, 117.0 ],
 					"text" : "Hugh: added limiter - just using preset but works pretty well but could be more fine tuned\n\nReplaced ezdac with ADC for 3 inputs: Body, neck, strings"
 				}
 
@@ -3356,7 +3367,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2911.067247599363327, 93.573028802871704, 150.0, 33.0 ],
+					"patching_rect" : [ 2911.067247599363327, 93.573028802871704, 150.0, 34.0 ],
 					"text" : "for testing drum pad functionality"
 				}
 
@@ -3396,7 +3407,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 898.0, 243.439176738262177, 91.0, 47.0 ],
+					"patching_rect" : [ 898.0, 243.439176738262177, 91.0, 48.0 ],
 					"text" : "Takes MIDI from the four drum pads"
 				}
 
@@ -3408,7 +3419,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2634.900126725435257, 624.894619941711426, 103.0, 33.0 ],
+					"patching_rect" : [ 2634.900126725435257, 624.894619941711426, 103.0, 34.0 ],
 					"text" : "0: Play from start of sample."
 				}
 
@@ -3420,7 +3431,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2935.775127559900284, 451.163851201534271, 150.0, 60.0 ],
+					"patching_rect" : [ 2935.775127559900284, 451.163851201534271, 150.0, 62.0 ],
 					"text" : "If the melody sequencer outputs 0, stay silent, otherwise trigger envelope."
 				}
 
@@ -3444,7 +3455,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 778.742110133171082, 665.0, 150.0, 74.0 ],
+					"patching_rect" : [ 778.742110133171082, 665.0, 150.0, 75.0 ],
 					"text" : "Oliver: But the drum pad shouldn't change the sample, only the velocity? Why is it affecting which samples are replaced?"
 				}
 
@@ -3456,7 +3467,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 92.200000584125519, 340.254901766777039, 426.005770593881607, 60.0 ],
+					"patching_rect" : [ 92.200000584125519, 340.254901766777039, 426.005770593881607, 62.0 ],
 					"text" : "SwitchSamples looks for samples in ./resources/samples/%s/ where %s is the name of the folder containing the current genre samples. This is the same as the genre name, which comes from \"FUZZ Producer Station User Interface.maxpat\" through [r current_genre]."
 				}
 
@@ -3484,7 +3495,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4016,7 +4027,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2755.400126725435257, 156.271222949028015, 150.0, 33.0 ],
+					"patching_rect" : [ 2755.400126725435257, 156.271222949028015, 150.0, 34.0 ],
 					"text" : "Oliver: Stuff I thought you might want to keep."
 				}
 
@@ -4028,7 +4039,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 572.194229990243912, 822.0, 150.0, 87.0 ],
+					"patching_rect" : [ 572.194229990243912, 822.0, 150.0, 89.0 ],
 					"text" : "Oliver: Didn't know what the zl.reg is doing. I think the cords should go from replace to the zl.reg? Make any changes you need."
 				}
 
@@ -4141,7 +4152,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4580,7 +4591,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 778.742110133171082, 582.038462340831757, 158.0, 74.0 ],
+					"patching_rect" : [ 778.742110133171082, 582.038462340831757, 158.0, 75.0 ],
 					"text" : "send out an impulse when drum pad hits or guitar gets recorded, for drum pad the velocity will control brightness"
 				}
 
@@ -4688,7 +4699,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 409.089364200830403, 1298.544183790683746, 99.438198208808899, 33.0 ],
+					"patching_rect" : [ 409.089364200830403, 1298.544183790683746, 99.438198208808899, 34.0 ],
 					"text" : "maybe cut lows when vel is low"
 				}
 
@@ -4777,7 +4788,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5010,7 +5021,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5243,7 +5254,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5476,7 +5487,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5804,7 +5815,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -6157,7 +6168,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -6436,7 +6447,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 83.211541771888733, 201.92907577753067, 150.0, 47.0 ],
+					"patching_rect" : [ 83.211541771888733, 201.92907577753067, 150.0, 48.0 ],
 					"text" : "How many genres are we making: as of October 16th, 11 are planned."
 				}
 
@@ -6448,7 +6459,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 159.205771178007126, 777.586968600749969, 150.0, 74.0 ],
+					"patching_rect" : [ 159.205771178007126, 777.586968600749969, 150.0, 75.0 ],
 					"text" : "we don't need this, only track 5 will be recorded. Only for feedback while building to see if samples are loaded"
 				}
 
@@ -6471,7 +6482,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 83.211541771888733, 131.180400490760803, 150.0, 33.0 ],
+					"patching_rect" : [ 83.211541771888733, 131.180400490760803, 150.0, 34.0 ],
 					"text" : "track 5 will be recorded from guitar/bass"
 				}
 
@@ -6483,7 +6494,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 83.211541771888733, 88.325708150863647, 151.0, 33.0 ],
+					"patching_rect" : [ 83.211541771888733, 88.325708150863647, 151.0, 34.0 ],
 					"text" : "track 1-4 will be controlled via drum pad midi"
 				}
 
@@ -7548,6 +7559,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-54", 0 ],
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-174", 0 ],
 					"source" : [ "obj-170", 0 ]
 				}
@@ -7650,28 +7668,28 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-54", 0 ],
+					"destination" : [ "obj-17", 0 ],
 					"source" : [ "obj-187", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-54", 0 ],
+					"destination" : [ "obj-17", 0 ],
 					"source" : [ "obj-188", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-54", 0 ],
+					"destination" : [ "obj-17", 0 ],
 					"source" : [ "obj-190", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-54", 0 ],
+					"destination" : [ "obj-17", 0 ],
 					"source" : [ "obj-191", 0 ]
 				}
 
@@ -8107,7 +8125,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-54", 0 ],
+					"destination" : [ "obj-17", 0 ],
 					"source" : [ "obj-319", 0 ]
 				}
 
@@ -8671,6 +8689,52 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-116::obj-51" : [ "live.dial", "live.dial", 0 ],
+			"obj-21" : [ "live.gain~", "Volum", 0 ],
+			"obj-77" : [ "live.toggle[2]", "live.toggle", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "FX_autoDefault.maxpat",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "drum_pad_fx_reverb.maxpat",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fade_to_grey_1.maxpat",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "freePlay_keys_voice.maxpat",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "BLACK",
 				"default" : 				{

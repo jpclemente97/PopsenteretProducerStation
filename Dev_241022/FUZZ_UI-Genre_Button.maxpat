@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 1,
+			"minor" : 3,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 701.0, 687.0 ],
+		"rect" : [ 42.0, 85.0, 701.0, 687.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,7 +37,140 @@
 		"tags" : "",
 		"style" : "FUZZ Producer Station",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-135",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 241.166639000000032, 658.31396484375, 81.0, 22.0 ],
+					"text" : "r global_reset"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-74",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 143.5, 741.31396484375, 156.0, 22.0 ],
+					"text" : "fuzz-ui-btn_genre_glow.png"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-72",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ -13.5, 815.31396484375, 57.0, 22.0 ],
+					"text" : "tosymbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-73",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ -13.5, 851.31396484375, 71.0, 22.0 ],
+					"text" : "prepend pic"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-62",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 427.166639000000032, 660.31396484375, 91.0, 20.0 ],
+					"text" : "Reset Graphics"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-58",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 399.166639000000032, 658.31396484375, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ -13.5, 776.31396484375, 176.0, 22.0 ],
+					"text" : "sprintf %sresources/images/%s"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-91",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "bang" ],
+					"patching_rect" : [ 331.5, 685.31396484375, 49.0, 22.0 ],
+					"text" : "t b b"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-90",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 331.5, 658.31396484375, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 331.5, 714.31396484375, 40.0, 22.0 ],
+					"text" : "path"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 331.5, 741.31396484375, 67.0, 22.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+					"text" : "thispatcher"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "newobj",
@@ -186,7 +319,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ -16.0, 25.5, 64.0, 47.0 ],
+					"patching_rect" : [ -16.0, 25.5, 64.0, 48.0 ],
 					"text" : "Text Style to control size."
 				}
 
@@ -260,7 +393,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 437.0, 34.0, 150.0, 47.0 ],
+					"patching_rect" : [ 437.0, 34.0, 150.0, 48.0 ],
 					"text" : "Send 1 to enable pulsing, 0 to disable. Off by default."
 				}
 
@@ -438,7 +571,8 @@
 					"bgcolor" : [ 0.925, 0.114, 0.141, 1.0 ],
 					"bgoncolor" : [ 0.569, 0.063, 0.078, 1.0 ],
 					"blinktime" : 20,
-					"fontsize" : 14.0,
+					"fontface" : 1,
+					"fontsize" : 12.0,
 					"id" : "obj-5",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -553,7 +687,7 @@
 			}
 , 			{
 				"box" : 				{
-					"alpha" : 0.0,
+					"alpha" : 0.858678045449761,
 					"autofit" : 1,
 					"forceaspect" : 1,
 					"id" : "obj-8",
@@ -562,7 +696,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 48.0, 305.0, 147.0, 147.0 ],
-					"pic" : "Macintosh HD:/Users/olivergetz/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images/fuzz-ui-btn_genre_glow.png",
+					"pic" : "C:/Users/Popit/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images/fuzz-ui-btn_genre_glow.png",
 					"presentation" : 1,
 					"presentation_rect" : [ 2.25, 2.25, 120.5, 120.5 ]
 				}
@@ -586,8 +720,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-90", 0 ],
+					"source" : [ "obj-135", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-72", 0 ],
+					"source" : [ "obj-15", 0 ]
 				}
 
 			}
@@ -596,6 +744,20 @@
 					"destination" : [ "obj-8", 0 ],
 					"midpoints" : [ 466.5, 287.0, 57.5, 287.0 ],
 					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-19", 1 ]
 				}
 
 			}
@@ -823,6 +985,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-91", 0 ],
+					"source" : [ "obj-58", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-6", 1 ]
 				}
@@ -840,6 +1009,27 @@
 				"patchline" : 				{
 					"destination" : [ "obj-81", 0 ],
 					"source" : [ "obj-70", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-73", 0 ],
+					"source" : [ "obj-72", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-73", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 1 ],
+					"source" : [ "obj-74", 0 ]
 				}
 
 			}
@@ -894,10 +1084,31 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-91", 0 ],
+					"source" : [ "obj-90", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-91", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-74", 0 ],
+					"source" : [ "obj-91", 1 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "fuzz-ui-btn_genre_glow.png",
-				"bootpath" : "~/Documents/MCT/Fall 2022/Applied Music Tech/PopsenteretProducerStation/Dev_241022/resources/images",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
 				"patcherrelativepath" : "./resources/images",
 				"type" : "PNG",
 				"implicit" : 1
@@ -907,13 +1118,13 @@
 		"styles" : [ 			{
 				"name" : "BLACK",
 				"default" : 				{
-					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"accentcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 0.0 ],
-					"textcolor" : [ 0.999889016151428, 1.0, 0.999841034412384, 1.0 ],
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"editing_bgcolor" : [ 0.10399004817009, 0.090992286801338, 0.09461422264576, 1.0 ],
+					"fontname" : [ "Ableton Sans Medium" ],
 					"fontsize" : [ 12.0 ],
 					"locked_bgcolor" : [ 0.105882352941176, 0.090196078431373, 0.094117647058824, 1.0 ],
-					"editing_bgcolor" : [ 0.10399004817009, 0.090992286801338, 0.09461422264576, 1.0 ],
-					"fontname" : [ "Ableton Sans Medium" ]
+					"textcolor" : [ 0.999889016151428, 1.0, 0.999841034412384, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -922,10 +1133,10 @@
 , 			{
 				"name" : "Descriptive Text",
 				"default" : 				{
-					"textcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
-					"textjustification" : [ 1 ],
+					"fontname" : [ "AlternateGothic-NoOne" ],
 					"fontsize" : [ 36.0 ],
-					"fontname" : [ "AlternateGothic-NoOne" ]
+					"textcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
+					"textjustification" : [ 1 ]
 				}
 ,
 				"parentstyle" : "Title Text",
@@ -939,11 +1150,11 @@
 , 			{
 				"name" : "Large Text",
 				"default" : 				{
-					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
-					"fontsize" : [ 64.0 ],
 					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
+					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
 					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
-					"fontname" : [ "AlternateGothic-NoOne" ]
+					"fontname" : [ "AlternateGothic-NoOne" ],
+					"fontsize" : [ 64.0 ]
 				}
 ,
 				"parentstyle" : "Medium Text",
@@ -952,12 +1163,12 @@
 , 			{
 				"name" : "Medium Text",
 				"default" : 				{
-					"fontface" : [ 0 ],
-					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
-					"fontsize" : [ 36.0 ],
 					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
+					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
 					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
-					"fontname" : [ "AlternateGothic-NoOne" ]
+					"fontface" : [ 0 ],
+					"fontname" : [ "AlternateGothic-NoOne" ],
+					"fontsize" : [ 36.0 ]
 				}
 ,
 				"parentstyle" : "Small Text",
@@ -966,11 +1177,11 @@
 , 			{
 				"name" : "Small Text",
 				"default" : 				{
-					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
-					"fontsize" : [ 30.0 ],
 					"bgcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
+					"color" : [ 0.176470588235294, 0.188235294117647, 0.27843137254902, 1.0 ],
 					"elementcolor" : [ 0.741176470588235, 0.450980392156863, 0.329411764705882, 1.0 ],
-					"fontname" : [ "AlternateGothic-NoOne" ]
+					"fontname" : [ "AlternateGothic-NoOne" ],
+					"fontsize" : [ 30.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -979,10 +1190,10 @@
 , 			{
 				"name" : "Title Text",
 				"default" : 				{
-					"textcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
-					"textjustification" : [ 1 ],
+					"fontname" : [ "AlternateGothic-NoOne" ],
 					"fontsize" : [ 72.0 ],
-					"fontname" : [ "AlternateGothic-NoOne" ]
+					"textcolor" : [ 1.0, 0.607843137254902, 0.443137254901961, 1.0 ],
+					"textjustification" : [ 1 ]
 				}
 ,
 				"parentstyle" : "",

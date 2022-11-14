@@ -40,6 +40,41 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 462.0, 802.0, 77.0, 22.0 ],
+					"text" : "loadmess 15"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 462.0, 909.0, 114.0, 22.0 ],
+					"text" : "s camera_threshold"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 462.0, 854.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-18",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -196,7 +231,7 @@
 					"numoutlets" : 2,
 					"offset" : [ -1280.0, 0.0 ],
 					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ -1.176470637321472, -6.470588505268097, 1280.0, 720.0 ],
+					"patching_rect" : [ 15.813820391893387, -5.499714732170105, 1280.0, 720.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -6.516049325466156, -0.026739180088043, 1280.0, 720.0 ],
 					"viewvisibility" : 1
@@ -222,6 +257,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
@@ -262,6 +304,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-7", 0 ]
 				}
@@ -281,7 +330,6 @@
 			"obj-1::obj-70::obj-116::obj-51" : [ "live.dial", "live.dial", 0 ],
 			"obj-1::obj-70::obj-21" : [ "live.gain~", "Volum", 0 ],
 			"obj-1::obj-70::obj-77" : [ "live.toggle[2]", "live.toggle", 0 ],
-			"obj-1::obj-95" : [ "live.tab[4]", "live.tab[4]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -382,6 +430,13 @@
 			}
 , 			{
 				"name" : "fuzz-ui-btn_fx_help.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
+				"patcherrelativepath" : "./resources/images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-btn_genre_glow.png",
 				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images",
 				"patcherrelativepath" : "./resources/images",
 				"type" : "PNG",
