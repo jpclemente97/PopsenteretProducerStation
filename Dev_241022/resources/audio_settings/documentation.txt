@@ -1,0 +1,2 @@
+guitar input thresholds: input 1 (neck), input 2 (strings), input 3 (body) - range 0-1
+output volume levels: drums, synth, master - drums synth range 0-1, master range is dB so 0 standard

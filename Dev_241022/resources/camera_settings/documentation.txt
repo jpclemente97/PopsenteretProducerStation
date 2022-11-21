@@ -1,0 +1,2 @@
+resolution: camera resolution, we found 160 120 to be minimum where it still works reliably
+threshold: value between 0-255 of mean pixel value to determine whether hole covered/uncovered, needs to be set through trial and error in each new environment

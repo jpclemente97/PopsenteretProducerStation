@@ -104,15 +104,28 @@ function bang(){
 			}		
 		}
 	}
+	
+	// format and output command for hole LED on/off for Arduino, output from outlet 3
+	
 	else if (inlet == 1){
+		
+		// iterate over each row
 		
 		for (x in led_list){
 			
+			// iterate over each value in row
+			
 			for (y in led_list[x]){
+				
+				// set value to be checked to value at coordinate
 				
 				var on_val = led_list[x][y]
 				
+				// get LED number (between 0-39) = row*8 + column
+				
 				var led_index = parseInt(x)*8+parseInt(y)
+				
+				// if hole not covered send LED off command
 				
 				if (on_val == 0){
 					
@@ -120,6 +133,8 @@ function bang(){
 					
 					outlet(3, out_val)
 				}
+				
+				// if hole covered send LED on command
 				
 				else if (on_val == 1){
 					

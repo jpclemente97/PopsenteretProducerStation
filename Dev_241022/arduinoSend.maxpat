@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 42.0, 85.0, 1168.0, 865.0 ],
+		"rect" : [ 817.0, 343.0, 1168.0, 865.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -212,8 +212,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "int" ],
-					"patching_rect" : [ 754.0, 230.0, 143.0, 22.0 ],
-					"text" : "text genre_sequences.txt"
+					"patching_rect" : [ 754.0, 230.0, 253.0, 22.0 ],
+					"text" : "text ./resources/samples/genre_sequences.txt"
 				}
 
 			}
@@ -526,8 +526,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 137.0, 71.0, 65.0, 22.0 ],
-					"text" : "r seq_step"
+					"patching_rect" : [ 137.0, 87.0, 84.0, 22.0 ],
+					"text" : "r global_count"
 				}
 
 			}
@@ -840,7 +840,9 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [  ],
+		"autosave" : 0
 	}
 
 }

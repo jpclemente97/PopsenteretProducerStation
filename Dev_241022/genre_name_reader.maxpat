@@ -46,7 +46,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 182.0, 15.0, 30.0, 30.0 ]
 				}
 
@@ -346,8 +346,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "int" ],
-					"patching_rect" : [ 268.0, 253.0, 121.0, 22.0 ],
-					"text" : "text genre_names.txt"
+					"patching_rect" : [ 268.0, 253.0, 231.0, 22.0 ],
+					"text" : "text ./resources/samples/genre_names.txt"
 				}
 
 			}
