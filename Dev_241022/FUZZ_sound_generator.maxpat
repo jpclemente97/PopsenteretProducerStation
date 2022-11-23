@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 3,
-			"revision" : 1,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 59.0, 2492.0, 1355.0 ],
+		"rect" : [ 42.0, 86.0, 1989.0, 1277.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,38 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-20",
+					"lastchannelcount" : 0,
+					"maxclass" : "live.gain~",
+					"numinlets" : 2,
+					"numoutlets" : 5,
+					"outlettype" : [ "signal", "signal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 1590.748710542917252, 485.207452426117015, 48.0, 136.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "live.gain~[1]",
+							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
+							"parameter_shortname" : "Volum",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"varname" : "live.gain~[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-39",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 18.211541771888733, 845.717730343341827, 108.0, 33.0 ],
-					"presentation_linecount" : 2,
+					"patching_rect" : [ 18.211541771888733, 845.717730343341827, 108.0, 34.0 ],
 					"text" : "playback from 0ms"
 				}
 
@@ -85,7 +110,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -312,7 +337,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1826.820517778396606, 613.636411710617267, 164.0, 33.0 ],
+					"patching_rect" : [ 1826.820517778396606, 613.636411710617267, 164.0, 34.0 ],
 					"text" : "Melody Sequencer Processing"
 				}
 
@@ -336,7 +361,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1180.014747768640518, 61.936244597274822, 150.0, 33.0 ],
+					"patching_rect" : [ 1180.014747768640518, 61.936244597274822, 150.0, 34.0 ],
 					"text" : "Enable freeplay when button selected"
 				}
 
@@ -370,7 +395,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1827.4961309645862, 211.85994565486908, 150.0, 47.0 ],
+					"patching_rect" : [ 1827.4961309645862, 211.85994565486908, 150.0, 48.0 ],
 					"text" : "Shifts the pitch of the strings to the key of the MIDI keyboard"
 				}
 
@@ -393,7 +418,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1912.105920038053227, 80.674291849136353, 150.0, 33.0 ],
+					"patching_rect" : [ 1912.105920038053227, 80.674291849136353, 150.0, 34.0 ],
 					"text" : "Initialises compressor settings"
 				}
 
@@ -434,7 +459,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -648,7 +673,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1955.709542840719223, 828.262467904922687, 150.0, 60.0 ],
+					"patching_rect" : [ 1955.709542840719223, 828.262467904922687, 150.0, 62.0 ],
 					"text" : "melody is activated by pressing a key on the keyboard. Will not play unless key is held down"
 				}
 
@@ -660,7 +685,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1123.110893875360489, 714.568506143093146, 77.083336114883423, 60.0 ],
+					"patching_rect" : [ 1123.110893875360489, 714.568506143093146, 77.083336114883423, 62.0 ],
 					"text" : "stop notes when switching modes"
 				}
 
@@ -672,7 +697,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1220.194229990243912, 657.4228595495224, 69.791669726371765, 33.0 ],
+					"patching_rect" : [ 1220.194229990243912, 657.4228595495224, 69.791669726371765, 34.0 ],
 					"text" : "freeplay toggle 0/1"
 				}
 
@@ -684,7 +709,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1420.34679239988327, 643.4228595495224, 66.666669845581055, 47.0 ],
+					"patching_rect" : [ 1420.34679239988327, 643.4228595495224, 66.666669845581055, 48.0 ],
 					"text" : "velocity from keyboard"
 				}
 
@@ -696,7 +721,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1342.03185510635376, 643.4228595495224, 69.791669726371765, 47.0 ],
+					"patching_rect" : [ 1342.03185510635376, 643.4228595495224, 69.791669726371765, 48.0 ],
 					"text" : "velocity from sequencer"
 				}
 
@@ -708,7 +733,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1394.860825449228287, 779.134450495243073, 150.0, 47.0 ],
+					"patching_rect" : [ 1394.860825449228287, 779.134450495243073, 150.0, 48.0 ],
 					"text" : "monophonic for seq-mode, poly for freeplay"
 				}
 
@@ -1127,7 +1152,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1586,7 +1611,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1808,7 +1833,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 357.694236129522324, 648.800951345798694, 150.0, 47.0 ],
+					"patching_rect" : [ 357.694236129522324, 648.800951345798694, 150.0, 48.0 ],
 					"text" : "Pitchshifting control for samples - sends to the speeds below"
 				}
 
@@ -1844,7 +1869,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 1822.5, 509.0, 30.0, 22.0 ],
-					"text" : "*~ 1"
+					"text" : "*~ 0"
 				}
 
 			}
@@ -1908,7 +1933,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2086,7 +2111,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2268,7 +2293,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3071,7 +3096,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3415,7 +3440,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1402.694229990243912, 220.331009914714855, 150.0, 33.0 ],
+					"patching_rect" : [ 1402.694229990243912, 220.331009914714855, 150.0, 34.0 ],
 					"text" : "Send MIDI note from controller to change key."
 				}
 
@@ -3473,7 +3498,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1454.694229990243912, 321.478147208690643, 87.0, 47.0 ],
+					"patching_rect" : [ 1454.694229990243912, 321.478147208690643, 87.0, 48.0 ],
 					"text" : "Send 0-24 here for key change"
 				}
 
@@ -3638,7 +3663,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1707.820517778396606, 832.262467904922687, 91.0, 47.0 ],
+					"patching_rect" : [ 1707.820517778396606, 832.262467904922687, 91.0, 48.0 ],
 					"text" : "Trigger melody sample envelope"
 				}
 
@@ -3760,7 +3785,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 929.305047482252121, 54.63245552778244, 91.0, 47.0 ],
+					"patching_rect" : [ 929.305047482252121, 54.63245552778244, 91.0, 48.0 ],
 					"text" : "Takes MIDI from the four drum pads"
 				}
 
@@ -3772,7 +3797,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 72.200000584125519, 141.128845572471619, 426.005770593881607, 60.0 ],
+					"patching_rect" : [ 72.200000584125519, 141.128845572471619, 426.005770593881607, 62.0 ],
 					"text" : "SwitchSamples looks for samples in ./resources/samples/%s/ where %s is the name of the folder containing the current genre samples. This is the same as the genre name, which comes from \"FUZZ Producer Station User Interface.maxpat\" through [r current_genre]."
 				}
 
@@ -3789,7 +3814,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4566,7 +4591,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4799,7 +4824,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5032,7 +5057,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5265,7 +5290,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -6316,16 +6341,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-54", 0 ],
 					"midpoints" : [ 1189.514747768640518, 978.0, 192.0, 978.0, 192.0, 987.0, 143.711541771888733, 987.0 ],
-					"order" : 1,
-					"source" : [ "obj-135", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"midpoints" : [ 1189.514747768640518, 960.0, 1167.0, 960.0, 1167.0, 870.0, 1229.694229990243912, 870.0 ],
-					"order" : 0,
 					"source" : [ "obj-135", 0 ]
 				}
 
@@ -7644,6 +7659,7 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-20" : [ "live.gain~[1]", "Volum", 0 ],
 			"obj-21" : [ "live.gain~", "Volum", 0 ],
 			"obj-77" : [ "live.toggle[2]", "live.toggle", 0 ],
 			"parameterbanks" : 			{
