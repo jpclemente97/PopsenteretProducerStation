@@ -1,5 +1,4 @@
 #include <Adafruit_NeoPixel.h>
-#include "ColorDefinitions.h"
 #include "SequencerDefinitions.h"
 #include <time.h>
 

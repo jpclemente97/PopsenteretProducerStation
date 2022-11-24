@@ -26,3 +26,7 @@
 #define LED_COUNT 14
 
 #define LED_ROWS 6
+
+#define WHITE 0xFFFFFF
+#define GREEN 0x008000
+#define RED 0xFF0000
