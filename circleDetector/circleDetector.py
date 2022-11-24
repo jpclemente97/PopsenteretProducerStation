@@ -20,7 +20,8 @@ def main():
 	frame = cv2.flip(frame, 1)
 
 	cv2.imshow("Detected Circle", frame)
-	cv2.waitKey(0)
+	cv2.waitKey(5000)
+	cv2.destroyAllWindows()
 	frame = frame.astype(np.uint8)
 	gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 	blur = cv2.blur(gray, (3, 3))
@@ -77,7 +78,8 @@ def main():
 							circles = np.uint16(np.around(circles))
 							
 						cv2.imshow("Detected Circle", frame_copy)
-						cv2.waitKey(0)
+						cv2.waitKey(5000)
+						cv2.destroyAllWindows()
 							
 						# Write the CSV file
 						with open('../Dev_241022/seq.csv', 'w', newline='') as f:
