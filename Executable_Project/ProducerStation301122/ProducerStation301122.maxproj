@@ -2,7 +2,7 @@
 	"name" : "ProducerStation301122",
 	"version" : 1,
 	"creationdate" : 3752651808,
-	"modificationdate" : 3776069911,
+	"modificationdate" : 3776070527,
 	"viewrect" : [ 25.0, 106.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -23,6 +23,49 @@
 		}
 ,
 		"code" : 		{
+
+		}
+,
+		"data" : 		{
+			"documentation.txt" : 			{
+				"kind" : "textfile",
+				"local" : 1
+			}
+,
+			"genre_documentation.txt" : 			{
+				"kind" : "textfile",
+				"local" : 1
+			}
+,
+			"genre_names.txt" : 			{
+				"kind" : "textfile",
+				"local" : 1
+			}
+,
+			"genre_sequences.txt" : 			{
+				"kind" : "textfile",
+				"local" : 1
+			}
+,
+			"guitar_input_thresholds.txt" : 			{
+				"kind" : "textfile",
+				"local" : 1
+			}
+,
+			"output_volume_levels.txt" : 			{
+				"kind" : "textfile",
+				"local" : 1
+			}
+,
+			"resolution.txt" : 			{
+				"kind" : "textfile",
+				"local" : 1
+			}
+,
+			"threshold.txt" : 			{
+				"kind" : "textfile",
+				"local" : 1
+			}
 
 		}
 
