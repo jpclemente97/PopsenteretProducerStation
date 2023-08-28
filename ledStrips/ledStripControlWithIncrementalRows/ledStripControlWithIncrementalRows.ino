@@ -19,15 +19,13 @@ unsigned long clocks[] = { 0, 0, 0, 0, 0 };
 bool indicatorLedsOn[5] = {false, false, false, false, false};
 
 const int indicatorLedsStart = 8;
-// null, null, kick, snare, hihat, tom, guitar
-const int indicatorLedsEnd[] = { 14, 14, 14, 14, 14 };
 
 // Keeps track of up to what row had red/green indiator lights
 short currentGenrePatternRow = 0;
 
 void clearLEDs(int index)
 {
-  for (int i=0; i<LED_COUNT; i++)
+  for (int i=0; i < LED_COUNT; i++)
   {
     ledArray[index].setPixelColor(i, 0);
   }
@@ -82,10 +80,9 @@ void genreChange() {
   currentGenrePatternRow = 0;
   while (checkGenrePatternRows());
 
-  for (int i = 0; i < 6; ++i) {
+  for (int i = 0; i < LED_ROWS; ++i) {
     ledArray[i].show();
   }
-
 }
 
 bool checkGenrePatternRows() {
@@ -96,6 +93,7 @@ bool checkGenrePatternRows() {
           return false;
       }
     }
+    
     // Light up the next row
     currentGenrePatternRow++;
     for (int i = 32 - (currentGenrePatternRow * 8); i < 40 - (currentGenrePatternRow * 8); ++i) {
@@ -138,8 +136,6 @@ void holeCovered() {
       ledArray[i].show();
     }
   }
-
-  
 }
 
 void holeUncovered() {
@@ -181,6 +177,12 @@ void setup()
   pinMode(HIHAT_ROW_PIN, OUTPUT);
   pinMode(SNARE_ROW_PIN, OUTPUT);
   pinMode(KICK_ROW_PIN, OUTPUT);
+
+  pinMode(GUITAR_HIT_PIN, OUTPUT);
+  pinMode(TOM_HIT_PIN, OUTPUT);
+  pinMode(HIHAT_HIT_PIN, OUTPUT);
+  pinMode(SNARE_HIT_PIN, OUTPUT);
+  pinMode(KICK_HIT_PIN, OUTPUT);
   
   // Initialize serial connection to Max
   Serial.begin(96000);
@@ -205,6 +207,7 @@ void loop()
   if (indicatorLedsOn[4]) {
     indicatorLedsOn[4] = checkLedTimeOn(currentClock, clocks[4], 4);
   }
+  
   // Determine what command is being sent
   // Binary format: command byte, message, end byte
   short command = Serial.read();
@@ -225,15 +228,10 @@ void loop()
   }
 }
 
-bool checkLedTimeOn(unsigned long currentClock, unsigned long instrumentClock, int ledArrayIndex) {
+bool checkLedTimeOn(unsigned long currentClock, unsigned long instrumentClock, int hitRowIndex) {
   unsigned long timeOn = currentClock - instrumentClock;
   if (timeOn >= 500) {
-    short endLed = indicatorLedsEnd[ledArrayIndex];
-    for (int i=indicatorLedsStart; i < endLed; i++)
-    {
-      ledArray[ledArrayIndex].setPixelColor(i, 0);
-    }
-    ledArray[ledArrayIndex].show();
+    digitalWrite(hitRowIndex + 8, LOW);
     return false;
   }
   return true;
@@ -242,11 +240,7 @@ bool checkLedTimeOn(unsigned long currentClock, unsigned long instrumentClock, i
 void hit(unsigned long currentClock) {
   short row = readSerialPort();
   clocks[row] = currentClock;
-  short endLed = indicatorLedsEnd[row];
-  for (int i = indicatorLedsStart; i < endLed; ++i) {
-    ledArray[row].setPixelColor(i, WHITE);
-  }
-  ledArray[row].show();
+  digitalWrite(row + 8, HIGH);
   indicatorLedsOn[row] = true;
 }
 

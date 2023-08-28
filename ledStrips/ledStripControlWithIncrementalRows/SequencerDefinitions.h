@@ -7,15 +7,6 @@
 #define END 255
 #define ERROR_BYTE 254
 
-#define STEP1 0
-#define STEP2 1
-#define STEP3 2
-#define STEP4 3
-#define STEP5 4
-#define STEP6 5
-#define STEP7 6
-#define STEP8 7
-
 #define KICK_ROW_PIN 2
 #define SNARE_ROW_PIN 3
 #define HIHAT_ROW_PIN 4
@@ -23,7 +14,13 @@
 #define GUITAR_ROW_PIN 6
 #define STEP_ROW_PIN 7
 
-#define LED_COUNT 14
+#define KICK_HIT_PIN 8
+#define SNARE_HIT_PIN 9
+#define HIHAT_HIT_PIN 10
+#define TOM_HIT_PIN 11
+#define GUITAR_HIT_PIN 12
+
+#define LED_COUNT 8
 
 #define LED_ROWS 6
 
