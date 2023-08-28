@@ -75,8 +75,10 @@ void genreChange() {
       else
         ledArray[rowIndex].setPixelColor(ledIndex, RED);
     }
+    ++readings;
   }
 
+  // Reset genre pattern and check each row to see if the pattern is filled
   currentGenrePatternRow = 0;
   while (checkGenrePatternRows());
 
@@ -129,10 +131,11 @@ void holeCovered() {
       ledArray[rowIndex].setPixelColor(ledIndex, GREEN);
     else
       ledArray[rowIndex].setPixelColor(ledIndex, WHITE);
-  
+
+    // Store led state and check the remaining rows to see if the pattern is filled
     sequencerLedStates[reading] = true;
     while (checkGenrePatternRows());
-    for (int i = 0; i < 6; ++i) {
+    for (int i = 0; i < LED_ROWS; ++i) {
       ledArray[i].show();
     }
   }
