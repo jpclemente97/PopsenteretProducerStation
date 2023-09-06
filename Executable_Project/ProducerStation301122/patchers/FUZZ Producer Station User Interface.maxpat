@@ -42,7 +42,7 @@
 				"box" : 				{
 					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
 					"fontsize" : 48.0,
-					"id" : "obj-18",
+					"id" : "selectGenreText",
 					"ignoreclick" : 1,
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
