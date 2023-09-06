@@ -52,19 +52,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-52",
-					"linecount" : 5,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 104.0, 375.0, 217.0, 77.0 ],
-					"text" : "replace C:/Users/Hugh/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media/samples/genre_3/1.wav"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-39",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -3835,7 +3822,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-72",
@@ -3857,18 +3843,6 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 130.200000584125519, 181.0, 32.0, 22.0 ],
 									"text" : "path"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-66",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 148.0, 616.0, 824.0, 22.0 ],
-									"text" : "C:/Users/Hugh/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media/samples/genre_3/1.wav"
 								}
 
 							}
@@ -4353,15 +4327,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-15", 0 ],
-									"order" : 1,
-									"source" : [ "obj-39", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-66", 1 ],
-									"order" : 0,
 									"source" : [ "obj-39", 0 ]
 								}
 
@@ -7410,15 +7375,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-296", 0 ],
-					"order" : 1,
-					"source" : [ "obj-394", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-52", 1 ],
-					"order" : 0,
 					"source" : [ "obj-394", 0 ]
 				}
 

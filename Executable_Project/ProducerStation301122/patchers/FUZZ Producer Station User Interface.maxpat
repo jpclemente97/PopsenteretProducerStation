@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 41.0, 84.0, 1468.0, 865.0 ],
+		"rect" : [ 41.0, 84.0, 1132.0, 865.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -145,9 +145,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 2562.0, 0.0, 1280.0, 720.0 ],
+					"patching_rect" : [ 2560.0, 0.0, 1280.0, 720.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2562.0, 0.0, 1280.0, 720.0 ],
+					"presentation_rect" : [ 2560.0, 0.0, 1280.0, 720.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1989,10 +1989,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 1282.0, 0.0, 1280.0, 720.0 ],
+					"patching_rect" : [ 1280.0, 0.0, 1280.0, 720.0 ],
 					"pic" : "fuzz-ui-fx_melody_background.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 1282.0, 0.0, 1280.0, 720.0 ]
+					"presentation_rect" : [ 1280.0, 0.0, 1280.0, 720.0 ]
 				}
 
 			}
