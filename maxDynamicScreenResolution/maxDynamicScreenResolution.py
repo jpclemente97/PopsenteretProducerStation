@@ -74,14 +74,11 @@ for f in files:
 				box['patching_rect'][2] = float(csvRow[7]) * widthRatio
 				box['patching_rect'][3] = float(csvRow[8]) * heightRatio
 
+			else:
+				box['patching_rect'][0] += screenWidth
 
 				if 'fontsize' in box:
 					box['fontsize'] = float(csvRow[9]) * areaRatio
-			else:
-				box['patching_rect'][0] = screenWidth
-				box['patching_rect'][1] = screenHeight
-				box['patching_rect'][2] = screenWidth
-				box['patching_rect'][3] = screenHeight
 
 			with open('../Executable_Project/ProducerStation301122/patchers/' + maxfileName, 'w') as newFile:
 				json.dump(fileJson, newFile, indent='\t')
@@ -94,6 +91,10 @@ for boxJson in boxes:
 	if 'rounded' in box:
 		box['rounded'] = 999999999
 
+with open('../Executable_Project/ProducerStation301122/patchers/FUZZ_UI-Genre_Button.maxpat', 'w') as newFile:
+	json.dump(fileJson, newFile, indent='\t')
+
+
 maxFile = open('../Executable_Project/ProducerStation301122/patchers/FUZZ Producer Station User Interface.maxpat')
 fileJson = json.load(maxFile)
 boxes = getBoxes(fileJson)
@@ -103,7 +104,7 @@ for boxJson in boxes:
 		offsetArray = str.split(box['text'])
 		offsetArray[1] = str(float(offsetArray[1]) * widthRatio)
 		box['text'] = ' '.join(offsetArray)
-		print(box['text'])
 
-
+with open('../Executable_Project/ProducerStation301122/patchers/FUZZ Producer Station User Interface.maxpat', 'w') as newFile:
+	json.dump(fileJson, newFile, indent='\t')
 
