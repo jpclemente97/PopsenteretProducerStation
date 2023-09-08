@@ -72,7 +72,7 @@ for f in files:
 
 
 				if 'fontSize' in box:
-					box['fontSize'] = csvRow[9] * totalRatio
+					box['fontSize'] = csvRow[9] * heightRatio * widthRatio
 
 			with open('../Executable_Project/ProducerStation301122/patchers/' + maxfileName, 'w') as newFile:
 				json.dump(fileJson, newFile)
