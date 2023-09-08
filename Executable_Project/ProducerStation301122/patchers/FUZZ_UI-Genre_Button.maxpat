@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"outlettype" : [ "", "", "", "", "" ],
+					"patching_rect" : [ 331.5, 784.0, 116.0, 22.0 ],
+					"text" : "regexp (.+)patchers/"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-135",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -57,7 +69,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 143.5, 741.31396484375, 156.0, 22.0 ],
+					"patching_rect" : [ 132.5, 847.31396484375, 156.0, 22.0 ],
 					"text" : "fuzz-ui-btn_genre_glow.png"
 				}
 
@@ -69,7 +81,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ -13.5, 815.31396484375, 57.0, 22.0 ],
+					"patching_rect" : [ -24.5, 921.31396484375, 57.0, 22.0 ],
 					"text" : "tosymbol"
 				}
 
@@ -81,7 +93,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ -13.5, 851.31396484375, 71.0, 22.0 ],
+					"patching_rect" : [ -24.5, 957.31396484375, 71.0, 22.0 ],
 					"text" : "prepend pic"
 				}
 
@@ -116,8 +128,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ -13.5, 776.31396484375, 176.0, 22.0 ],
-					"text" : "sprintf %sresources/images/%s"
+					"patching_rect" : [ -24.5, 882.31396484375, 114.0, 22.0 ],
+					"text" : "sprintf %smedia/%s"
 				}
 
 			}
@@ -208,7 +220,7 @@
 				"box" : 				{
 					"comment" : "Bang to press button.",
 					"id" : "obj-10",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -221,7 +233,7 @@
 				"box" : 				{
 					"comment" : "Item Symbol",
 					"id" : "obj-7",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -328,7 +340,7 @@
 				"box" : 				{
 					"comment" : "Bang to change text size.",
 					"id" : "obj-30",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -365,7 +377,7 @@
 				"box" : 				{
 					"comment" : "Bang on mouse up.",
 					"id" : "obj-38",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -377,7 +389,7 @@
 				"box" : 				{
 					"comment" : "Button Name",
 					"id" : "obj-32",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -438,11 +450,11 @@
 				"box" : 				{
 					"comment" : "Enable/disable pusling when active (0 or 1).",
 					"id" : "obj-4",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 403.0, 34.0, 30.0, 30.0 ]
 				}
 
@@ -568,8 +580,8 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 0.522, 0.31, 1.0 ],
-					"bgoncolor" : [ 0.682, 0.416, 0.302, 1.0 ],
+					"bgcolor" : [ 0.925, 0.114, 0.141, 1.0 ],
+					"bgoncolor" : [ 0.569, 0.063, 0.078, 1.0 ],
 					"blinktime" : 20,
 					"fontface" : 1,
 					"fontsize" : 12.0,
@@ -696,7 +708,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 48.0, 305.0, 147.0, 147.0 ],
-					"pic" : "C:/Users/Hugh/Documents/GitHub/PopsenteretProducerStation/Dev_241022/resources/images/fuzz-ui-btn_genre_glow.png",
+					"pic" : "C:/Users/Hugh/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media/fuzz-ui-btn_genre_glow.png",
 					"presentation" : 1,
 					"presentation_rect" : [ 2.25, 2.25, 120.5, 120.5 ]
 				}
@@ -756,7 +768,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
+					"destination" : [ "obj-34", 0 ],
 					"source" : [ "obj-19", 1 ]
 				}
 
@@ -874,6 +886,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-34", 1 ]
 				}
 
 			}
@@ -1106,6 +1125,15 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "fuzz-ui-btn_genre_glow.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
+				"patcherrelativepath" : "../media",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "BLACK",
 				"default" : 				{
