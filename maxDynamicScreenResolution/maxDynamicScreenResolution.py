@@ -14,7 +14,7 @@ mainRatio = mainWidth / mainHeight
 
 widthRatio = screenWidth / mainWidth
 heightRatio = screenHeight / mainHeight
-totalRatio = screenRatio / mainRatio
+areaRatio = (screenHeight * screenWidth) / (mainHeight * mainWidth)
 
 files = os.listdir('../Executable_Project/ProducerStation301122/patchers/')
 
@@ -72,7 +72,7 @@ for f in files:
 
 
 				if 'fontsize' in box:
-					box['fontsize'] = float(csvRow[9]) * heightRatio * widthRatio
+					box['fontsize'] = float(csvRow[9]) * areaRatio
 
 			with open('../Executable_Project/ProducerStation301122/patchers/' + maxfileName, 'w') as newFile:
 				json.dump(fileJson, newFile, indent='\t')
