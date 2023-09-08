@@ -76,7 +76,7 @@ for f in files:
 
 				if 'fontsize' in box:
 					box['fontsize'] = float(csvRow[9]) * areaRatio
-					
+
 			else:
 				box['patching_rect'][0] += screenWidth
 
@@ -106,5 +106,18 @@ for boxJson in boxes:
 		box['text'] = ' '.join(offsetArray)
 
 with open('../Executable_Project/ProducerStation301122/patchers/FUZZ Producer Station User Interface.maxpat', 'w') as newFile:
+	json.dump(fileJson, newFile, indent='\t')
+
+maxFile = open('../Executable_Project/ProducerStation301122/patchers/ProducerStation301122.maxpat')
+fileJson = json.load(maxFile)
+boxes = getBoxes(fileJson)
+for boxJson in boxes:
+	box = boxJson['box']
+	if 'text' in box and box['text'].startswith('offset'):
+		offsetArray = str.split(box['text'])
+		offsetArray[1] = str(float(offsetArray[1]) * widthRatio)
+		box['text'] = ' '.join(offsetArray)
+
+with open('../Executable_Project/ProducerStation301122/patchers/ProducerStation301122.maxpat', 'w') as newFile:
 	json.dump(fileJson, newFile, indent='\t')
 
