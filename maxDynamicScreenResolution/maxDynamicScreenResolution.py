@@ -71,9 +71,9 @@ for f in files:
 				box['patching_rect'][3] = float(csvRow[8]) * heightRatio
 
 
-				if 'fontSize' in box:
-					box['fontSize'] = csvRow[9] * heightRatio * widthRatio
+				if 'fontsize' in box:
+					box['fontsize'] = float(csvRow[9]) * heightRatio * widthRatio
 
 			with open('../Executable_Project/ProducerStation301122/patchers/' + maxfileName, 'w') as newFile:
-				json.dump(fileJson, newFile)
+				json.dump(fileJson, newFile, indent='\t')
 				
