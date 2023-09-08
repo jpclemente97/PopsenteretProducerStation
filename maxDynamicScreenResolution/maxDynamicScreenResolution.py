@@ -19,7 +19,7 @@ mainHeight = 720
 
 widthRatio = screenWidth / mainWidth
 heightRatio = screenHeight / mainHeight
-areaRatio = (screenHeight * screenWidth) / (mainHeight * mainWidth) * 0.75
+areaRatio = (screenHeight * screenWidth) / (mainHeight * mainWidth) * 0.5
 
 # Get all patchers
 files = os.listdir('../Executable_Project/ProducerStation301122/patchers/')
