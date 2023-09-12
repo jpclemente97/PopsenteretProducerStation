@@ -77,6 +77,9 @@ for f in files:
 				if 'fontsize' in box:
 					box['fontsize'] = float(csvRow[9]) * areaRatio
 
+				if 'thickness' in box:
+					box['thickness'] *= areaRatio;
+
 			else:
 				box['patching_rect'][0] += screenWidth
 
@@ -120,4 +123,5 @@ for boxJson in boxes:
 
 with open('../Executable_Project/ProducerStation301122/patchers/ProducerStation301122.maxpat', 'w') as newFile:
 	json.dump(fileJson, newFile, indent='\t')
+
 
