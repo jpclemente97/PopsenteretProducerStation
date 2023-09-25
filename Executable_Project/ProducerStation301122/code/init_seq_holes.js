@@ -2,7 +2,7 @@
 reading the csv file containing the center pixels for the sequencer holes
 
 */
-inlets = 3
+inlets = 4
 outlets = 3
 var csv_filename = "";
 var seq_list = [[], [], [], [], []];
@@ -66,7 +66,7 @@ function msg_int(i){
 			}
 		}
 	// generate list for LED control
-	else if (inlet == 1){
+	else if (inlet == 3){
 		if (a >= 40){
 			a = 0;
 			led_list = [[], [], [], [], []];
