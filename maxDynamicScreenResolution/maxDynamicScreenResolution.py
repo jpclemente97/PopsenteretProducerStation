@@ -125,8 +125,23 @@ for boxJson in boxes:
 with open('../Executable_Project/ProducerStation301122/patchers/ProducerStation301122.maxpat', 'w') as newFile:
 	json.dump(fileJson, newFile, indent='\t')
 
+maxFile = open('../Executable_Project/ProducerStation301122/patchers/FUZZ_UI-FX.maxpat')
+fileJson = json.load(maxFile)
+boxes = getBoxes(fileJson)
+for boxJson in boxes:
+	box = boxJson['box']
+	if 'horizontaltracking' in box:
+		box['horizontaltracking'] = box['horizontaltracking'] * widthRatio
+	if 'verticaltracking' in box:
+		box['verticaltracking'] = box['verticaltracking'] * heightRatio
+
+
+with open('../Executable_Project/ProducerStation301122/patchers/FUZZ_UI-FX.maxpat', 'w') as newFile:
+	json.dump(fileJson, newFile, indent='\t')
+
 
 img=cv2.imread('../Executable_Project/ProducerStation301122/media/fuzz-ui-the_biggest_knob.png')
 height, width, channel = img.shape
 newImg = cv2.resize(img, (int(width * widthRatio), int(height * heightRatio)))
 cv2.imwrite('../Executable_Project/ProducerStation301122/media/fuzz-ui-the_biggest_knob.png', newImg)
+
