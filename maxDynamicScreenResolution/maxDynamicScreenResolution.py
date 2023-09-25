@@ -2,6 +2,7 @@ import json
 import os
 import csv
 import tkinter as tk
+import cv2
 
 def getBoxes(fileJson):
 	patcher = fileJson['patcher']
@@ -125,3 +126,6 @@ with open('../Executable_Project/ProducerStation301122/patchers/ProducerStation3
 	json.dump(fileJson, newFile, indent='\t')
 
 
+img=cv2.imread('../Executable_Project/ProducerStation301122/media/fuzz-ui-the_biggest_knob.png')
+height, width, channel = img.shape
+cv2.resize(img, (width * widthRatio, height * heightRatio))
