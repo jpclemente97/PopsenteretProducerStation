@@ -3,6 +3,7 @@ import os
 import csv
 import tkinter as tk
 import cv2
+from PIL import Image
 
 def getBoxes(fileJson):
 	patcher = fileJson['patcher']
@@ -138,15 +139,25 @@ for boxJson in boxes:
 
 with open('../Executable_Project/ProducerStation301122/patchers/FUZZ_UI-FX.maxpat', 'w') as newFile:
 	json.dump(fileJson, newFile, indent='\t')
+ 
+# Opens a image in RGB mode
+im = Image.open('../Executable_Project/ProducerStation301122/media/fuzz-ui-the_biggest_knob.png')
+ 
+# Size of the image in pixels (size of original image)
+# (This is not mandatory)
+width, height = im.size
+newsize = (int(width * widthRatio), int(height * heightRatio))
+im = im.resize(newsize)
+# Shows the image in image viewer
+im.save('../Executable_Project/ProducerStation301122/media/fuzz-ui-the_biggest_knob.png')
 
-
-img=cv2.imread('../Executable_Project/ProducerStation301122/media/fuzz-ui-the_biggest_knob.png')
-height, width, channel = img.shape
-newImg = cv2.resize(img, (int(width * widthRatio), int(height * heightRatio)))
-tmp = cv2.cvtColor(newImg, cv2.COLOR_BGR2GRAY)
-_,alpha = cv2.threshold(tmp,0,255,cv2.THRESH_BINARY)
-b, g, r = cv2.split(newImg)
-rgba = [b,g,r, alpha]
-newImg = cv2.merge(rgba,4)
-cv2.imwrite('../Executable_Project/ProducerStation301122/media/fuzz-ui-the_biggest_knob.png', newImg)
+# img=cv2.imread('../Executable_Project/ProducerStation301122/media/fuzz-ui-the_biggest_knob.png')
+# height, width, channel = img.shape
+# newImg = cv2.resize(img, (int(width * widthRatio), int(height * heightRatio)))
+# tmp = cv2.cvtColor(newImg, cv2.COLOR_BGR2GRAY)
+# _,alpha = cv2.threshold(tmp,0,255,cv2.THRESH_BINARY)
+# b, g, r = cv2.split(newImg)
+# rgba = [b,g,r, alpha]
+# newImg = cv2.merge(rgba,4)
+# cv2.imwrite('../Executable_Project/ProducerStation301122/media/fuzz-ui-the_biggest_knob.png', newImg)
 
