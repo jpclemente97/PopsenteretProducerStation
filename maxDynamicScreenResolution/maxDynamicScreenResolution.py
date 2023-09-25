@@ -128,4 +128,5 @@ with open('../Executable_Project/ProducerStation301122/patchers/ProducerStation3
 
 img=cv2.imread('../Executable_Project/ProducerStation301122/media/fuzz-ui-the_biggest_knob.png')
 height, width, channel = img.shape
-cv2.resize(img, (width * widthRatio, height * heightRatio))
+newImg = cv2.resize(img, (int(width * widthRatio), int(height * heightRatio)))
+cv2.imwrite('../Executable_Project/ProducerStation301122/media/fuzz-ui-the_biggest_knob.png', newImg)
