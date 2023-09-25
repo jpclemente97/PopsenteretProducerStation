@@ -4,6 +4,7 @@ import csv
 import tkinter as tk
 import cv2
 from PIL import Image
+import math
 
 def getBoxes(fileJson):
 	patcher = fileJson['patcher']
@@ -146,7 +147,14 @@ im = Image.open('../Executable_Project/ProducerStation301122/media/fuzz-ui-the_b
 # Size of the image in pixels (size of original image)
 # (This is not mandatory)
 width, height = im.size
-newsize = (int(width * widthRatio), int(height * heightRatio))
+newWidth = math.floor(width * widthRatio)
+if newWidth % 2 == 1:
+	newWidth -= 1
+
+newHeight= math.floor(height * heightRatio)
+if newHeight % 2 == 1:
+	newHeight -= 1
+newsize = (newWidth, newHeight)
 im = im.resize(newsize)
 # Shows the image in image viewer
 im.save('../Executable_Project/ProducerStation301122/media/fuzz-ui-the_biggest_knob.png')
