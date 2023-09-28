@@ -269,17 +269,19 @@ void displayPowerOffPatern() {
 
 short readSerialPort() {
   int iterationWithoutReading = 0;
-  while (iterationWithoutReading < 1000) {
+  while (iterationWithoutReading < 5000) {
     if (Serial.available()) {
       if (powerOff) {
          for (int i = 0; i < LED_ROWS; ++i) {
            clearLEDs(i);
+           ledArray[i].show();
          }
       }
       powerOff = false;
       short reading = Serial.read();
       return reading;
     }
+    delay(1);
     ++iterationWithoutReading;
   }
   powerOff = true;
