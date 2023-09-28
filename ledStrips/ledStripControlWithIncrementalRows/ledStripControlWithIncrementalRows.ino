@@ -19,7 +19,7 @@ unsigned long clocks[] = { 0, 0, 0, 0, 0 };
 bool indicatorLedsOn[5] = {false, false, false, false, false};
 
 bool powerOff = false;
-short powerOffPattern[] = { 1, 6, 19, 33, 38 };
+short powerOffPattern[] = { 1, 6, 20, 33, 38 };
 
 const int indicatorLedsStart = 8;
 
