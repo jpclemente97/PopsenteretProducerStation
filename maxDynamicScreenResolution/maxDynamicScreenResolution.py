@@ -24,6 +24,9 @@ widthRatio = screenWidth / mainWidth
 heightRatio = screenHeight / mainHeight
 areaRatio = (screenHeight * screenWidth) / (mainHeight * mainWidth) * 0.5
 
+knobRatioWidth = 128 / 3076
+knobRatioHeight = 64 / 1484
+
 # Get all patchers
 files = os.listdir('../Executable_Project/ProducerStation301122/patchers/')
 
@@ -147,11 +150,11 @@ im = Image.open('../Executable_Project/ProducerStation301122/media/fuzz-ui-the_b
 # Size of the image in pixels (size of original image)
 # (This is not mandatory)
 width, height = im.size
-newWidth = math.floor(width * widthRatio)
+newWidth = math.floor(width * widthRatio * knobRatioWidth)
 if newWidth % 2 == 1:
 	newWidth -= 1
 
-newHeight= math.floor(height * heightRatio)
+newHeight= math.floor(height * heightRatio * knobRatioWidth)
 if newHeight % 2 == 1:
 	newHeight -= 1
 newsize = (newWidth, newHeight)
