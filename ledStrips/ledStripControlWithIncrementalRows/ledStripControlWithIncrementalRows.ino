@@ -18,6 +18,7 @@ bool currentSequencerPattern[40] = { 0 };
 unsigned long clocks[] = { 0, 0, 0, 0, 0 };
 bool indicatorLedsOn[5] = {false, false, false, false, false};
 
+bool powerOff = false;
 short powerOffPattern[] = { 1, 6, 19, 33, 38 };
 
 const int indicatorLedsStart = 8;
@@ -270,10 +271,17 @@ short readSerialPort() {
   int iterationWithoutReading = 0;
   while (iterationWithoutReading < 1000) {
     if (Serial.available()) {
+      if (powerOff) {
+         for (int i = 0; i < LED_ROWS; ++i) {
+           clearLEDs(i);
+         }
+      }
+      powerOff = false;
       short reading = Serial.read();
       return reading;
     }
     ++iterationWithoutReading;
   }
+  powerOff = true;
   return ERROR_BYTE;
 }
