@@ -18,6 +18,8 @@ bool currentSequencerPattern[40] = { 0 };
 unsigned long clocks[] = { 0, 0, 0, 0, 0 };
 bool indicatorLedsOn[5] = {false, false, false, false, false};
 
+short powerOffPattern = [1, 6, 19, 33, 38];
+
 const int indicatorLedsStart = 8;
 
 // Keeps track of up to what row had red/green indiator lights
@@ -213,7 +215,7 @@ void loop()
   
   // Determine what command is being sent
   // Binary format: command byte, message, end byte
-  short command = Serial.read();
+  short command = readSerialPort();
   if (command == STEP_CHANGE) {
     stepChange();
   }
@@ -228,6 +230,9 @@ void loop()
   }
   else if (command == HIT) {
     hit(currentClock);
+  }
+  else if (command == ERROR_BYTE) {
+    displayPowerOffPatern();
   }
 }
 
@@ -245,6 +250,20 @@ void hit(unsigned long currentClock) {
   clocks[row] = currentClock;
   digitalWrite(row + 8, HIGH);
   indicatorLedsOn[row] = true;
+}
+
+void displayPowerOffPatern() {
+  for (int i = 0; i < LED_ROWS; ++i)
+    clearLEDs(i);
+    
+  for (int i = 0; i < sizeof(powerOffPattern); ++i) {
+    int rowIndex = floor(powerOffPattern[i] / 8);
+    // Hacky way to invert the values
+    int ledIndex = abs((powerOffPattern[i] % 8) - 7);
+    ledArray[rowIndex].setPixelColor(ledIndex, WHITE);
+  }
+  for (int i = 0; i < LED_ROWS; ++i)
+    ledArray[i].show();
 }
 
 short readSerialPort() {
