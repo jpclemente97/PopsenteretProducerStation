@@ -18,7 +18,7 @@ bool currentSequencerPattern[40] = { 0 };
 unsigned long clocks[] = { 0, 0, 0, 0, 0 };
 bool indicatorLedsOn[5] = {false, false, false, false, false};
 
-short powerOffPattern = [1, 6, 19, 33, 38];
+short powerOffPattern[] = { 1, 6, 19, 33, 38 };
 
 const int indicatorLedsStart = 8;
 
@@ -256,7 +256,7 @@ void displayPowerOffPatern() {
   for (int i = 0; i < LED_ROWS; ++i)
     clearLEDs(i);
     
-  for (int i = 0; i < sizeof(powerOffPattern); ++i) {
+  for (int i = 0; i < 5; ++i) {
     int rowIndex = floor(powerOffPattern[i] / 8);
     // Hacky way to invert the values
     int ledIndex = abs((powerOffPattern[i] % 8) - 7);
