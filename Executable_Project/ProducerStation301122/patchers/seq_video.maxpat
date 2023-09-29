@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1132.0, 865.0 ],
+		"rect" : [ 1570.0, 77.0, 1852.0, 921.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -1214,21 +1214,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-73",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 943.0, 342.184034109115601, 217.0, 23.0 ],
-					"text" : "jit.slide @slide_up 2 @slide_down 2"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-72",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1624,12 +1609,12 @@
 				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 4,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 125.0, 677.0, 97.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "init_seq_holes.js",
+						"filename" : "init_seq_holes",
 						"parameter_enable" : 0
 					}
 ,
@@ -2076,22 +2061,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"midpoints" : [ 212.5, 702.0, 598.5, 702.0 ],
-					"source" : [ "obj-1", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-57", 0 ],
-					"midpoints" : [ 173.5, 702.0, 341.5, 702.0 ],
-					"source" : [ "obj-1", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
 					"midpoints" : [ 1079.5, 78.0, 1150.125851333141327, 78.0 ],
 					"order" : 1,
@@ -2269,14 +2238,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 2 ],
-					"midpoints" : [ 619.0, 312.0, 207.0, 312.0, 207.0, 672.0, 186.5, 672.0 ],
-					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-113", 0 ],
 					"midpoints" : [ 190.5, 738.0, 190.5, 738.0 ],
 					"source" : [ "obj-111", 0 ]
@@ -2362,18 +2323,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 1 ],
-					"midpoints" : [ 23.5, 1104.0, 0.0, 1104.0, 0.0, 663.0, 160.5, 663.0 ],
-					"order" : 0,
-					"source" : [ "obj-116", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-122", 0 ],
 					"midpoints" : [ 23.5, 1104.0, 23.5, 1104.0 ],
-					"order" : 1,
 					"source" : [ "obj-116", 0 ]
 				}
 
@@ -2664,14 +2615,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 3 ],
-					"midpoints" : [ 341.5, 819.0, 267.0, 819.0, 267.0, 663.0, 212.5, 663.0 ],
-					"source" : [ "obj-33", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"midpoints" : [ 643.25, 162.0, 619.0, 162.0 ],
 					"source" : [ "obj-34", 1 ]
@@ -2688,18 +2631,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 1 ],
-					"midpoints" : [ 51.5, 1113.0, 0.0, 1113.0, 0.0, 663.0, 160.5, 663.0 ],
-					"order" : 0,
-					"source" : [ "obj-39", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-122", 1 ],
 					"midpoints" : [ 51.5, 1113.0, 34.75, 1113.0 ],
-					"order" : 1,
 					"source" : [ "obj-39", 0 ]
 				}
 
@@ -2793,18 +2726,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 1 ],
-					"midpoints" : [ 115.5, 1113.0, 0.0, 1113.0, 0.0, 663.0, 160.5, 663.0 ],
-					"order" : 0,
-					"source" : [ "obj-69", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-122", 3 ],
 					"midpoints" : [ 115.5, 1124.851851463317871, 57.25, 1124.851851463317871 ],
-					"order" : 1,
 					"source" : [ "obj-69", 0 ]
 				}
 
@@ -2819,27 +2742,17 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-73", 0 ],
-					"midpoints" : [ 952.5, 267.0, 952.5, 267.0 ],
+					"destination" : [ "obj-114", 0 ],
+					"order" : 1,
 					"source" : [ "obj-72", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-114", 0 ],
-					"midpoints" : [ 952.5, 366.0, 952.5, 366.0 ],
-					"order" : 1,
-					"source" : [ "obj-73", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-36", 0 ],
-					"midpoints" : [ 952.5, 450.0, 1191.0, 450.0, 1191.0, 471.0, 1197.0, 471.0, 1197.0, 480.0, 1220.5, 480.0 ],
 					"order" : 0,
-					"source" : [ "obj-73", 0 ]
+					"source" : [ "obj-72", 0 ]
 				}
 
 			}
@@ -2914,18 +2827,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 1 ],
-					"midpoints" : [ 83.5, 1113.0, 0.0, 1113.0, 0.0, 663.0, 160.5, 663.0 ],
-					"order" : 0,
-					"source" : [ "obj-86", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-122", 2 ],
 					"midpoints" : [ 83.5, 1113.0, 46.0, 1113.0 ],
-					"order" : 1,
 					"source" : [ "obj-86", 0 ]
 				}
 
@@ -2940,18 +2843,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 1 ],
-					"midpoints" : [ 147.25, 1121.888888597488403, 0.0, 1121.888888597488403, 0.0, 663.740740716457367, 160.5, 663.740740716457367 ],
-					"order" : 0,
-					"source" : [ "obj-89", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-122", 4 ],
 					"midpoints" : [ 147.25, 1130.03703647851944, 68.5, 1130.03703647851944 ],
-					"order" : 1,
 					"source" : [ "obj-89", 0 ]
 				}
 
@@ -3006,14 +2899,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 1 ],
-					"midpoints" : [ 455.0, 663.0, 160.5, 663.0 ],
-					"source" : [ "obj-96", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"midpoints" : [ 25.5, 663.0, 134.5, 663.0 ],
 					"source" : [ "obj-97", 0 ]
@@ -3036,13 +2921,6 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "init_seq_holes.js",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/code",
-				"patcherrelativepath" : "../code",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "square_mean.maxpat",
 				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/patchers",
 				"patcherrelativepath" : ".",
