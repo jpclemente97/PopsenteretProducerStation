@@ -12,8 +12,6 @@ def main():
 	# Detect circles from an image from the webcam
 	frame = cv2.imread('/Users/jpclemente97/git/PopsenteretProducerStation/circleDetector/CameraCalibrating.png', cv2.IMREAD_COLOR)
 	#cam = cv2.VideoCapture(1)
-	#cam.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
-	#cam.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
 	
 	#ret, frame = cam.read()
 
@@ -106,7 +104,7 @@ def gridDetector(coordinatesDict):
 			elif centerPixelCoordinates[i][0] > maxPixelX:
 				maxPixelX = centerPixelCoordinates[i][0]
 
-		if ((maxPixelX - minPixelX) > 50):
+		if ((maxPixelX - minPixelX) > 100):
 			print(maxPixelX)
 			print(minPixelX)
 			return False
@@ -121,7 +119,7 @@ def gridDetector(coordinatesDict):
 			elif coordinate[1] > maxPixelY:
 				maxPixelY = coordinate[1]
 
-		if ((maxPixelY - minPixelY) > 50):
+		if ((maxPixelY - minPixelY) > 100):
 			return False
 
 	return True
