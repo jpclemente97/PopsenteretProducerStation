@@ -6,11 +6,6 @@ import cv2
 from PIL import Image
 import math
 
-def getBoxes(fileJson):
-	patcher = fileJson['patcher']
-	boxes = patcher['boxes']
-	return boxes
-
 # Get width/height of current screen
 root = tk.Tk()
 screenWidth = root.winfo_screenwidth()
@@ -24,7 +19,7 @@ widthRatio = screenWidth / mainWidth
 heightRatio = screenHeight / mainHeight
 areaRatio = (screenHeight * screenWidth) / (mainHeight * mainWidth) * 0.5
 
-knobRatioWidth = 128 / 3076
+knobRatioWidth = 128 / 2998
 knobRatioHeight = 64 / 1484
 
 # Get all patchers
@@ -36,7 +31,8 @@ for f in files:
 		writer = csv.writer(csvFile)
 		openFile = open('../Executable_Project/ProducerStation301122/patchers/' + f)
 		fileJson = json.load(openFile)
-		boxes = getBoxes(fileJson)
+		patcher = fileJson['patcher']
+		boxes = patcher['boxes']
 		for boxJson in boxes:
 			box = boxJson['box']
 			if 'presentation' in box and box['presentation'] == 1:
@@ -60,7 +56,14 @@ for f in files:
 		maxfileName = f.replace('.csv', '')
 		maxFile = open('../Executable_Project/ProducerStation301122/patchers/' + maxfileName)
 		fileJson = json.load(maxFile)
-		boxes = getBoxes(fileJson)
+
+		patcher = fileJson['patcher']
+		patcher['rect'][0] = patcher['rect'][0] * widthRatio
+		patcher['rect'][1] = patcher['rect'][1] * heightRatio
+		patcher['rect'][2] = patcher['rect'][2] * widthRatio
+		patcher['rect'][3] = patcher['rect'][3] * heightRatio
+		
+		boxes = patcher['boxes']
 		for boxJson in boxes:
 			box = boxJson['box']
 			if 'presentation' in box and box['presentation'] == 1:
@@ -79,6 +82,12 @@ for f in files:
 				box['patching_rect'][1] = float(csvRow[6]) * heightRatio
 				box['patching_rect'][2] = float(csvRow[7]) * widthRatio
 				box['patching_rect'][3] = float(csvRow[8]) * heightRatio
+
+				if 'rect' in box:
+					box['rect'][0] = box['rect'][0] * widthRatio
+					box['rect'][1] = box['rect'][1] * heightRatio
+					box['rect'][2] = box['rect'][2] * widthRatio
+					box['rect'][3] = box['rect'][3] * heightRatio
 
 				if 'fontsize' in box:
 					box['fontsize'] = float(csvRow[9]) * areaRatio
@@ -152,11 +161,11 @@ im = Image.open('../Executable_Project/ProducerStation301122/media/fuzz-ui-the_b
 width, height = im.size
 newWidth = math.floor(width * widthRatio * knobRatioWidth)
 if newWidth % 2 == 1:
-	newWidth -= 1
+	newWidth += 1
 
 newHeight= math.floor(height * heightRatio * knobRatioWidth)
 if newHeight % 2 == 1:
-	newHeight -= 1
+	newHeight += 1
 newsize = (newWidth, newHeight)
 im = im.resize(newsize)
 # Shows the image in image viewer
