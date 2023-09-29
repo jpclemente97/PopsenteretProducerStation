@@ -6,6 +6,11 @@ import cv2
 from PIL import Image
 import math
 
+def getBoxes(fileJson):
+	patcher = fileJson['patcher']
+	boxes = patcher['boxes']
+	return boxes
+
 # Get width/height of current screen
 root = tk.Tk()
 screenWidth = root.winfo_screenwidth()
@@ -31,8 +36,7 @@ for f in files:
 		writer = csv.writer(csvFile)
 		openFile = open('../Executable_Project/ProducerStation301122/patchers/' + f)
 		fileJson = json.load(openFile)
-		patcher = fileJson['patcher']
-		boxes = patcher['boxes']
+		boxes = getBoxes(fileJson)
 		for boxJson in boxes:
 			box = boxJson['box']
 			if 'presentation' in box and box['presentation'] == 1:
@@ -58,11 +62,12 @@ for f in files:
 		fileJson = json.load(maxFile)
 
 		patcher = fileJson['patcher']
-		patcher['rect'][0] = patcher['rect'][0] * widthRatio
-		patcher['rect'][1] = patcher['rect'][1] * heightRatio
-		patcher['rect'][2] = patcher['rect'][2] * widthRatio
-		patcher['rect'][3] = patcher['rect'][3] * heightRatio
-		
+		if 'rect' in patcher:
+			patcher['rect'][0] = patcher['rect'][0] * widthRatio
+			patcher['rect'][1] = patcher['rect'][1] * heightRatio
+			patcher['rect'][2] = patcher['rect'][2] * widthRatio
+			patcher['rect'][3] = patcher['rect'][3] * heightRatio
+
 		boxes = patcher['boxes']
 		for boxJson in boxes:
 			box = boxJson['box']
