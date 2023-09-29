@@ -39,16 +39,19 @@ for f in files:
 		boxes = getBoxes(fileJson)
 		for boxJson in boxes:
 			box = boxJson['box']
-			if 'presentation' in box and box['presentation'] == 1:
+			presentationRect = [0, 0, 0, 0]
+			patchingRect = [0, 0, 0, 0]
+			if 'presentation_rect' in box:
 				presentationRect = box['presentation_rect']
+			if 'patching_rect' in box:
 				patchingRect = box['patching_rect']
 
-				fontSize = 0
-				if 'fontsize' in box:
-					fontSize = box['fontsize']
+			fontSize = 0
+			if 'fontsize' in box:
+				fontSize = box['fontsize']
 
-				writer.writerow([box['id'], presentationRect[0], presentationRect[1], presentationRect[2], presentationRect[3], 
-					patchingRect[0], patchingRect[1], patchingRect[2], patchingRect[3], fontSize])
+			writer.writerow([box['id'], presentationRect[0], presentationRect[1], presentationRect[2], presentationRect[3], 
+				patchingRect[0], patchingRect[1], patchingRect[2], patchingRect[3], fontSize])
 
 # Go through every CSV file and scale every object in presentaiton mode in relation to the current size of the screen
 files = os.listdir('.')
@@ -71,37 +74,36 @@ for f in files:
 		boxes = patcher['boxes']
 		for boxJson in boxes:
 			box = boxJson['box']
-			if 'presentation' in box and box['presentation'] == 1:
-				csvRow = []
-				for row in csvReader:
-					if row[0] == box['id']:
-						csvRow = row
-						break
 
+			csvRow = []
+			for row in csvReader:
+				if row[0] == box['id']:
+					csvRow = row
+					break
+
+			if 'presentation_rect' in box:
 				box['presentation_rect'][0] = float(csvRow[1]) * widthRatio
 				box['presentation_rect'][1] = float(csvRow[2]) * heightRatio
 				box['presentation_rect'][2] = float(csvRow[3]) * widthRatio
 				box['presentation_rect'][3] = float(csvRow[4]) * heightRatio
 
+			if 'patching_rect' in box:
 				box['patching_rect'][0] = float(csvRow[5]) * widthRatio
 				box['patching_rect'][1] = float(csvRow[6]) * heightRatio
 				box['patching_rect'][2] = float(csvRow[7]) * widthRatio
 				box['patching_rect'][3] = float(csvRow[8]) * heightRatio
 
-				if 'rect' in box:
-					box['rect'][0] = box['rect'][0] * widthRatio
-					box['rect'][1] = box['rect'][1] * heightRatio
-					box['rect'][2] = box['rect'][2] * widthRatio
-					box['rect'][3] = box['rect'][3] * heightRatio
+			if 'rect' in box:
+				box['rect'][0] = box['rect'][0] * widthRatio
+				box['rect'][1] = box['rect'][1] * heightRatio
+				box['rect'][2] = box['rect'][2] * widthRatio
+				box['rect'][3] = box['rect'][3] * heightRatio
 
-				if 'fontsize' in box:
-					box['fontsize'] = float(csvRow[9]) * areaRatio
+			if 'fontsize' in box:
+				box['fontsize'] = float(csvRow[9]) * areaRatio
 
-				if 'thickness' in box:
-					box['thickness'] *= areaRatio;
-
-			else:
-				box['patching_rect'][0] += screenWidth
+			if 'thickness' in box:
+				box['thickness'] *= areaRatio;
 
 			with open('../Executable_Project/ProducerStation301122/patchers/' + maxfileName, 'w') as newFile:
 				json.dump(fileJson, newFile, indent='\t')
@@ -172,6 +174,7 @@ newHeight= math.floor(height * heightRatio * knobRatioWidth)
 if newHeight % 2 == 1:
 	newHeight += 1
 newsize = (newWidth, newHeight)
+print(newsize)
 im = im.resize(newsize)
 # Shows the image in image viewer
 im.save('../Executable_Project/ProducerStation301122/media/fuzz-ui-the_biggest_knob.png')
