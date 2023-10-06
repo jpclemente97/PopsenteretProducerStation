@@ -161,7 +161,7 @@ def interpretValues(coordinatesDict):
 
 	coordinatesDict['guitar'].insert(1, [int(guitarNewX[0]), int(guitarNewY[0])])
 	coordinatesDict['guitar'].insert(6, [int(guitarNewX[1]), int(guitarNewY[1])])
-	coordinatesDict['hihat'].insert(3, [int(hihatNewX), int(hihatNewY)])
+	coordinatesDict['hihat'].insert(4, [int(hihatNewX), int(hihatNewY)])
 	coordinatesDict['kick'].insert(1, [int(kickNewX[0]), int(kickNewY[0])])
 	coordinatesDict['kick'].insert(6, [int(kickNewX[1]), int(kickNewY[1])])
 
