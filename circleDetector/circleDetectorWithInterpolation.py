@@ -10,10 +10,10 @@ def secondSort(coordinates):
 
 def main():
 	# Detect circles from an image from the webcam
-	frame = cv2.imread('/Users/jpclemente97/git/PopsenteretProducerStation/circleDetector/CameraCalibrating.png', cv2.IMREAD_COLOR)
-	#cam = cv2.VideoCapture(1)
+	#frame = cv2.imread('/Users/jpclemente97/git/PopsenteretProducerStation/circleDetector/CameraCalibrating.png', cv2.IMREAD_COLOR)
 	
-	#ret, frame = cam.read()
+	cam = cv2.VideoCapture(1)
+	ret, frame = cam.read()
 
 	frame = cv2.flip(frame, 1)
 
