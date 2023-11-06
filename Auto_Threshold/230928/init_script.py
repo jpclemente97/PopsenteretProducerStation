@@ -507,7 +507,7 @@ def gridDetector(coordinatesDict):
 			elif centerPixelCoordinates[i][0] > maxPixelX:
 				maxPixelX = centerPixelCoordinates[i][0]
 
-		if ((maxPixelX - minPixelX) > 300):
+		if ((maxPixelX - minPixelX) > 100):
 			print(maxPixelX)
 			print(minPixelX)
 			return False
@@ -522,7 +522,7 @@ def gridDetector(coordinatesDict):
 			elif coordinate[1] > maxPixelY:
 				maxPixelY = coordinate[1]
 
-		if ((maxPixelY - minPixelY) > 300):
+		if ((maxPixelY - minPixelY) > 100):
 			return False
 
 	return True
