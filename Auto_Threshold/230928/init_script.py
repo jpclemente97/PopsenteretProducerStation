@@ -391,8 +391,12 @@ def secondSort(coordinates):
 def circleDetector():
 	# Detect circles from an image from the webcam
 	#frame = cv2.imread('/Users/jpclemente97/git/PopsenteretProducerStation/circleDetector/CameraCalibrating.png', cv2.IMREAD_COLOR)
+
+	camera = 'USB'
+	device_idx = getDeviceIndex(camera)
+	print('Camera Device Index: ' + str(device_idx))
 	
-	cam = cv2.VideoCapture(1)
+	cam = cv2.VideoCapture(device_idx)
 	cam.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
 	cam.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
 	ret, frame = cam.read()
