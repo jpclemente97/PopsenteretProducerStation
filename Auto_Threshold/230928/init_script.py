@@ -37,7 +37,7 @@ def autoThreshold(res_x=160, res_y=120, weight=0.33):
     
     valid_threshold = False
     
-    hole_positions = loadSequence(res_x=res_x, res_y=res_y)
+    hole_positions = loadSequence(filepath='../../Executable_Project/ProducerStation301122/data',res_x=res_x, res_y=res_y)
     
     threshold_count = 0
     
@@ -79,6 +79,7 @@ def autoThreshold(res_x=160, res_y=120, weight=0.33):
             print('Please place pegs into the holes indicated and check lighting conditions')
 
             displayPegs()
+            time.sleep(5)
             
             threshold_count += 1
             
@@ -96,7 +97,7 @@ def autoThreshold(res_x=160, res_y=120, weight=0.33):
             print('Threshold value: ' + str(threshold))
             print('Writing threshold to text...')
             
-            fp = open('threshold.txt', 'w')
+            fp = open('../../Executable_Project/ProducerStation301122/data/threshold.txt', 'w')
             fp.write('{}'.format(threshold))
             fp.close()
             
@@ -485,7 +486,7 @@ def circleDetector():
 						cv2.destroyAllWindows()
 							
 						# Write the CSV file
-						with open('seq.csv', 'w', newline='') as f:
+						with open('../../Executable_Project/ProducerStation301122/data/seq.csv', 'w', newline='') as f:
 							writer = csv.writer(f)
 							for key, value in coordinatesDict.items():
 								for coordinate in value:
@@ -585,7 +586,7 @@ def main():
     
         print('Checking if circle detector sequence found...')
 
-        found_csv = checkCSV()
+        found_csv = checkCSV('../../Executable_Project/ProducerStation301122/data')
 
         if found_csv == True:
 
@@ -603,6 +604,7 @@ def main():
                 print('Please place pegs into the holes indicated')
             
                 displayPegs()
+                time.sleep(5)
                 
             if circle_detector_runs == 1:
                 
