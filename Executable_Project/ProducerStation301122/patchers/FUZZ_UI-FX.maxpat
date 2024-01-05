@@ -683,8 +683,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1170.333360999999968, 388.81396484375, 176.0, 22.0 ],
-					"text" : "sprintf %sresources/images/%s"
+					"patching_rect" : [ 1170.333360999999968, 388.81396484375, 114.0, 22.0 ],
+					"text" : "sprintf %smedia/%s"
 				}
 
 			}
