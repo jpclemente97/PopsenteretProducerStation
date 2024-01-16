@@ -11,14 +11,27 @@ def getBoxes(fileJson):
 	boxes = patcher['boxes']
 	return boxes
 
+def findCurrentWidthHeight():
+	openFile = open('../Executable_Project/ProducerStation301122/patchers/FUZZ Producer Station User Interface.maxpat')
+	fileJson = json.load(openFile)
+	boxes = getBoxes(fileJson)
+	for boxJson in boxes:
+		box = boxJson['box']
+		if 'pic' in box:
+			if box['pic'] == "fuzz-ui-genres_background.jpg":
+				if screenWidth == box['pic'][2] and screenHeight == box['pic'][3]:
+					sys.exit()
+				else
+					return box['pic'][2], box['pic'][3]
+
 # Get width/height of current screen
 root = tk.Tk()
 screenWidth = root.winfo_screenwidth()
 screenHeight = root.winfo_screenheight()
 
-# Declare width/height of "default" (main) screen
-mainWidth = 1280
-mainHeight = 720
+# Check if screen has already been resized using the background
+# and declare width/height of "default" (main) screen
+mainWidth, mainHeight = findCurrentWidthHeight()
 
 widthRatio = screenWidth / mainWidth
 heightRatio = screenHeight / mainHeight
