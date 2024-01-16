@@ -5,6 +5,7 @@ import tkinter as tk
 import cv2
 from PIL import Image
 import math
+import sys
 
 def getBoxes(fileJson):
 	patcher = fileJson['patcher']
@@ -19,10 +20,10 @@ def findCurrentWidthHeight():
 		box = boxJson['box']
 		if 'pic' in box:
 			if box['pic'] == "fuzz-ui-genres_background.jpg":
-				if screenWidth == box['pic'][2] and screenHeight == box['pic'][3]:
+				if screenWidth == int(box['presentation_rect'][2]) and screenHeight == int(box['presentation_rect'][3]):
 					sys.exit()
 				else:
-					return box['pic'][2], box['pic'][3]
+					return int(box['presentation_rect'][2]), int(box['presentation_rect'][3])
 
 # Get width/height of current screen
 root = tk.Tk()
