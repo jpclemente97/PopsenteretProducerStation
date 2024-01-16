@@ -21,7 +21,7 @@ def findCurrentWidthHeight():
 			if box['pic'] == "fuzz-ui-genres_background.jpg":
 				if screenWidth == box['pic'][2] and screenHeight == box['pic'][3]:
 					sys.exit()
-				else
+				else:
 					return box['pic'][2], box['pic'][3]
 
 # Get width/height of current screen
