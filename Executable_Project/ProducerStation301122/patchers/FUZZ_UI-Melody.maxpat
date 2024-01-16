@@ -178,7 +178,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 961.0, 364.0, 56.0, 22.0 ],
+					"patching_rect" : [ 900.0, 288.0, 56.0, 22.0 ],
 					"text" : "r runtime"
 				}
 
@@ -812,37 +812,13 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-135",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 900.0, 264.0, 81.0, 22.0 ],
-					"text" : "r global_reset"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-91",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "bang", "bang", "bang" ],
-					"patching_rect" : [ 900.0, 321.0, 42.0, 22.0 ],
-					"text" : "t b b b"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-90",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 900.0, 294.0, 58.0, 22.0 ],
-					"text" : "loadbang"
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "bang", "int" ],
+					"patching_rect" : [ 900.0, 321.0, 50.5, 22.0 ],
+					"text" : "t b b b i"
 				}
 
 			}
@@ -1638,13 +1614,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-90", 0 ],
-					"source" : [ "obj-135", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-114", 0 ],
 					"source" : [ "obj-14", 0 ]
 				}
@@ -1902,7 +1871,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-51", 1 ],
+					"destination" : [ "obj-91", 0 ],
 					"source" : [ "obj-53", 0 ]
 				}
 
@@ -2049,15 +2018,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-91", 0 ],
-					"source" : [ "obj-90", 0 ]
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-91", 2 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
-					"source" : [ "obj-91", 2 ]
+					"destination" : [ "obj-51", 1 ],
+					"source" : [ "obj-91", 3 ]
 				}
 
 			}

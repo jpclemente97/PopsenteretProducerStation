@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1570.0, 77.0, 1852.0, 921.0 ],
+		"rect" : [ 1578.0, 85.0, 1852.0, 921.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -106,7 +106,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1355.5, 1407.666692137718201, 56.0, 22.0 ],
+					"patching_rect" : [ 1301.5, 1359.0, 56.0, 22.0 ],
 					"text" : "r runtime"
 				}
 
@@ -118,7 +118,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1301.5, 1436.0, 50.0, 22.0 ]
+					"patching_rect" : [ 1301.5, 1436.0, 50.0, 22.0 ],
+					"text" : "0"
 				}
 
 			}
@@ -202,7 +203,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 829.0, 101.0, 56.0, 22.0 ],
+					"patching_rect" : [ 911.333360999999968, 70.0, 56.0, 22.0 ],
 					"text" : "r runtime"
 				}
 
@@ -680,10 +681,10 @@
 					"id" : "obj-151",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "bang", "bang", "bang" ],
-					"patching_rect" : [ 1301.5, 1397.0, 42.0, 22.0 ],
-					"text" : "t b b b"
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "bang", "int" ],
+					"patching_rect" : [ 1301.5, 1397.0, 50.5, 22.0 ],
+					"text" : "t b b b i"
 				}
 
 			}
@@ -829,18 +830,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1304.0, 1606.666643142700195, 134.0, 22.0 ],
 					"text" : "sprintf %smedia/no.png"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-92",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1301.5, 1370.666688442230225, 58.0, 22.0 ],
-					"text" : "loadbang"
 				}
 
 			}
@@ -1811,7 +1800,7 @@
 					"clickedimage" : 1,
 					"id" : "obj-40",
 					"maxclass" : "pictctrl",
-					"name" : "C:/Users/Hugh/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/patchers/media/resources/",
+					"name" : "fuzz-ui-btn_fx_help.png",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
@@ -1827,7 +1816,7 @@
 					"clickedimage" : 1,
 					"id" : "obj-39",
 					"maxclass" : "pictctrl",
-					"name" : "C:/Users/Hugh/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/patchers/media/resources/",
+					"name" : "fuzz-ui-btn_melody_help.png",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
@@ -2064,7 +2053,7 @@
 				"box" : 				{
 					"id" : "obj-114",
 					"maxclass" : "pictctrl",
-					"name" : "C:/Users/Hugh/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/patchers/media/resources/",
+					"name" : "fuzz-ui-btn_menu_reset.png",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
@@ -2203,29 +2192,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-62",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1007.0, 76.0, 91.0, 20.0 ],
-					"text" : "Reset Graphics"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-58",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 979.0, 74.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-35",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -2290,22 +2256,10 @@
 					"id" : "obj-91",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 7,
-					"outlettype" : [ "bang", "bang", "bang", "bang", "bang", "bang", "bang" ],
-					"patching_rect" : [ 911.333360999999968, 101.0, 82.0, 22.0 ],
-					"text" : "t b b b b b b b"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-90",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 911.333360999999968, 74.0, 58.0, 22.0 ],
-					"text" : "loadbang"
+					"numoutlets" : 8,
+					"outlettype" : [ "bang", "bang", "bang", "bang", "bang", "bang", "bang", "int" ],
+					"patching_rect" : [ 911.333360999999968, 101.0, 92.5, 22.0 ],
+					"text" : "t b b b b b b b i"
 				}
 
 			}
@@ -2340,7 +2294,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1041.333360999999968, 326.100001901388168, 203.0, 22.0 ],
+					"patching_rect" : [ 1043.333360999999968, 320.0, 203.0, 22.0 ],
 					"style" : "none",
 					"text" : "fuzz-ui-btn_menu_genres_circle.png"
 				}
@@ -2447,7 +2401,7 @@
 					"clickedimage" : 1,
 					"id" : "obj-243",
 					"maxclass" : "pictctrl",
-					"name" : "C:/Users/Hugh/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/patchers/media/resources/",
+					"name" : "fuzz-ui-btn_menu_genres_circle.png",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
@@ -2739,7 +2693,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-127", 1 ],
+					"destination" : [ "obj-91", 0 ],
 					"source" : [ "obj-102", 0 ]
 				}
 
@@ -3118,6 +3072,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-168", 0 ],
 					"source" : [ "obj-151", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-180", 1 ],
+					"source" : [ "obj-151", 3 ]
 				}
 
 			}
@@ -3512,7 +3473,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-180", 1 ],
+					"destination" : [ "obj-151", 0 ],
 					"source" : [ "obj-181", 0 ]
 				}
 
@@ -4206,13 +4167,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-91", 0 ],
-					"source" : [ "obj-58", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-132", 0 ],
 					"order" : 0,
 					"source" : [ "obj-59", 1 ]
@@ -4411,8 +4365,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-91", 0 ],
-					"source" : [ "obj-90", 0 ]
+					"destination" : [ "obj-127", 1 ],
+					"source" : [ "obj-91", 7 ]
 				}
 
 			}
@@ -4462,13 +4416,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-96", 0 ],
 					"source" : [ "obj-91", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-151", 0 ],
-					"source" : [ "obj-92", 0 ]
 				}
 
 			}
@@ -4624,6 +4571,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "fuzz-ui-btn_fx_help.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
+				"patcherrelativepath" : "../media",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "fuzz-ui-btn_genre_glow.png",
 				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
 				"patcherrelativepath" : "../media",
@@ -4632,6 +4586,27 @@
 			}
 , 			{
 				"name" : "fuzz-ui-btn_melody_close_help.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
+				"patcherrelativepath" : "../media",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-btn_melody_help.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
+				"patcherrelativepath" : "../media",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-btn_menu_genres_circle.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
+				"patcherrelativepath" : "../media",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-btn_menu_reset.png",
 				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
 				"patcherrelativepath" : "../media",
 				"type" : "PNG",
