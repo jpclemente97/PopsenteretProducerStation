@@ -40,6 +40,90 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-191",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1691.166639000000032, 1561.666643142700195, 108.0, 22.0 ],
+					"text" : "append resources/"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-186",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1579.166639000000032, 1561.666643142700195, 108.0, 22.0 ],
+					"text" : "append resources/"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-188",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1579.0, 1493.666643142700195, 40.0, 22.0 ],
+					"text" : "path"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-190",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1579.0, 1520.666643142700195, 67.0, 22.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+					"text" : "thispatcher"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-183",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "" ],
+					"patching_rect" : [ 1303.5, 1471.666642427444458, 44.0, 22.0 ],
+					"text" : "sel 0 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-181",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1355.5, 1407.666692137718201, 56.0, 22.0 ],
+					"text" : "r runtime"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-180",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1301.5, 1436.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-176",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -106,7 +190,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 911.333360999999968, 138.31396484375, 50.0, 22.0 ]
+					"patching_rect" : [ 911.333360999999968, 138.31396484375, 50.0, 22.0 ],
+					"text" : "0"
 				}
 
 			}
@@ -117,7 +202,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 818.0, 101.0, 56.0, 22.0 ],
+					"patching_rect" : [ 829.0, 101.0, 56.0, 22.0 ],
 					"text" : "r runtime"
 				}
 
@@ -597,7 +682,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "bang" ],
-					"patching_rect" : [ 1210.5, 1304.0, 42.0, 22.0 ],
+					"patching_rect" : [ 1301.5, 1397.0, 42.0, 22.0 ],
 					"text" : "t b b b"
 				}
 
@@ -636,7 +721,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1351.0, 1469.666643142700195, 71.0, 22.0 ],
+					"patching_rect" : [ 1444.0, 1637.666643142700195, 71.0, 22.0 ],
 					"text" : "prepend pic"
 				}
 
@@ -648,7 +733,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1351.0, 1438.666643142700195, 134.0, 22.0 ],
+					"patching_rect" : [ 1444.0, 1606.666643142700195, 134.0, 22.0 ],
 					"text" : "sprintf %smedia/en.png"
 				}
 
@@ -660,7 +745,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 1350.5, 1397.666643142700195, 116.0, 22.0 ],
+					"patching_rect" : [ 1443.5, 1565.666643142700195, 116.0, 22.0 ],
 					"text" : "regexp (.+)patchers/"
 				}
 
@@ -730,7 +815,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1211.0, 1469.666643142700195, 71.0, 22.0 ],
+					"patching_rect" : [ 1304.0, 1637.666643142700195, 71.0, 22.0 ],
 					"text" : "prepend pic"
 				}
 
@@ -742,7 +827,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1211.0, 1438.666643142700195, 134.0, 22.0 ],
+					"patching_rect" : [ 1304.0, 1606.666643142700195, 134.0, 22.0 ],
 					"text" : "sprintf %smedia/no.png"
 				}
 
@@ -754,7 +839,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1210.5, 1277.666688442230225, 58.0, 22.0 ],
+					"patching_rect" : [ 1301.5, 1370.666688442230225, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -766,7 +851,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 1210.5, 1397.666643142700195, 116.0, 22.0 ],
+					"patching_rect" : [ 1303.5, 1565.666643142700195, 116.0, 22.0 ],
 					"text" : "regexp (.+)patchers/"
 				}
 
@@ -778,7 +863,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1210.5, 1335.980607986450195, 40.0, 22.0 ],
+					"patching_rect" : [ 1303.5, 1503.980607986450195, 40.0, 22.0 ],
 					"text" : "path"
 				}
 
@@ -790,7 +875,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1210.5, 1362.980607986450195, 67.0, 22.0 ],
+					"patching_rect" : [ 1303.5, 1530.980607986450195, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -950,7 +1035,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1356.000039219856262, 1514.58681260569756, 150.0, 62.0 ],
+					"patching_rect" : [ 1408.666666000000077, 1733.166666507720947, 150.0, 62.0 ],
 					"text" : "this should grey out the melody sequencer and make it ignore clicks maybe"
 				}
 
@@ -962,7 +1047,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1675.0, 1528.58681260569756, 77.0, 34.0 ],
+					"patching_rect" : [ 1727.666626780143815, 1747.166666507720947, 77.0, 34.0 ],
 					"text" : "random melody"
 				}
 
@@ -975,7 +1060,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1612.0, 1514.58681260569756, 61.0, 61.0 ]
+					"patching_rect" : [ 1664.666626780143815, 1733.166666507720947, 61.0, 61.0 ]
 				}
 
 			}
@@ -985,7 +1070,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1612.0, 1598.0, 87.0, 22.0 ],
+					"patching_rect" : [ 1664.666626780143815, 1816.579853902023387, 87.0, 22.0 ],
 					"text" : "s genre_select"
 				}
 
@@ -996,7 +1081,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1502.0, 1598.0, 92.0, 22.0 ],
+					"patching_rect" : [ 1554.666626780143815, 1816.579853902023387, 92.0, 22.0 ],
 					"text" : "s freeplay_keys"
 				}
 
@@ -1007,7 +1092,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1504.5, 1498.0, 81.0, 20.0 ],
+					"patching_rect" : [ 1557.166626780143815, 1716.579853902023387, 81.0, 20.0 ],
 					"text" : "FREE PLAY"
 				}
 
@@ -1023,7 +1108,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1502.0, 1514.586812999999893, 68.0, 68.0 ],
+					"patching_rect" : [ 1554.666626780143815, 1733.16666690202328, 68.0, 68.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1295.666661381721497, 326.0, 68.0, 68.0 ],
 					"saved_attribute_attributes" : 					{
@@ -1726,7 +1811,7 @@
 					"clickedimage" : 1,
 					"id" : "obj-40",
 					"maxclass" : "pictctrl",
-					"name" : "fuzz-ui-btn_fx_help.png",
+					"name" : "C:/Users/Hugh/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/patchers/media/resources/",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
@@ -1742,7 +1827,7 @@
 					"clickedimage" : 1,
 					"id" : "obj-39",
 					"maxclass" : "pictctrl",
-					"name" : "fuzz-ui-btn_melody_help.png",
+					"name" : "C:/Users/Hugh/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/patchers/media/resources/",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
@@ -1979,7 +2064,7 @@
 				"box" : 				{
 					"id" : "obj-114",
 					"maxclass" : "pictctrl",
-					"name" : "fuzz-ui-btn_menu_reset.png",
+					"name" : "C:/Users/Hugh/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/patchers/media/resources/",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
@@ -2362,7 +2447,7 @@
 					"clickedimage" : 1,
 					"id" : "obj-243",
 					"maxclass" : "pictctrl",
-					"name" : "fuzz-ui-btn_menu_genres_circle.png",
+					"name" : "C:/Users/Hugh/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/patchers/media/resources/",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
@@ -3038,7 +3123,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
+					"destination" : [ "obj-180", 0 ],
 					"source" : [ "obj-151", 2 ]
 				}
 
@@ -3358,7 +3443,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-176", 0 ],
-					"source" : [ "obj-174", 0 ]
+					"source" : [ "obj-174", 1 ]
 				}
 
 			}
@@ -3415,6 +3500,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-59", 0 ],
 					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-183", 0 ],
+					"source" : [ "obj-180", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-180", 1 ],
+					"source" : [ "obj-181", 0 ]
 				}
 
 			}
@@ -3519,6 +3618,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-183", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-188", 0 ],
+					"source" : [ "obj-183", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-239", 0 ],
 					"midpoints" : [ 786.500009655952454, 958.0, 920.0, 958.0, 920.0, 1297.0, 963.833360910415649, 1297.0 ],
 					"source" : [ "obj-185", 0 ]
@@ -3535,6 +3648,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-93", 0 ],
+					"source" : [ "obj-186", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-239", 0 ],
 					"midpoints" : [ 955.833333790302277, 958.0, 920.0, 958.0, 920.0, 1297.0, 963.833360910415649, 1297.0 ],
 					"source" : [ "obj-187", 0 ]
@@ -3546,6 +3666,13 @@
 					"destination" : [ "obj-47", 0 ],
 					"midpoints" : [ 1056.166666209697723, 958.0, 896.0, 958.0, 896.0, 1366.0, 806.5, 1366.0 ],
 					"source" : [ "obj-187", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-190", 0 ],
+					"source" : [ "obj-188", 0 ]
 				}
 
 			}
@@ -3568,6 +3695,29 @@
 				"patchline" : 				{
 					"destination" : [ "selectGenreText", 0 ],
 					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-186", 0 ],
+					"order" : 1,
+					"source" : [ "obj-190", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-191", 0 ],
+					"order" : 0,
+					"source" : [ "obj-190", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-130", 0 ],
+					"source" : [ "obj-191", 0 ]
 				}
 
 			}
@@ -4474,13 +4624,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "fuzz-ui-btn_fx_help.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "fuzz-ui-btn_genre_glow.png",
 				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
 				"patcherrelativepath" : "../media",
@@ -4489,27 +4632,6 @@
 			}
 , 			{
 				"name" : "fuzz-ui-btn_melody_close_help.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fuzz-ui-btn_melody_help.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fuzz-ui-btn_menu_genres_circle.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fuzz-ui-btn_menu_reset.png",
 				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
 				"patcherrelativepath" : "../media",
 				"type" : "PNG",
