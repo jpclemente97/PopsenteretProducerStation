@@ -77,11 +77,11 @@
 				"box" : 				{
 					"id" : "obj-62",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1229.333360999999968, 469.6279296875, 108.0, 22.0 ],
-					"text" : "append resources/"
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1229.333360999999968, 469.6279296875, 155.0, 22.0 ],
+					"text" : "combine filepath resources/"
 				}
 
 			}
@@ -126,11 +126,11 @@
 				"box" : 				{
 					"id" : "obj-55",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 918.333360999999968, 505.31396484375, 108.0, 22.0 ],
-					"text" : "append resources/"
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 918.333360999999968, 505.31396484375, 155.0, 22.0 ],
+					"text" : "combine filepath resources/"
 				}
 
 			}
@@ -2045,21 +2045,7 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "FUZZ-Tutorial-Melody_NO.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fuzz-ui-btn_melody_close_help.png",
-				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
- ],
+		"dependency_cache" : [  ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "BLACK",

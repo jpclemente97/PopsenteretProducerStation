@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1082.0, 1097.899038314819336, 155.0, 22.0 ],
+					"text" : "combine filepath resources/"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -69,19 +81,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 956.427888870239258, 922.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-36",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1082.0, 1097.899038314819336, 108.0, 22.0 ],
-					"text" : "append resources/"
+					"patching_rect" : [ 956.427888870239258, 922.0, 50.0, 22.0 ],
+					"text" : "0"
 				}
 
 			}
@@ -114,11 +115,11 @@
 				"box" : 				{
 					"id" : "obj-32",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1389.0, 1097.899038314819336, 108.0, 22.0 ],
-					"text" : "append resources/"
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1389.0, 1097.899038314819336, 155.0, 22.0 ],
+					"text" : "combine filepath resources/"
 				}
 
 			}
@@ -154,7 +155,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1313.427888870239258, 922.0, 56.0, 22.0 ],
+					"patching_rect" : [ 1318.427888870239258, 865.337499999999977, 56.0, 22.0 ],
 					"text" : "r runtime"
 				}
 
@@ -268,8 +269,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1248.427888870239258, 1190.119038314819363, 265.0, 22.0 ],
-					"text" : "sprintf %s/media/videos/fuzz_producer_EN.mp4"
+					"patching_rect" : [ 1248.427888870239258, 1190.119038314819363, 261.0, 22.0 ],
+					"text" : "sprintf %smedia/videos/fuzz_producer_EN.mp4"
 				}
 
 			}
@@ -495,8 +496,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 956.427888870239258, 1190.119038314819363, 266.0, 22.0 ],
-					"text" : "sprintf %s/media/videos/fuzz_producer_NO.mp4"
+					"patching_rect" : [ 956.427888870239258, 1190.119038314819363, 263.0, 22.0 ],
+					"text" : "sprintf %smedia/videos/fuzz_producer_NO.mp4"
 				}
 
 			}
@@ -752,6 +753,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-63", 0 ],
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-25", 0 ]
 				}
@@ -794,14 +802,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-63", 0 ],
-					"source" : [ "obj-36", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-36", 0 ],
+					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-37", 1 ]
 				}
 

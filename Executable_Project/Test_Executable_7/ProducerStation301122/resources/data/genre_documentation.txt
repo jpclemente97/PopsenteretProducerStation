@@ -1,0 +1,13 @@
+# Numbering for each genre
+
+0 pop
+1 house
+2 90s hiphop
+3 tonal
+4 chillhouse
+5 disco
+6 hardstyle
+7 drum n bass
+8 tropical house
+9 lofi
+10 edm
