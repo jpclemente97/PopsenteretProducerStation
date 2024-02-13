@@ -40,6 +40,54 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-41",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "int", "int", "int" ],
+					"patching_rect" : [ 322.0, 1221.0, 52.0, 22.0 ],
+					"text" : "t b 0 0 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-38",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 470.647153288125992, 1063.0, 62.0, 22.0 ],
+					"text" : "r admin_3"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 396.0, 1063.0, 62.0, 22.0 ],
+					"text" : "r admin_2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-33",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 322.0, 1063.0, 62.0, 22.0 ],
+					"text" : "r admin_1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-30",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -120,123 +168,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-82",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 625.0, 1070.0, 29.5, 22.0 ],
-					"text" : "0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-83",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 670.0, 1070.0, 29.5, 22.0 ],
-					"text" : "1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"handoff" : "",
-					"id" : "obj-84",
-					"maxclass" : "ubutton",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "bang", "bang", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 625.0, 977.0, 141.0, 48.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 675.0, 566.0, 44.0, 37.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-79",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 469.0, 1070.0, 29.5, 22.0 ],
-					"text" : "0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-80",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 514.0, 1070.0, 29.5, 22.0 ],
-					"text" : "1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"handoff" : "",
-					"id" : "obj-81",
-					"maxclass" : "ubutton",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "bang", "bang", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 469.0, 977.0, 141.0, 48.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 739.0, 579.0, 49.0, 41.5 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-78",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 312.0, 1070.0, 29.5, 22.0 ],
-					"text" : "0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-76",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 357.0, 1070.0, 29.5, 22.0 ],
-					"text" : "1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"handoff" : "",
-					"id" : "obj-74",
-					"maxclass" : "ubutton",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "bang", "bang", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 312.0, 977.0, 141.0, 48.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 487.0, 579.0, 43.0, 42.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-61",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -266,7 +197,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 321.813822537660599, 1215.000023722648621, 82.0, 22.0 ],
+					"patching_rect" : [ 322.0, 1259.000023722648621, 82.0, 22.0 ],
 					"text" : "offset -3840 0"
 				}
 
@@ -1129,6 +1060,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-60", 0 ],
+					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-60", 1 ],
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"order" : 1,
 					"source" : [ "obj-35", 0 ]
@@ -1177,8 +1122,43 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-60", 2 ],
+					"source" : [ "obj-38", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"source" : [ "obj-41", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-60", 2 ],
+					"source" : [ "obj-41", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-60", 1 ],
+					"source" : [ "obj-41", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-60", 0 ],
+					"source" : [ "obj-41", 1 ]
 				}
 
 			}
@@ -1219,91 +1199,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-76", 0 ],
-					"source" : [ "obj-74", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-78", 0 ],
-					"source" : [ "obj-74", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-60", 0 ],
-					"source" : [ "obj-76", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-60", 0 ],
-					"source" : [ "obj-78", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-60", 1 ],
-					"source" : [ "obj-79", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-60", 1 ],
-					"source" : [ "obj-80", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-79", 0 ],
-					"source" : [ "obj-81", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-80", 0 ],
-					"source" : [ "obj-81", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-60", 2 ],
-					"source" : [ "obj-82", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-60", 2 ],
-					"source" : [ "obj-83", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-82", 0 ],
-					"source" : [ "obj-84", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-83", 0 ],
-					"source" : [ "obj-84", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
+					"destination" : [ "obj-41", 0 ],
 					"source" : [ "obj-85", 0 ]
 				}
 
@@ -1340,6 +1236,20 @@
 				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "FUZZ-Tutorial-FX_NO.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
+				"patcherrelativepath" : "../media",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "FUZZ-Tutorial-Melody_NO.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
+				"patcherrelativepath" : "../media",
+				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
@@ -1392,6 +1302,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "en.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
+				"patcherrelativepath" : "../media",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "fade_to_grey_1.maxpat",
 				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/patchers",
 				"patcherrelativepath" : ".",
@@ -1406,6 +1323,83 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "fuzz-ui-btn_fx_close_help.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
+				"patcherrelativepath" : "../media",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-btn_fx_help.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
+				"patcherrelativepath" : "../media",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-btn_genre_glow.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
+				"patcherrelativepath" : "../media",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-btn_melody_close_help.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
+				"patcherrelativepath" : "../media",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-btn_melody_help.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
+				"patcherrelativepath" : "../media",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-btn_menu_genres_circle.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
+				"patcherrelativepath" : "../media",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-btn_menu_reset.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
+				"patcherrelativepath" : "../media",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-fx_melody_background_NO.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
+				"patcherrelativepath" : "../media",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-genres_background.jpg",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
+				"patcherrelativepath" : "../media",
+				"type" : "JPEG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui-the_biggest_knob.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
+				"patcherrelativepath" : "../media",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fuzz-ui_bg-xy_NO.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
+				"patcherrelativepath" : "../media",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "genre_name_reader.maxpat",
 				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/patchers",
 				"patcherrelativepath" : ".",
@@ -1417,6 +1411,13 @@
 				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "no.png",
+				"bootpath" : "~/Documents/GitHub/PopsenteretProducerStation/Executable_Project/ProducerStation301122/media",
+				"patcherrelativepath" : "../media",
+				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
