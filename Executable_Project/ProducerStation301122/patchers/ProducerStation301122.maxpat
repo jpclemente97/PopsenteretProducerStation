@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-42",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2256.0, 2638.76187539100647, 69.0, 22.0 ],
+					"text" : "r dac_open"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-43",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -911,7 +923,7 @@
 					"name" : "FUZZ Producer Station User Interface.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"offset" : [ 0.0, 0.0 ],
+					"offset" : [ -5120.0, 0.0 ],
 					"outlettype" : [ "bang", "bang" ],
 					"patching_rect" : [ 105.627640783786774, -2.99942946434021, 2560.0, 1440.0 ],
 					"presentation" : 1,
@@ -1217,6 +1229,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-60", 0 ],
 					"source" : [ "obj-41", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-43", 0 ],
+					"source" : [ "obj-42", 0 ]
 				}
 
 			}
